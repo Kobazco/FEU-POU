@@ -3,3 +3,6 @@ I've been talking to some people on the FEU discord, and we were all talking abo
 
 # Contributing
 Here is somewhat of a guide: https://stackedit.io/viewer#!provider=gist&gistId=3b11a59d6ab47a818170fb10628c88c1&filename=ContributToPOE
+
+# The Doc
+List of suggestions: https://docs.google.com/spreadsheets/d/1WmfBs79M_KPgqfzvDnsL_sZ5i-5u0E2vBALkZkrwHyY/edit#gid=0
