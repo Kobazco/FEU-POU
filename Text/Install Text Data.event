@@ -3,12 +3,11 @@
 #include "Tools/Tool Helpers.txt"
 #include "Text Definitions.event"
 
+TxtData0x212:
+#incext ParseFile "_textentries\0x212.txt"
+setText(0x212,TxtData0x212)
 
-Unit_Names_Data:
-#incext ParseFile "Unit Names.txt"
-setText(Unit_Names,Unit_Names_Data)
-
-Unit_R_Text_Data:
-#incext ParseFile "Unit R Text.txt"
-setText(Unit_R_Text,Unit_R_Text_Data)
+TxtData0x06E:
+#incext ParseFile "_textentries\0x06E.txt"
+setText(0x06E,TxtData0x06E)
 

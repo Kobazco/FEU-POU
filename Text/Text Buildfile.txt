@@ -1,2 +1,5 @@
-#include "Unit Names.txt"
-#include "Unit R Text.txt"
+#0x212
+Tordo[X]
+
+#0x06E
+Please reply soon :)[X]
