@@ -1,0 +1,16 @@
+/////////////////////////////////////////////////////////
+//                                                     //
+//               Master Hack Installer                 //
+//                                                     //
+/////////////////////////////////////////////////////////
+
+ORG 0xb2a610
+#include "Extensions/Hack Installation.txt"
+
+////////////////////////////////FREE SPACE OUT OF BL RANGE
+//start of Free space
+
+  //HP Bars (and effective weapon warning)
+  #include "HPbars.txt"
+
+ALIGN 4
