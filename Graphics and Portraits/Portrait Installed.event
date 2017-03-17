@@ -1,0 +1,46 @@
+#include "Tools/Tool Helpers.txt"
+//this file defines the macro:
+//setMugEntry(number, data, mouth_x, mouth_y, eye_x, eye_y)
+
+Colm_Mug:
+#incext PortraitFormatter "Portraits/Colm.png"
+setMugEntry(0x0C, Colm_Mug, 3, 5, 3, 3)
+Meth_Mug:
+#incext PortraitFormatter "Portraits/Meth.png"
+setMugEntry(0x04, Meth_Mug, 2, 5, 2, 2)
+DathzlaZzogoth_Mug:
+#incext PortraitFormatter "Portraits/DathzlaZzogoth.png"
+setMugEntry(0x0E, DathzlaZzogoth_Mug, 3, 5, 3, 3)
+Dorcas_Mug:
+#incext PortraitFormatter "Portraits/dorcas.png"
+setMugEntry(0x05, Dorcas_Mug, 2, 4, 3, 2)
+JimBob_Mug:
+#incext PortraitFormatter "Portraits/JimBob.png"
+setMugEntry(0x09, JimBob_Mug, 2, 6, 4, 4)
+Tordo_Mug:
+#incext PortraitFormatter "Portraits/unknown.png"
+setMugEntry(0x02, Tordo_Mug, 3, 6, 3, 4)
+TordoEye_Mug:
+#incext PortraitFormatter "Portraits/unknown.png"
+setMugEntry(0x03, TordoEye_Mug, 3, 6, 3, 4)
+Glaceo_Mug:
+#incext PortraitFormatter "Portraits/Glaceo.png"
+setMugEntry(0x48, Glaceo_Mug, 3, 5, 3, 3)
+Harkinian_Mug:
+#incext PortraitFormatter "Portraits/Harkinian.png"
+setMugEntry(0x41, Harkinian_Mug, 4, 4, 4, 2)
+HarkinianH_Mug:
+#incext PortraitFormatter "Portraits/Harkinian.png"
+setMugEntry(0x41, HarkinianH_Mug, 4, 4, 4, 2)
+Gwonam_Mug:
+#incext PortraitFormatter "Portraits/Gwonam.png"
+setMugEntry(0x42, Gwonam_Mug, 3, 8, 3, 5)
+Takeshi_Mug:
+#incext PortraitFormatter "Portraits/Takeshi.png"
+setMugEntry(0x44, Takeshi_Mug, 4, 5, 4, 3)
+Takeshi2_Mug:
+#incext PortraitFormatter "Portraits/Takeshi.png"
+setMugEntry(0x45, Takeshi2_Mug, 4, 5, 4, 3)
+Moudler_Mug:
+#incext PortraitFormatter "Portraits/Moudler.png"
+setMugEntry(0x07, Moudler_Mug, 2, 5, 3, 3)
