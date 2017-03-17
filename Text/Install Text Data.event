@@ -15,3 +15,11 @@ TxtData0x213:
 #incext ParseFile "_textentries\0x213.txt"
 setText(0x213,TxtData0x213)
 
+TxtData0x0366:
+#incext ParseFile "_textentries\0x0366.txt"
+setText(0x0366,TxtData0x0366)
+
+TxtData0x0416:
+#incext ParseFile "_textentries\0x0416.txt"
+setText(0x0416,TxtData0x0416)
+
