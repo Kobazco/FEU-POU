@@ -1,0 +1,94 @@
+#ifndef BOOTS_TABLE_CLASS_EA
+#define BOOTS_TABLE_CLASS_EA
+
+// Defines Class Table Setters
+
+#include "../core/constants.ea"
+
+#ifndef pTableClass
+	#ifdef _FE6_
+		#define pTableClass 0x60A0E8
+	#endif // _FE6_
+	
+	#ifdef _FE7_
+		#define pTableClass 0xBE015C
+	#endif // _FE7_
+	
+	#ifdef _FE8_
+		#define pTableClass 0x807110
+	#endif // _FE8_
+#endif
+
+MESSAGE Class table located at pTableClass
+
+#ifndef sizeTableClassEntry
+	#ifdef _FE6_
+		#define sizeTableClassEntry 72
+	#else // _FE6_
+		#define sizeTableClassEntry 84
+	#endif // _FE6_
+#endif
+
+#define GetClassOffset(aId) "(pTableClass + aId*sizeTableClassEntry)"
+
+/*
+	NOTE: The EA Standard Library defines SetClassAnimation.
+	The effect is probably the same as Boots's SetClassAnimationPtr.
+*/
+
+#define SetClassNumber(aIdClass) "PUSH; ORG GetClassOffset(aIdClass) + 4; BYTE (aIdClass+0x01); POP"
+#define SetClassName(aIdClass, aIdTextName) "PUSH; ORG GetClassOffset(aIdClass) + 0; SHORT aIdTextName; POP"
+#define SetClassDesc(aIdClass, aIdTextDesc) "PUSH; ORG GetClassOffset(aIdClass) + 2; SHORT aIdTextDesc; POP"
+
+#ifdef _FE8_
+	#define SetClassPromotion(aIdClass, aIdPromotion) "PUSH; ORG 0x95DFA4 + aIdClass*2; BYTE aChoice1 0x00; POP"
+	#define SetClassPromotions(aIdClass, aChoice1, aChoice2) "PUSH; ORG 0x95DFA4 + aIdClass*2; BYTE aChoice1 aChoice2; POP"
+#else
+	#define SetClassPromotion(aIdClass, aIdPromotion) "PUSH; ORG GetClassOffset(aIdClass) + 5; BYTE aIdPromotion; POP"
+#endif
+
+#define SetClassMapSprite(aIdClass, aIdSprite) "PUSH; ORG GetClassOffset(aIdClass) + 6; BYTE aIdSprite; POP"
+#define SetClassWalkingSpeed(aIdClass, aSpeed) "PUSH; ORG GetClassOffset(aIdClass) + 7; BYTE aSpeed; POP"
+#define SetClassRelativePower(aIdClass, Power) "PUSH; ORG GetClassOffset(aIdClass) + 26; BYTE Power; POP"
+
+#define SetClassBases(aIdClass, HP, Power, Skill, Speed, Def, Res) "PUSH; ORG GetClassOffset(aIdClass) + 11; BYTE HP Power Skill Speed Def Res; POP"
+#define SetClassBases(aIdClass, HP, Power, Skill, Speed, Def, Res, Con, Mov) "PUSH; ORG GetClassOffset(aIdClass) + 11; BYTE HP Power Skill Speed Def Res Con Mov; POP"
+
+#define SetClassMaxes(aIdClass, HP, Power, Skill, Speed, Def, Res) "PUSH; ORG GetClassOffset(aIdClass) + 19; BYTE HP Power Skill Speed Def Res; POP"
+#define SetClassMaxes(aIdClass, HP, Power, Skill, Speed, Def, Res, Con) "PUSH; ORG GetClassOffset(aIdClass) + 19; BYTE HP Power Skill Speed Def Res Con; POP"
+
+#define SetClassGrowths(aIdClass, HP, Power, Skill, Speed, Def, Res) "PUSH; ORG GetClassOffset(aIdClass) + 27; BYTE HP Power Skill Speed Def Res; POP"
+#define SetClassGrowths(aIdClass, HP, Power, Skill, Speed, Def, Res, ConOrLuck) "PUSH; ORG GetClassOffset(aIdClass) + 27; BYTE HP Power Skill Speed Def Res ConOrLuck; POP"
+
+#ifdef _FE6_
+	#define SetClassPortrait(aIdClass, aIdPortrait) "PUSH; ORG GetClassOffset(aIdClass) + 9; BYTE aIdPortrait; POP"
+	#define SetClassAttributes(aIdClass, aFlagAttributes) "PUSH; ORG GetClassOffset(aIdClass) + 36; WORD (aFlagAttributes); POP"
+
+	#define SetClassRank(aIdClass, aIdWeapon, aRank) "PUSH; ORG GetClassOffset(aIdClass) + 40 + aIdWeapon; BYTE aRank; POP"
+	#define SetClassRanks(aIdClass, Swords, Lances, Axes, Bows, Staff, Anima, Light, Dark) "PUSH; ORG GetClassOffset(aIdClass) + 40; BYTE Swords Lances Axes Bows Staff Anima Light Dark; POP"
+	
+	#define SetClassAnimationPtr(aIdClass, apAnimations) "PUSH; ORG GetClassOffset(aIdClass) + 48; POIN apAnimations; POP"
+	#define SetClassMovCostPtr(aIdClass, apMovCostTable) "PUSH; ORG GetClassOffset(aIdClass) + 52; POIN apMovCostTable; POP"
+
+	#define SetClassTerrainBonusesPtrs(aIdClass, apTerrainDef, apTerrainRes, apTerrainAvo) "PUSH; ORG GetClassOffset(aIdClass) + 56; POIN apTerrainDef; POIN apTerrainAvo; POIN apTerrainRes; POP"
+	#define SetClassTerrainDefPtr(aIdClass, apTerrainDef) "PUSH; ORG GetClassOffset(aIdClass) + 56; POIN apTerrainDef; POP"
+	#define SetClassTerrainResPtr(aIdClass, apTerrainRes) "PUSH; ORG GetClassOffset(aIdClass) + 64; POIN apTerrainRes; POP"
+	#define SetClassTerrainAvoPtr(aIdClass, apTerrainAvo) "PUSH; ORG GetClassOffset(aIdClass) + 60; POIN apTerrainAvo; POP"
+#else // _FE7_ or _FE8_
+	#define SetClassPortrait(aIdClass, aIdPortrait) "PUSH; ORG GetClassOffset(aIdClass) + 8; BYTE aIdPortrait; POP"
+	#define SetClassAttributes(aIdClass, aFlagAttributes) "PUSH; ORG GetClassOffset(aIdClass) + 40; WORD (aFlagAttributes); POP"
+
+	#define SetClassRank(aIdClass, aIdWeapon, aRank) "PUSH; ORG GetClassOffset(aIdClass) + 44 + aIdWeapon; BYTE aRank; POP"
+	#define SetClassRanks(aIdClass, Swords, Lances, Axes, Bows, Staff, Anima, Light, Dark) "PUSH; ORG GetClassOffset(aIdClass) + 44; BYTE Swords Lances Axes Bows Staff Anima Light Dark; POP"
+	#define SetClassPromotionBonuses(aIdClass, HP, Power, Skill, Speed, Def, Res) "PUSH; ORG GetClassOffset(aIdClass) + 34; BYTE HP Power Skill Speed Def Res; POP"
+
+	#define SetClassAnimationPtr(aIdClass, apAnimations) "PUSH; ORG GetClassOffset(aIdClass) + 52; POIN apAnimations; POP"
+	#define SetClassMovCostPtr(aIdClass, apMovCostTable) "PUSH; ORG GetClassOffset(aIdClass) + 56; POIN apMovCostTable; POP"
+
+	#define SetClassTerrainBonusesPtrs(aIdClass, apTerrainDef, apTerrainRes, apTerrainAvo) "PUSH; ORG GetClassOffset(aIdClass) + 68; POIN apTerrainDef; POIN apTerrainAvo; POIN apTerrainRes; POP"
+	#define SetClassTerrainDefPtr(aIdClass, apTerrainDef) "PUSH; ORG GetClassOffset(aIdClass) + 68; POIN apTerrainDef; POP"
+	#define SetClassTerrainResPtr(aIdClass, apTerrainRes) "PUSH; ORG GetClassOffset(aIdClass) + 76; POIN apTerrainRes; POP"
+	#define SetClassTerrainAvoPtr(aIdClass, apTerrainAvo) "PUSH; ORG GetClassOffset(aIdClass) + 72; POIN apTerrainAvo; POP"
+#endif // _FE6_
+
+#endif // BOOTS_TABLE_CLASS_EA

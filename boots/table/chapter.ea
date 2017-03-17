@@ -1,0 +1,158 @@
+#ifndef BOOTS_TABLE_CHAPTER_EA
+#define BOOTS_TABLE_CHAPTER_EA
+
+// Defines Chapter Table Setters
+
+#include "../core/constants.ea"
+
+#ifndef pTableChapter
+	#ifdef _FE6_
+		#define pTableChapter 0x6637A4
+	#endif // _FE6_
+	
+	#ifdef _FE7_
+		#define pTableChapter 0xC9A200
+	#endif // _FE7_
+	
+	#ifdef _FE8_
+		#define pTableChapter 0x8B0890
+	#endif // _FE8_
+#endif
+
+MESSAGE Chapter table located at pTableChapter
+
+#ifndef sizeTableChapterEntry
+	#ifdef _FE6_
+		#define sizeTableChapterEntry 68
+	#endif // _FE6_
+	
+	#ifdef _FE7_
+		#define sizeTableChapterEntry 152
+	#endif // _FE7_
+	
+	#ifdef _FE8_
+		#define sizeTableChapterEntry 148
+	#endif // _FE8_
+#endif
+
+#define GetChapterOffset(aId) "(pTableChapter + aId*sizeTableChapterEntry)"
+
+#define GetTileSet(aIdObj1, aIdObj2, aIdPalette, aIdTileConfig) "((aIdObj1) | (aIdObj2<<8) | (aIdPalette<<16) | (aIdTileConfig<<24))"
+#define GetMapData(aIdMap, aIdAnim1, aIdAnim2, aIdMapChanges) "((aIdMap) | (aIdAnim1<<8) | (aIdAnim2<<16) | (aIdMapChanges<<24))"
+
+#define SetChapterNumberPtr(aIdChapter, apNumber) "PUSH; ORG GetChapterOffset(aIdChapter) + 0; POIN apNumber; POP"
+#define SetChapterTileSet(aIdChapter, aTileSet) "PUSH; ORG GetChapterOffset(aIdChapter) + 4; WORD aTileSet; POP"
+#define SetChapterMapData(aIdChapter, aMapDaa) "PUSH; ORG GetChapterOffset(aIdChapter) + 8; WORD aMapDaa; POP"
+#define SetChapterFOWLevel(aIdChapter, aLevel) "PUSH; ORG GetChapterOffset(aIdChapter) + 12; BYTE aLevel; POP"
+#define SetChapterEnablePrep(aIdChapter, aBoolean) "PUSH; ORG GetChapterOffset(aIdChapter) + 13; BYTE aBoolean; POP"
+
+#ifdef _FE6_
+	#define SetChapterWeather(aIdChapter, aIdWeather) "PUSH; ORG GetChapterOffset(aIdChapter) + 17; BYTE aIdWeather; POP"
+	#define SetChapterBattleTiles(aIdChapter, aIdBattleTiles) "PUSH; ORG GetChapterOffset(aIdChapter) + 18; BYTE aIdBattleTiles; POP"
+	
+	#define SetChapterHMBonusLevels(aIdChapter, aLevel) "PUSH; ORG GetChapterOffset(aIdChapter) + 19; BYTE aLevel; POP"
+	
+	#define SetChapterPlayerMusic(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 20; BYTE aIdMusic; POP"
+	#define SetChapterEnemyMusic(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 21; BYTE aIdMusic; POP"
+	#define SetChapterNPCMusic(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 22; BYTE aIdMusic; POP"
+	#define SetChapterWMPrologueMusic(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 23; BYTE aIdMusic; POP"
+	#define SetChapterOpeningMusic(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 24; BYTE aIdMusic; POP"
+	
+	#define SetChapterGoalText(aIdChapter, aIdText) "PUSH; ORG GetChapterOffset(aIdChapter) + 48; SHORT aIdText; POP"
+	#define SetChapterAllyArmyText(aIdChapter, aIdText) "PUSH; ORG GetChapterOffset(aIdChapter) + 50; SHORT aIdText; POP"
+	#define SetChapterEnemyArmyText(aIdChapter, aIdText) "PUSH; ORG GetChapterOffset(aIdChapter) + 52; SHORT aIdText; POP"
+	#define SetChapterEnemyEmblemMug(aIdChapter, aIdMug) "PUSH; ORG GetChapterOffset(aIdChapter) + 54; BYTE aIdMug; POP"
+	
+	#define SetChapterEventPointerArray(aIdChapter, aId) "PUSH; ORG GetChapterOffset(aIdChapter) + 58; BYTE aId; POP"
+	#define SetChapterWMPrologue(aIdChapter, aId) "PUSH; ORG GetChapterOffset(aIdChapter) + 59; BYTE aId; POP"
+#else
+	#define SetChapterWeather(aIdChapter, aIdWeather) "PUSH; ORG GetChapterOffset(aIdChapter) + 18; BYTE aIdWeather; POP"
+	#define SetChapterBattleTiles(aIdChapter, aIdBattleTiles) "PUSH; ORG GetChapterOffset(aIdChapter) + 19; BYTE aIdBattleTiles; POP"
+	
+	#define SetChapterPlayerMusic(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 22; SHORT aIdMusic; POP"
+	#define SetChapterEnemyMusic(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 24; SHORT aIdMusic; POP"
+	#define SetChapterNPCMusic(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 26; SHORT aIdMusic; POP"
+	
+	#define SetChapterPlayerMusic2(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 28; SHORT aIdMusic; POP"
+	#define SetChapterEnemyMusic2(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 30; SHORT aIdMusic; POP"
+	#define SetChapterNPCMusic2(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 32; SHORT aIdMusic; POP"
+	
+	#define SetChapterWallHealth(aIdChapter, aNumber) "PUSH; ORG GetChapterOffset(aIdChapter) + 44; BYTE aNumber; POP"
+	
+	#ifdef _FE7_
+		#define SetChapterHMBonusLevels(aIdChapter, aLevel) "PUSH; ORG GetChapterOffset(aIdChapter) + 20; BYTE aLevel; POP"
+		
+		#define SetChapterPlayerMusicAlt(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 34; SHORT aIdMusic; POP"
+		#define SetChapterEnemyMusicAlt(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 36; SHORT aIdMusic; POP"
+		#define SetChapterWMPrologueMusic(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 38; SHORT aIdMusic; POP"
+		
+		#define SetChapterOpeningMusic(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 40; SHORT aIdMusic; POP"
+		#define SetChapterOpeningMusic2(aIdChapter, aIdMusic) "PUSH; ORG GetChapterOffset(aIdChapter) + 42; SHORT aIdMusic; POP"
+		
+		#define SetChapter5StarTurnLimits(aIdChapter, aENM, aEHM, aHNM, AHHM) "PUSH; ORG GetChapterOffset(aIdChapter) + 45; BYTE aENM aEHM aHNM AHHM; POP"
+		#define SetChapter4StarTurnLimits(aIdChapter, aENM, aEHM, aHNM, AHHM) "PUSH; ORG GetChapterOffset(aIdChapter) + 49; BYTE aENM aEHM aHNM AHHM; POP"
+		#define SetChapter3StarTurnLimits(aIdChapter, aENM, aEHM, aHNM, AHHM) "PUSH; ORG GetChapterOffset(aIdChapter) + 53; BYTE aENM aEHM aHNM AHHM; POP"
+		#define SetChapter2StarTurnLimits(aIdChapter, aENM, aEHM, aHNM, AHHM) "PUSH; ORG GetChapterOffset(aIdChapter) + 57; BYTE aENM aEHM aHNM AHHM; POP"
+		
+		#define SetChapter5StarExpReq(aIdChapter, aENM, aEHM, aHNM, AHHM) "PUSH; ORG GetChapterOffset(aIdChapter) + 62; SHORT aENM aEHM aHNM AHHM; POP"
+		#define SetChapter4StarExpReq(aIdChapter, aENM, aEHM, aHNM, AHHM) "PUSH; ORG GetChapterOffset(aIdChapter) + 70; SHORT aENM aEHM aHNM AHHM; POP"
+		#define SetChapter3StarExpReq(aIdChapter, aENM, aEHM, aHNM, AHHM) "PUSH; ORG GetChapterOffset(aIdChapter) + 78; SHORT aENM aEHM aHNM AHHM; POP"
+		#define SetChapter2StarExpReq(aIdChapter, aENM, aEHM, aHNM, AHHM) "PUSH; ORG GetChapterOffset(aIdChapter) + 86; SHORT aENM aEHM aHNM AHHM; POP"
+		
+		#define SetChapterMaxFunds(aIdChapter, aENM, aEHM, aHNM, AHHM) "PUSH; ORG GetChapterOffset(aIdChapter) + 96; WORD aENM aEHM aHNM AHHM; POP"
+		
+		#define SetChapterNameWithNumber(aIdChapter, aIdTextName) "PUSH; ORG GetChapterOffset(aIdChapter) + 112; SHORT aIdTextName; POP"
+		#define SetChapterNameWithNumber2(aIdChapter, aIdTextName) "PUSH; ORG GetChapterOffset(aIdChapter) + 114; SHORT aIdTextName; POP"
+		
+		#define SetChapterName(aIdChapter, aIdTextName) "PUSH; ORG GetChapterOffset(aIdChapter) + 116; SHORT aIdTextName; POP"
+		#define SetChapterName2(aIdChapter, aIdTextName) "PUSH; ORG GetChapterOffset(aIdChapter) + 118; SHORT aIdTextName; POP"
+		
+		#define SetChapterEventPointerArray(aIdChapter, aId) "PUSH; ORG GetChapterOffset(aIdChapter) + 120; BYTE aId; POP"
+		#define SetChapterWMPrologue(aIdChapter, aId) "PUSH; ORG GetChapterOffset(aIdChapter) + 121; BYTE aId; POP"
+		
+		#define SetChapterPreAuguryText(aIdChapter, aIdText) "PUSH; ORG GetChapterOffset(aIdChapter) + 122; SHORT aIdText; POP"
+		#define SetChapterAuguryText(aIdChapter, aIdText) "PUSH; ORG GetChapterOffset(aIdChapter) + 124; SHORT aIdText; POP"
+		#define SetChapterAuguryText2(aIdChapter, aIdText) "PUSH; ORG GetChapterOffset(aIdChapter) + 126; SHORT aIdText; POP"
+		#define SetChapterPostAuguryText(aIdChapter, aIdText) "PUSH; ORG GetChapterOffset(aIdChapter) + 128; SHORT aIdText; POP"
+		
+		#define SetChapterAuguryMug(aIdChapter, aIdMug) "PUSH; ORG GetChapterOffset(aIdChapter) + 130; BYTE aIdMug; POP"
+		#define SetChapterAuguryPrice(aIdChapter, aPrice) "PUSH; ORG GetChapterOffset(aIdChapter) + 131; BYTE aPrice; POP"
+		
+		#define SetChapterDisplayNumber(aIdChapter, aNumber, aBooleanX) "PUSH; ORG GetChapterOffset(aIdChapter) + 132; BYTE (((aNumber)<<1) | aBooleanX); POP"
+		#define SetChapterDisplayNumber2(aIdChapter, aNumber, aBooleanX) "PUSH; ORG GetChapterOffset(aIdChapter) + 133; BYTE (((aNumber)<<1) | aBooleanX); POP"
+		
+		#define SetChapterMerlinusPos(aIdChapter, aX, aY) "PUSH; ORG GetChapterOffset(aIdChapter) + 134; BYTE aX; ORG GetChapterOffset(aIdChapter) + 136; BYTE aY; POP"
+		#define SetChapterMerlinusPos2(aIdChapter, aX, aY) "PUSH; ORG GetChapterOffset(aIdChapter) + 135; BYTE aX; ORG GetChapterOffset(aIdChapter) + 137; BYTE aY; POP"
+		
+		#define SetChapterVictoryMusicThreshold(aIdChapter, aAmount) "PUSH; ORG GetChapterOffset(aIdChapter) + 138; BYTE aAmount; POP"
+		
+		#define SetChapterTitleFadeToBlack(aIdChapter, aBoolean) "PUSH; ORG GetChapterOffset(aIdChapter) + 139; BYTE aBoolean; POP"
+		
+		#define SetChapterObjectiveText(aIdChapter, aIdText) "PUSH; ORG GetChapterOffset(aIdChapter) + 140; SHORT aIdText; POP"
+		#define SetChapterGoalText(aIdChapter, aIdText) "PUSH; ORG GetChapterOffset(aIdChapter) + 142; SHORT aIdText; POP"
+		#define SetChapterGoalInfo(aIdChapter, aGoal) "PUSH; ORG GetChapterOffset(aIdChapter) + 144; BYTE aGoal; POP"
+		
+		#define SetChapterTurnCount(aIdChapter, aStart) "PUSH; ORG GetChapterOffset(aIdChapter) + 145; BYTE aStart; POP"
+		#define SetChapterProtectUnit(aIdChapter, aUnit) "PUSH; ORG GetChapterOffset(aIdChapter) + 146; BYTE aUnit; POP"
+		#define SetChapterTileMarker(aIdChapter, aX, aY) "PUSH; ORG GetChapterOffset(aIdChapter) + 147; BYTE aX aY; POP"
+	#else // _FE8_
+		#define SetChapterLevelModifiers(aIdChapter, aEMPenalty, aNMPenalty, aHMBonus) "PUSH; ORG GetChapterOffset(aIdChapter) + 20; SHORT ((aEMPenalty) | (aHMBonus<<4) | (aNMPenalty<<8)); POP"
+		
+		#define SetChapterEventPointerArray(aIdChapter, aId) "PUSH; ORG GetChapterOffset(aIdChapter) + 116; BYTE aId; POP"
+		#define SetChapterWMPrologue(aIdChapter, aId) "PUSH; ORG GetChapterOffset(aIdChapter) + 117; BYTE aId; POP"
+		
+		#define SetChapterVictoryMusicThreshold(aIdChapter, aAmount) "PUSH; ORG GetChapterOffset(aIdChapter) + 134; BYTE aAmount; POP"
+		
+		#define SetChapterTitleFadeToBlack(aIdChapter, aBoolean) "PUSH; ORG GetChapterOffset(aIdChapter) + 135; BYTE aBoolean; POP"
+		
+		#define SetChapterObjectiveText(aIdChapter, aIdText) "PUSH; ORG GetChapterOffset(aIdChapter) + 136; SHORT aIdText; POP"
+		#define SetChapterGoalText(aIdChapter, aIdText) "PUSH; ORG GetChapterOffset(aIdChapter) + 138; SHORT aIdText; POP"
+		#define SetChapterGoalInfo(aIdChapter, aGoal) "PUSH; ORG GetChapterOffset(aIdChapter) + 140; BYTE aGoal; POP"
+		
+		#define SetChapterTurnCount(aIdChapter, aStart) "PUSH; ORG GetChapterOffset(aIdChapter) + 141; BYTE aStart; POP"
+		#define SetChapterProtectUnit(aIdChapter, aUnit) "PUSH; ORG GetChapterOffset(aIdChapter) + 142; BYTE aUnit; POP"
+		#define SetChapterTileMarker(aIdChapter, aX, aY) "PUSH; ORG GetChapterOffset(aIdChapter) + 143; BYTE aX aY; POP"
+	#endif
+#endif
+
+#endif // BOOTS_TABLE_CHAPTER_EA

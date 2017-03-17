@@ -2,10 +2,15 @@
 #include eastdlib.event
 ORG FreeSpace
 #include "FE8Essentials.event"
-#include "Graphics and Portraits/Portrait Installed.event"
-#include "Tables/Table Installer.event"
-#include "FE8-Stat Colors/Talk and Growths Master EA.txt"
-#include "Item Effect Revamp/EA Main Installer.txt"
-#include "HPBAR/HP Installer.txt"
-#include "Dangerzone_FE8 (1).txt"
+//#include "Graphics and Portraits/Portrait Installed.event"
+//#include "Tables/Table Installer.event"
+//#include "FE8-Stat Colors/Talk and Growths Master EA.txt"
+//#include "Item Effect Revamp/EA Main Installer.txt"
+//#include "HPBAR/HP Installer.txt"
+//#include "Dangerzone_FE8 (1).txt"
 #include "Text/Install Text Data.event"
+
+#include "boots/master.ea"
+
+SetUnitName(Eirika, EirikaName)
+SetUnitDesc(Eirika, EirikaDesc)

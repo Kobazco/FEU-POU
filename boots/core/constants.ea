@@ -1,0 +1,138 @@
+#ifndef BOOTS_CORE_CONSTANTS_EA
+#define BOOTS_CORE_CONSTANTS_EA
+
+// Defines Engine-Defined Constants (won't change without assembly hacking)
+
+#define WALKSPEED_NORMAL 0x00
+#define WALKSPEED_SLOW   0x01
+
+#define WTYPE_SWORD    0x00
+#define WTYPE_LANCE    0x01
+#define WTYPE_AXE      0x02
+#define WTYPE_BOW      0x03
+#define WTYPE_STAFF    0x04
+#define WTYPE_ANIMA    0x05
+#define WTYPE_LIGHT    0x06
+#define WTYPE_DARK     0x07
+#define WTYPE_ITEM     0x09
+#define WTYPE_DISARMED WTYPE_ITEM // For Animation Definition Readability
+
+#define WRANK_NONE 0
+#define WRANK_E    1
+#define WRANK_D    31
+#define WRANK_C    71
+#define WRANK_B    121
+#define WRANK_A    171
+#define WRANK_S    251
+
+#define ATTR_NONE                  0x00000000
+#define ATTR_MOUNTEDAID            0x00000001
+#define ATTR_CANTO                 0x00000002
+#define ATTR_STEAL                 0x00000004
+#define ATTR_LOCKPICK              0x00000008
+#define ATTR_DANCE                 0x00000010
+#define ATTR_PLAY                  0x00000020
+#define ATTR_CRITBONUS             0x00000040
+#define ATTR_BALLISTAE             0x00000080
+#define ATTR_PROMOTED              0x00000100
+#define ATTR_SUPPLY                0x00000200
+#define ATTR_MOUNTED               0x00000400
+#define ATTR_WYVERN                0x00000800
+#define ATTR_PEGASUS               0x00001000
+#define ATTR_LORD                  0x00002000
+#define ATTR_FEMALE                0x00004000
+#define ATTR_BOSS                  0x00008000
+#define ATTR_ITEMLOCK_1            0x00010000
+#define ATTR_ITEMLOCK_2            0x00020000
+#define ATTR_ITEMLOCK_3            0x00040000 // Dragons or Monster depending of game
+#define ATTR_TRIANGLEATTACK_PEGASI 0x00200000
+#define ATTR_TRIANGLEATTACK_ARMORS 0x00400000
+
+#define ITEMATTR_NONE            0x00000000
+#define ITEMATTR_WEAPON          0x00000001
+#define ITEMATTR_MAGIC           0x00000002
+#define ITEMATTR_STAFF           0x00000004
+#define ITEMATTR_UNBREAKABLE     0x00000008
+#define ITEMATTR_UNSELLABLE      0x00000010
+#define ITEMATTR_BRAVEEFFECT     0x00000020
+#define ITEMATTR_MAGICDAMAGE     0x00000040
+#define ITEMATTR_UNCOUNTERABLE   0x00000080
+#define ITEMATTR_REVERSETRIANGLE 0x00000100
+#define ITEMATTR_HAMMERNE        0x00000200 // Defined as Hammerne effect in FE6 Nightmare module, but as ??? in FE7 & FE8.
+#define ITEMATTR_LOCK_3          0x00000400 // Dragons or Monster depending of game
+#define ITEMATTR_LOCK_1          0x00000800
+#define ITEMATTR_LOCK_2          0x00001000
+#define ITEMATTR_LOCK_0          0x00002000 // King in FE6
+#define ITEMATTR_NEGATE_FLYING   0x00004000
+
+#define ITEMEFFECT_NONE    0x00
+#define ITEMEFFECT_POISON  0x01
+#define ITEMEFFECT_HPDRAIN 0x02
+#define ITEMEFFECT_HPHALF  0x03
+#define ITEMEFFECT_DEVIL   0x04
+
+#define WEATHER_CLEAR     0x00
+#define WEATHER_FLURRIES  0x01
+#define WEATHER_BLIZZARD  0x02
+#define WEATHER_BLUEGRAD  0x03
+#define WEATHER_RAIN      0x04
+#define WEATHER_ASHES     0x05
+#define WEATHER_SANDSTORM 0x06
+#define WEATHER_CLOUDS    0x07
+
+#define TEXTCOLOR_NORMAL 0x00
+#define TEXTCOLOR_GRAY   0x01
+#define TEXTCOLOR_BLUE   0x02
+#define TEXTCOLOR_ORANGE 0x03
+#define TEXTCOLOR_GREEN  0x04
+#define TEXTCOLOR_BLACK  0x05
+
+#ifdef _FE6_
+	#define WTYPE_DRAGONSTONE 0x0B
+	
+	#define ATTR_STARTNPC 0x00800000
+#else // _FE6_
+	#define WTYPE_DANCERING 0x0C
+	
+	#define ATTR_UNSELECTABLE 0x00100000
+	#define ATTR_LETHALITY    0x02000000
+	#define ATTR_ITEMLOCK_4   0x10000000
+	#define ATTR_ITEMLOCK_5   0x20000000
+	#define ATTR_ITEMLOCK_6   0x40000000
+	#define ATTR_ITEMLOCK_7   0x80000000
+	
+	#define ITEMATTR_NEGATE_CRIT    0x00008000
+	#define ITEMATTR_NEGATE_DEFENSE 0x00020000
+	#define ITEMATTR_LOCK_4         0x00040000
+	#define ITEMATTR_LOCK_5         0x00080000
+	#define ITEMATTR_LOCK_6         0x00100000
+	#define ITEMATTR_LOCK_7         0x00200000
+	
+	#define GOAL_NONE_SEIZE    0x00
+	#define GOAL_ENEMYCOUNT    0x01
+	#define GOAL_TURNCOUNT     0x02
+	#define GOAL_NONE_KILLBOSS 0x03
+	#define GOAL_NONE_SPECIAL  0x04
+
+	#ifdef _FE7_
+		#define WTYPE_DRAGONSTONE 0x0B
+		
+		#define ATTR_MORPH     0x00080000 // ???
+		#define ATTR_NOEXP     0x01000000
+		#define ATTR_MAGICSEAL 0x04000000
+		#define ATTR_ITEMDROP  0x08000000
+	#else // _FE8_
+		#define WTYPE_MONSTER         0x0B
+		#define WTYPE_FIREDRAGONSTONE 0x11
+		#define WTYPE_DANCERING2      0x12
+		
+		#define ATTR_MAXLEVEL10 0x00080000
+		#define ATTR_SUMMON     0x08000000
+		
+		#define ITEMATTR_UNUSABLE 0x00010000
+		
+		#define ITEMEFFECT_STONE 0x05
+	#endif // _FE8_
+#endif // _FE6_
+
+#endif // BOOTS_CORE_CONSTANTS_EA

@@ -1,0 +1,28 @@
+#ifndef BOOTS_CORE_UTIL_EA
+#define BOOTS_CORE_UTIL_EA
+
+// Defines Utilities For Misc/General Data Definitions
+
+#include "constants.ea"
+
+#define GetPaletteColor(aRed, aGreen, aBlue) "(((aGreen & 0x1F) << 10) | ((aRed & 0x1F) << 5) | (aBlue & 0x1F))"
+
+#define AnimationForType(aWeaponType, aIdAnimation) "BYTE aWeaponType 0x01 aIdAnimation 0x00"
+#define AnimationForWeapon(aIdItemWeapon, aIdAnimation) "BYTE aIdItemWeapon 0x00 aIdAnimation 0x00"
+#define AnimationEnd "BYTE 0x00 0x00 0x00 0x00"
+
+#define PaletteColor(aRed, aGreen, aBlue) "SHORT GetPaletteColor(aRed, aGreen, aBlue)"
+
+#ifdef _FE6_
+	#define SetCritBonus(aAmount) "PUSH; ORG 0x0249BA; BYTE aAmount; POP"
+#endif // _FE6_
+
+#ifdef _FE7_
+	#define SetCritBonus(aAmount) "PUSH; ORG 0x028D32; BYTE aAmount; POP"
+#endif // _FE7_
+
+#ifdef _FE8_
+	#define SetCritBonus(aAmount) "PUSH; ORG 0x02AC4A; BYTE aAmount; POP"
+#endif // _FE8_
+
+#endif // BOOTS_CORE_UTIL_EA

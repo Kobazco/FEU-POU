@@ -1,0 +1,30 @@
+#ifndef BOOTS_MASTER_EA
+#define BOOTS_MASTER_EA
+
+#include "core/constants.ea"
+#include "core/util.ea"
+
+#ifndef NO_BOOTS_TABLE
+	#include "table/text.ea"
+	#include "table/mug.ea"
+	#include "table/class.ea"
+	#include "table/unit.ea"
+	#include "table/item.ea"
+	#include "table/chapter.ea"
+#endif // NO_BOOTS_TABLE
+
+#ifdef _FE8_
+	#ifndef NO_BOOTS_EXTRA
+		#include "extra/unitmenu.fe8.ea"
+	#endif // NO_BOOTS_EXTRA
+	
+	#ifndef NO_BOOTS_VANILLA_DEFINITIONS
+		#include "core/vanilla.fe8.ea"
+	#endif // NO_BOOTS_VANILLA_DEFINITIONS
+	
+	#ifndef NO_ESSENTIALFIXES
+		#include "3rdparty/essentialfixes.fe8.ea"
+	#endif // NO_ESSENTIALFIXES
+#endif // _FE8_
+
+#endif // BOOTS_MASTER_EA
