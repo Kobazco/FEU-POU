@@ -1,0 +1,13 @@
+#ifndef THEDOC_EVENT
+#define THEDOC_EVENT
+
+#define TheDoc Sieglind
+
+SetItemName(TheDoc, TheDocName)
+SetItemDesc(TheDoc, TheDocDesc)
+
+SetItemWeaponType(TheDoc, WTYPE_LIGHT)
+SetItemWeaponStats(TheDoc, 15, 80, 10, 20) // Mgt, Hit, Crt, Wgt
+SetItemWeaponRange(TheDoc, 1, 2)
+
+#endif // THEDOC_EVENT

@@ -1,0 +1,8 @@
+#ifndef VALKYRIESTAFF_EVENT
+#define VALKYRIESTAFF_EVENT
+
+#define ValkyrieStaff Rapier
+
+// TODO
+
+#endif // VALKYRIESTAFF_EVENT
