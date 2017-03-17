@@ -1,8 +1,1 @@
-# 0x212 EirikaName
-Tordo[X]
-
-# 0x6e EirikaDesc
-Please reply soon :)[X]
-
-# 0x213 MethName
-Meth[X]
+#include "Text/Characters.txt"

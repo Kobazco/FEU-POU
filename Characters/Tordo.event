@@ -1,0 +1,9 @@
+#ifndef TORDO_EVENT
+#define TORDO_EVENT
+
+#define Tordo Eirika
+
+SetUnitName(Tordo, TordoName)
+SetUnitDesc(Tordo, TordoDesc)
+
+#endif // TORDO_EVENT

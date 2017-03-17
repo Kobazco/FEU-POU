@@ -16,10 +16,12 @@
 	#define NO_BOOTS_VANILLA_DEFINITIONS
 	#include "boots/master.ea"
 
+	// NOTE: FE8 Item Effect Revamp doesn't assemble for some reason :/
 	// #include "Item Effect Revamp/EA Main Installer.txt"
 
-	// NOTO: FE8 Stat Colors Doesn't work for now for unknown reasons
+	// NOTE: FE8 Stat Colors Doesn't work for now for unknown reasons (softlocks when trying to open unit menu)
 	// #include "FE8-Stat Colors/Talk and Growths Master EA.txt"
+	
 	#include "HPBAR/HP Installer.txt"
 	#include "Dangerzone.event"
 
@@ -28,16 +30,11 @@
 	#include "Animations/Master Animation Installer.event"
 	#include "Text/Install Text Data.event"
 
-	SetUnitName(Eirika, EirikaName)
-	SetUnitDesc(Eirika, EirikaDesc)
-	SetUnitName(Seth, MethName)
+	#include "Characters/Tordo.event"
+	#include "Characters/Meth.event"
 	
-	SetClassAnimationPtr(Paladin, pTestAnimations)
-	
-	pTestAnimations:
-		AnimationForType(WTYPE_SWORD, 0x03)
-		AnimationForType(WTYPE_LANCE, 0x03)
-	AnimationEnd
+	// Comment out to assemble the actual ROMHack, modify for testing
+	#include "Debug.ea"
 
 #else // _FE8_
 	ERROR This is a FE8 hack.

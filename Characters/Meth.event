@@ -1,0 +1,8 @@
+#ifndef METH_EVENT
+#define METH_EVENT
+
+#define Meth Seth
+
+SetUnitName(Meth, MethName)
+
+#endif // METH_EVENT
