@@ -1,0 +1,161 @@
+//begin Mode 1
+C03
+C07
+1  p- stand.png
+3  p- a1.png
+3  p- a2.png
+3  p- a3.png
+3  p- a4.png
+C04
+C24
+C20
+C1A
+3  p- a5p.png
+C1B
+12  p- a6p.png
+
+C01
+2  p- ab1.png
+2  p- ab2.png
+2  p- ab3.png
+C34
+2  p- stand.png
+C06
+2  p- stand.png
+C0D
+~~~
+//begin Mode 3
+C03
+C07
+1  p- stand.png
+C22
+2  p- cri1.png
+10  p- cri2.png
+C44
+2  p- cri3.png
+2  p- cri4.png
+2  p- cri5.png
+2  p- cri6.png
+2  p- cri7.png
+2  p- cri8.png
+C22
+2  p- cri1.png
+5  p- cri9.png
+
+3  p- cri10.png
+3  p- cri11.png
+3  p- cri12.png
+3  p- cri13.png
+C04
+C09
+C20
+2  p- cri14p.png
+C1B
+10  p- cri15p.png
+
+C01
+2  p- crib1.png
+2  p- crib2.png
+2  p- crib3.png
+C34
+2  p- cri9.png
+C22
+2  p- cri1.png
+10  p- cri8.png
+C44
+2  p- cri6.png
+2  p- cri2.png
+C22
+2  p- cri1.png
+C06
+2  p- stand.png
+C0D
+~~~
+//begin Mode 5
+C03
+C07
+1  p- stand.png
+C22
+2  p- cri1.png
+5  p- cri2.png
+C05
+5  p- cri2.png
+C01
+C23
+2  p- cri1.png
+C06
+1  p- stand.png
+C0D
+~~~
+//begin Mode 6
+C03
+C07
+1  p- stand.png
+C22
+2  p- cri1.png
+5  p- cri2.png
+5  p- cri3.png
+C05
+5  p- cri3.png
+C01
+5  p- cri2.png
+C23
+2  p- cri1.png
+C06
+1  p- stand.png
+C0D
+~~~
+//begin Mode 7
+C02
+1  p- stand.png
+C0E
+3  p- dodge.png
+C01
+3  p- stand.png
+C0D
+~~~
+//begin Mode 8
+C02
+1  p- stand.png
+C0E
+3  p- dodge.png
+C01
+3  p- stand.png
+C0D
+~~~
+//begin Mode 9
+4  p- stand.png
+C01
+~~~
+//begin Mode 10
+4  p- stand.png
+C01
+~~~
+//begin Mode 11
+4  p- stand.png
+C01
+~~~
+//begin Mode 12
+C03
+C07
+1  p- stand.png
+3  p- a1.png
+3  p- a2.png
+3  p- a3.png
+3  p- a4.png
+C04
+C25
+3  p- a5.png
+C1B
+12  p- a6.png
+C01
+2  p- ab1.png
+2  p- ab2.png
+2  p- ab3.png
+C34
+2  p- stand.png
+C06
+2  p- stand.png
+C0D
+~~~
+//End of animation script

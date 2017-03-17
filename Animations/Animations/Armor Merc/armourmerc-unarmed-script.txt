@@ -1,0 +1,93 @@
+//begin Mode 1
+C03
+C07
+1  p- frame00unarmed.png
+C04
+C15
+C1A
+C1F
+C01
+C06
+C0D
+~~~
+//begin Mode 3
+C03
+C07
+1  p- frame00unarmed.png
+C04
+C15
+C1A
+C1F
+C01
+C06
+C0D
+~~~
+//begin Mode 5
+C03
+C07
+1  p- frame00unarmed.png
+C04
+C15
+C05
+C1F
+C01
+C06
+C0D
+~~~
+//begin Mode 6
+C03
+C07
+1  p- frame00unarmed.png
+C04
+C15
+C05
+C1F
+C01
+C06
+C0D
+~~~
+//begin Mode 7
+C02
+1  p- frame00unarmed.png
+C0E
+3  p- frame90.png
+1  p- frame91.png
+C01
+3  p- frame90.png
+C0D
+~~~
+//begin Mode 8
+C02
+1  p- frame00unarmed.png
+C0E
+3  p- frame90.png
+1  p- frame91.png
+C01
+3  p- frame90.png
+C0D
+~~~
+//begin Mode 9
+1  p- frame00unarmed.png
+C01
+~~~
+//begin Mode 10
+1  p- frame00unarmed.png
+C01
+~~~
+//begin Mode 11
+1  p- frame00unarmed.png
+C01
+~~~
+//begin Mode 12
+C03
+C07
+1  p- frame00unarmed.png
+C04
+C15
+C1F
+C01
+C06
+1  p- frame00unarmed.png
+C0D
+~~~
+//End of animation script

@@ -1,0 +1,108 @@
+/// - Begin Mode 1 - Normal Attack (Layered in Front)
+C03
+C07
+7  p- staff1.png
+6  p- staff2.png
+2  p- staff3.png
+2  p- staff4.png
+5  p- staff5.png
+5  p- staff6.png
+C05
+C01
+5  p- staff5.png
+5  p- staff4.png
+3  p- staff3.png
+6  p- staff2.png
+7  p- staff1.png
+C06
+C0D
+/// - End Mode 1
+~~~
+/// - Begin Mode 3 - Critical Attack (Layered in Front)
+C03
+C07
+7  p- staff1.png
+6  p- staff2.png
+2  p- staff3.png
+2  p- staff4.png
+5  p- staff5.png
+5  p- staff6.png
+C05
+C01
+5  p- staff5.png
+5  p- staff4.png
+3  p- staff3.png
+6  p- staff2.png
+7  p- staff1.png
+C06
+C0D
+/// - End Mode 3
+~~~
+/// - Begin Mode 5 - Magic/Range Attack
+C03
+C07
+7  p- staff1.png
+6  p- staff2.png
+2  p- staff3.png
+2  p- staff4.png
+5  p- staff5.png
+5  p- staff6.png
+C05
+C01
+5  p- staff5.png
+5  p- staff4.png
+3  p- staff3.png
+6  p- staff2.png
+7  p- staff1.png
+C06
+C0D
+/// - End Mode 5
+~~~
+/// - Begin Mode 6 - Magic/Range Attack Critical
+C03
+C07
+7  p- staff1.png
+6  p- staff2.png
+2  p- staff3.png
+2  p- staff4.png
+5  p- staff5.png
+5  p- staff6.png
+C05
+C01
+5  p- staff5.png
+5  p- staff4.png
+3  p- staff3.png
+6  p- staff2.png
+7  p- staff1.png
+C06
+C0D
+/// - End Mode 6
+~~~
+/// - Begin Mode 7 - Close Range Dodge
+3  p- staff1.png
+/// - End Mode 7
+~~~
+/// - Begin Mode 8 - Ranged Dodge
+3  p- staff1.png
+/// - End Mode 8
+~~~
+/// - Begin Mode 9 - Standing Frames
+3  p- staff1.png
+C01
+/// - End Mode 9
+~~~
+/// - Begin Mode 10 - Standing Frames 2
+3  p- staff1.png
+C01
+/// - End Mode 10
+~~~
+/// - Begin Mode 11 - Ranged Standing Frames
+3  p- staff1.png
+C01
+/// - End Mode 11
+~~~
+/// - Begin Mode 12 - Dodged attack
+3  p- staff1.png
+/// - End Mode 12
+~~~
+/// - End Animation Data

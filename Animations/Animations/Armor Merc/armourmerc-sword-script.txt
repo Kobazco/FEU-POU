@@ -1,0 +1,288 @@
+//begin Mode 1
+C03
+C07
+1  p- frame00.png
+2  p- frame01.png
+2  p- frame01a.png
+3  p- frame02.png
+8  p- frame02a.png
+4  p- frame03.png
+2  p- frame04.png
+2  p- frame05.png
+1  p- frame06.png
+1  p- frame07.png
+3  p- frame08.png
+3  p- frame09.png
+2  p- frame10.png
+2  p- frame11.png
+1  p- frame12.png
+2  p- frame12a.png
+C23
+1  p- frame13.png
+C04
+2  p- frame13.png
+C15
+1  p- frame14hit.png
+C1A
+C1F
+C01
+3  p- frame14hit.png
+1  p- frame15.png
+C22
+1  p- frame15.png
+2  p- frame15a.png
+1  p- frame16.png
+1  p- frame16a.png
+4  p- frame16b.png
+3  p- frame17.png
+3  p- frame18.png
+2  p- frame19.png
+2  p- frame20.png
+2  p- frame21.png
+2  p- frame22.png
+2  p- frame23.png
+2  p- frame24.png
+1  p- frame25.png
+1  p- frame26.png
+1  p- frame26a.png
+1  p- frame01.png
+C34
+C15
+1  p- frame01.png
+C06
+2  p- frame00.png
+C0D
+~~~
+//begin Mode 3
+C03
+C07
+1  p- frame00.png
+3  p- frame01.png
+3  p- frame32.png
+28  p- frame33.png
+8  p- frame34.png
+8  p- frame33.png
+8  p- frame34.png
+16  p- frame33.png
+2  p- frame35.png
+1  p- frame36.png
+//6  p- frame39.png
+//C22
+C22
+5  p- frame41a.png
+12  p- frame42.png
+2  p- frame42a.png
+2  p- frame43.png
+C3C
+//C23? shwing slash sound
+4  p- frame44.png
+C15
+C30
+//dirt kick; 32 is large
+C04
+1  p- frame44a.png
+//HIT!!!
+C08
+C1F
+1  p- frame44a.png
+1  p- empty.png
+1  p- frame45.png
+1  p- empty.png
+1  p- frame45.png
+1  p- empty.png
+1  p- frame45.png
+1  p- empty.png
+1  p- frame45.png
+1  p- frame46u.png
+1  p- frame46.png
+1  p- frame46u.png
+1  p- frame46.png
+1  p- frame46u.png
+1  p- frame46.png
+1  p- frame46u.png
+1  p- frame46.png
+1  p- frame47u.png
+1  p- frame47.png
+1  p- frame47u.png
+1  p- frame47.png
+1  p- frame47u.png
+1  p- frame47.png
+1  p- frame48u.png
+1  p- frame48.png
+1  p- frame48u.png
+1  p- frame48.png
+1  p- frame48u.png
+1  p- frame48.png
+1  p- frame49u.png
+1  p- frame49.png
+1  p- frame49u.png
+1  p- frame49.png
+3  p- frame50.png
+3  p- frame50a.png
+3  p- frame50b.png
+3  p- frame51.png
+3  p- frame51a.png
+3  p- frame52.png
+3  p- frame53.png
+3  p- frame54.png
+3  p- frame55.png
+2  p- frame56.png
+1  p- frame57.png
+//hits ground
+C34
+C14
+C01
+11  p- frame57.png
+13  p- frame58.png
+//crouching; prepares for return
+C35
+5  p- frame59.png
+//big jump!!
+2  p- frame60.png
+2  p- frame61.png
+3  p- frame61a.png
+3  p- frame61b.png
+3  p- frame61c.png
+3  p- frame62.png
+3  p- frame26.png
+2  p- frame26a.png
+
+
+1  p- frame01.png
+//landing
+C34
+C15
+2  p- frame01.png
+C06
+2  p- frame00.png
+C0D
+
+~~~
+//begin Mode 5
+C03
+C07
+2  p- frame00.png
+3  p- frame86.png
+3  p- frame87.png
+C05
+10  p- frame88.png
+C01
+C06
+3  p- frame87.png
+3  p- frame86.png
+6  p- frame00.png
+C0D
+~~~
+//begin Mode 6
+C03
+C07
+2  p- frame00.png
+3  p- frame86.png
+3  p- frame87.png
+1  p- frame88.png
+1  p- frame89.png
+C05
+2  p- frame88.png
+2  p- frame89.png
+2  p- frame88.png
+2  p- frame89.png
+2  p- frame88.png
+2  p- frame89.png
+2  p- frame88.png
+2  p- frame89.png
+2  p- frame88.png
+C01
+C06
+3  p- frame87.png
+3  p- frame86.png
+6  p- frame00.png
+C0D
+~~~
+//begin Mode 7
+C02
+1  p- frame00.png
+C0E
+3  p- frame84.png
+1  p- frame85.png
+C01
+3  p- frame84.png
+C0D
+~~~
+//begin Mode 8
+C02
+1  p- frame00.png
+C0E
+3  p- frame84.png
+1  p- frame85.png
+C01
+3  p- frame84.png
+C0D
+~~~
+//begin Mode 9
+1  p- frame00.png
+C01
+~~~
+//begin Mode 10
+1  p- frame00.png
+C01
+~~~
+//begin Mode 11
+1  p- frame00.png
+C01
+~~~
+//begin Mode 12
+C03
+C07
+1  p- frame00.png
+2  p- frame01.png
+2  p- frame01a.png
+2  p- frame01.png
+3  p- frame02.png
+8  p- frame02a.png
+4  p- frame03.png
+2  p- frame04.png
+2  p- frame05.png
+1  p- frame06.png
+1  p- frame07.png
+3  p- frame08.png
+3  p- frame09.png
+2  p- frame10.png
+2  p- frame11.png
+1  p- frame12.png
+2  p- frame12a.png
+C23
+1  p- frame13.png
+C04
+2  p- frame13.png
+C15
+1  p- frame14miss.png
+//missed attack; no mode 2 layering
+C01
+3  p- frame14miss.png
+1  p- frame15.png
+C22
+1  p- frame15.png
+2  p- frame15a.png
+1  p- frame16.png
+1  p- frame16a.png
+4  p- frame16b.png
+3  p- frame17.png
+3  p- frame18.png
+2  p- frame19.png
+2  p- frame20.png
+2  p- frame21.png
+2  p- frame22.png
+2  p- frame23.png
+2  p- frame24.png
+2  p- frame25.png
+2  p- frame26.png
+2  p- frame26a.png
+1  p- frame01.png
+C34
+C15
+1  p- frame01.png
+C06
+2  p- frame00.png
+C0D
+~~~
+//End of animation script

@@ -1,0 +1,256 @@
+/// - Mode 1
+C03
+C07
+3  p- Ata01.png
+3  p- Ata02.png
+3  p- Ata03.png
+3  p- Ata04.png
+3  p- Ata05.png
+3  p- Ata06.png
+3  p- Ata07.png
+3  p- Ata08.png
+C79
+2  p- Ata09.png
+2  p- Ata10.png
+2  p- Ata11.png
+2  p- Ata12.png
+2  p- Ata13.png
+2  p- Ata14.png
+2  p- Ata15.png
+2  p- Ata16.png
+2  p- Ata17.png
+2  p- Ata18.png
+3  p- Ata08.png
+2  p- Ata19.png
+2  p- Ata20.png
+C3C
+2  p- Ata21.png
+2  p- Ata22.png
+3  p- Ata23.png
+C05
+3  p- Ata24.png
+3  p- Ata25.png
+3  p- Ata27.png
+C01
+3  p- Ata28.png
+3  p- Ata29.png
+3  p- St01.png
+C06
+C0D
+~~~
+/// - Mode 3
+C03
+C07
+3  p- Crit01.png
+3  p- Crit02.png
+3  p- Crit03.png
+2  p- Crit04.png
+3  p- Crit05.png
+3  p- Crit06.png
+3  p- Crit07.png
+C1B
+3  p- Crit08.png
+C1B
+3  p- Crit09.png
+C4B
+3  p- Crit10.png
+2  p- Crit11.png
+2  p- Crit12.png
+2  p- Crit13.png
+2  p- Crit14.png
+2  p- Crit15.png
+2  p- Crit16.png
+2  p- Crit17.png
+2  p- Crit18.png
+2  p- Crit19.png
+C79
+2  p- Crit20.png
+2  p- Crit21.png
+2  p- Crit22.png
+2  p- Crit23.png
+2  p- Crit24.png
+2  p- Crit25.png
+2  p- Crit26.png
+2  p- Crit27.png
+2  p- Crit28.png
+2  p- Crit29.png
+2  p- Crit30.png
+C3C
+2  p- Crit31.png
+2  p- Crit32.png
+3  p- Ata23.png
+C05
+3  p- Ata24.png
+3  p- Ata25.png
+3  p- Ata27.png
+C01
+3  p- Ata28.png
+3  p- Ata29.png
+3  p- St01.png
+C06
+C0D
+~~~
+/// - Mode 5
+C03
+C07
+3  p- Ata01.png
+3  p- Ata02.png
+3  p- Ata03.png
+3  p- Ata04.png
+3  p- Ata05.png
+3  p- Ata06.png
+3  p- Ata07.png
+3  p- Ata08.png
+C79
+2  p- Ata09.png
+2  p- Ata10.png
+2  p- Ata11.png
+2  p- Ata12.png
+2  p- Ata13.png
+2  p- Ata14.png
+2  p- Ata15.png
+2  p- Ata16.png
+2  p- Ata17.png
+2  p- Ata18.png
+3  p- Ata08.png
+2  p- Ata19.png
+2  p- Ata20.png
+C3C
+2  p- Ata21.png
+2  p- Ata22.png
+3  p- Ata23.png
+C05
+3  p- Ata24.png
+3  p- Ata25.png
+3  p- Ata27.png
+C01
+3  p- Ata28.png
+3  p- Ata29.png
+3  p- St01.png
+C06
+C0D
+~~~
+/// - Mode 6
+C03
+C07
+3  p- Crit01.png
+3  p- Crit02.png
+3  p- Crit03.png
+2  p- Crit04.png
+3  p- Crit05.png
+3  p- Crit06.png
+3  p- Crit07.png
+C1B
+3  p- Crit08.png
+C1B
+3  p- Crit09.png
+C4B
+3  p- Crit10.png
+2  p- Crit11.png
+2  p- Crit12.png
+2  p- Crit13.png
+2  p- Crit14.png
+2  p- Crit15.png
+2  p- Crit16.png
+2  p- Crit17.png
+2  p- Crit18.png
+2  p- Crit19.png
+C79
+2  p- Crit20.png
+2  p- Crit21.png
+2  p- Crit22.png
+2  p- Crit23.png
+2  p- Crit24.png
+2  p- Crit25.png
+2  p- Crit26.png
+2  p- Crit27.png
+2  p- Crit28.png
+2  p- Crit29.png
+2  p- Crit30.png
+C3C
+2  p- Crit31.png
+2  p- Crit32.png
+3  p- Ata23.png
+C05
+3  p- Ata24.png
+3  p- Ata25.png
+3  p- Ata27.png
+C01
+3  p- Ata28.png
+3  p- Ata29.png
+3  p- St01.png
+C06
+C0D
+~~~
+/// - Mode 7
+C02
+4  p- Ev01.png
+C0E
+16  p- Ev02.png
+C01
+4  p- Ev01.png
+C0D
+~~~
+/// - Mode 8
+C02
+4  p- Ev01.png
+C0E
+16  p- Ev02.png
+C01
+4  p- Ev01.png
+C0D
+~~~
+/// - Mode 9
+16 p- St01.png
+C01
+~~~
+/// - Mode 10
+16 p- St01.png
+C01
+~~~
+/// - Mode 11
+16 p- St01.png
+C01
+~~~
+/// - Mode 12
+C03
+C07
+3  p- Ata01.png
+3  p- Ata02.png
+3  p- Ata03.png
+3  p- Ata04.png
+3  p- Ata05.png
+3  p- Ata06.png
+3  p- Ata07.png
+3  p- Ata08.png
+C79
+2  p- Ata09.png
+2  p- Ata10.png
+2  p- Ata11.png
+2  p- Ata12.png
+2  p- Ata13.png
+2  p- Ata14.png
+2  p- Ata15.png
+2  p- Ata16.png
+2  p- Ata17.png
+2  p- Ata18.png
+3  p- Ata08.png
+2  p- Ata19.png
+2  p- Ata20.png
+C3C
+2  p- Ata21.png
+2  p- Ata22.png
+3  p- Ata23.png
+C05
+3  p- Ata24.png
+3  p- Ata25.png
+3  p- Ata27.png
+C01
+C0D
+C0E
+3  p- Ata28.png
+3  p- Ata29.png
+3  p- St01.png
+C06
+~~~
+/// - End of animation

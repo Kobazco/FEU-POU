@@ -6,3 +6,4 @@
 
 #define EirikaName 0x212
 #define EirikaDesc 0x6e
+#define MethName 0x213
