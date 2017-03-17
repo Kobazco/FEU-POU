@@ -1,0 +1,52 @@
+//change the offset to repoint these tables and update the macros
+#ifndef HACK_INSTALLATION
+	#include "Extensions\Hack Installation.txt"
+	#define B(pointer) "SHORT ((((pointer - CURRENTOFFSET - 4) >> 1)&0x7ff)|0xE000)"
+#endif
+
+#ifndef ItemPointerTables
+	#define ItemPointerTables
+
+	#ifdef _FE8_
+		#ifndef	IUArray
+			#define IUArray 0x288B0	//Item Usability Pointer Jump Table
+		#endif
+		#ifndef	IEArray
+			#define IEArray 0x2FC90	//Item Use Effect Pointer Jump Table
+		#endif
+		#ifndef	ITArray
+			#define ITArray 0x28E8C	//Item Targeting Pointer Jump Table
+		#endif
+		#ifndef PUArray
+			#define PUArray 0x29F34 //Prep Screen Item Usability Pointer Jump Table
+		#endif
+		#ifndef IBArray
+			#define IBArray 0xB3FF00 //custom array for items that display text when used (stat boosters and metis tome)
+		#endif
+		#ifndef ItemTable
+			#define ItemTable 0x809B10 //Item Data Table Offset
+		#endif	
+		#ifndef PromoTable
+			#define PromoTable 0x2921C //Promotion Item Usability Jump Table
+		#endif
+		#ifndef AIItemArray
+			#define AIItemArray 0xB3FE80	//repointed to add master keys to ai list, originally at 0xD86F4
+		#endif
+		#ifndef AIStaffArray
+			#define AIStaffArray 0xD868C
+		#endif
+	#endif
+
+	//Item Use Macros
+	#define SetIBPointer(Item_ID, pointer)	"setPointerTableEntry(IBArray, Item_ID, pointer)"
+	#define SetIUPointer(Item_ID, pointer)	"setPointerTableEntry(IUArray, Item_ID, pointer)"
+	#define SetIEPointer(Item_ID, pointer)	"setPointerTableEntry(IEArray, Item_ID, pointer)"
+	#define SetITPointer(Item_ID, pointer)	"setPointerTableEntry(ITArray, Item_ID, pointer)"
+	#define SetPUPointer(Item_ID, pointer)	"setPointerTableEntry(PUArray, Item_ID, pointer)"
+	//#define SetItemEffect(Item_ID, IUPoin, IEPoin, ITPoin) "SetIUPointer(Item_ID, IUPoin);SetIEPointer(Item_ID, IEPoin);SetITPointer(Item_ID,ITPoin)"
+
+	//Item Stat table Macros
+    #define SetItemMight(Item_ID, Might) "setTableByte(ItemTable, 0x24, Item_ID, 0x15, Might)"
+    #define SetItemUseID(Item_ID, Use_ID) "setTableByte(ItemTable, 0x24, Item_ID, 0x1E, Use_ID)"
+	
+#endif

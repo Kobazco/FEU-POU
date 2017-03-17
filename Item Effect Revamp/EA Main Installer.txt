@@ -1,0 +1,61 @@
+//Currently FE8 only
+//Prep screen items not supported yet
+
+#ifndef DefaultOffset	//write hack at this offset if assebmling from this file
+	#ifdef _FE8_
+		#define DefaultOffset 0xB40000
+	#endif
+	ORG DefaultOffset
+#endif
+
+//If you wish to repoint the jump pointer tables, change the offsets in ArraySetup.txt
+#include ArrayMacros.txt
+
+#ifndef FEditor
+	PUSH
+	#define FEditor
+	#include "FEditorAutopatches.txt"
+	POP
+#endif
+
+ALIGN 4
+#ifdef _FE8_
+
+	#include UseIDSetup.txt 	//still need to find and fix all mini jump tables
+	#include Effect_ID_AI_Setup.txt 	//only vulnerary AI works for now
+
+	#include "KeyCommandsByID.txt"	//make the "Door" and "Chest" commands check effect ID, includes master keys
+	//Set Item
+	
+	#include "MightStaffSetup.txt"	//make staves heal based on might
+
+	PUSH
+	//Set Staff base heal values
+	SetItemMight(0x4B, 0xA)
+	SetItemMight(0x4C, 0x14)
+	SetItemMight(0x4D, 0x80)
+	SetItemMight(0x4E, 0xA)
+	SetItemMight(0x4F, 0xA)
+	POP
+	
+	#include "MigVulSetup.txt"	//make vulneraries heal based on might
+	//Set Item
+	PUSH
+	SetIUPointer(0x33, 0x28B60)
+	SetIEPointer(0x33, VM)
+	SetITPointer(0x33, 0x2905C)
+	//SetItemMight(0xA2, 0xA)
+	POP
+
+	#include "PromoItemSetup.txt"
+	PUSH
+	SetIEPointer(0x34, 0x2FEEC)
+	SetITPointer(0x34, 0x2905C)
+	SetIUPointer(0x34, 0x28B56)
+	SetPUPointer(0x34, 0x2A0DA)
+	//setTablePointer(ItemTable, 0x24, 0x68, 0x10, 0x88ADF76)
+	//SetItemUseID(0x68, 0x34)
+	POP
+#else
+	ERROR "This is for FE8 only"
+#endif

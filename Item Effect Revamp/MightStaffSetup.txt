@@ -1,0 +1,8 @@
+#ifdef _FE8_
+PUSH
+ORG 0x16FB8
+#incbin "AsmBin\MigStaff.dmp"
+POP
+#else
+ERROR "This is for FE8 only"
+#endif
