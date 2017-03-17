@@ -1,0 +1,14 @@
+#ifndef DEBUG_EA
+#define DEBUG_EA
+
+// Lets use this file to insert changes using for testing only
+
+// This allows us to use Meth to test animations
+SetClassAnimationPtr(Paladin, pTestAnimations)
+
+pTestAnimations:
+	AnimationForType(WTYPE_SWORD, 0x03)
+	AnimationForType(WTYPE_LANCE, 0x03)
+AnimationEnd
+
+#endif // DEBUG_EA
