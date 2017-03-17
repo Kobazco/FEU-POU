@@ -1,17 +1,44 @@
-#define FreeSpace 0xB31A90
-#include eastdlib.event
-ORG FreeSpace
-#include "FE8Essentials.event"
-#include "Graphics and Portraits/Portrait Installed.event"
-#include "Tables/Table Installer.event"
-#include "FE8-Stat Colors/Talk and Growths Master EA.txt"
-#include "Item Effect Revamp/EA Main Installer.txt"
-#include "HPBAR/HP Installer.txt"
-#include "Dangerzone_FE8 (1).txt"
-#include "Animations/Master Animation Installer.event"
-#include "Text/Install Text Data.event"
-#include "boots/master.ea"
+#ifdef _FE8_ // Ensuring we are assembling FE8 events
+	#define FreeSpace 0xB31A90
+	
+	// Ensuring everyone is happy
+	#define pFreeSpace FreeSpace
+	#define Free_Space FreeSpace
+	
+	#include eastdlib.event
+	
+	ORG FreeSpace
+	
+	#include "FE8Essentials.event"
+	
+	// As long as it works I'll keep it :p
+	#define NO_BOOTS_EXTRA
+	#define NO_BOOTS_VANILLA_DEFINITIONS
+	#include "boots/master.ea"
 
-SetUnitName(Eirika, EirikaName)
-SetUnitDesc(Eirika, EirikaDesc)
-SetUnitName(Seth, MethName)
+	// #include "Item Effect Revamp/EA Main Installer.txt"
+
+	// NOTO: FE8 Stat Colors Doesn't work for now for unknown reasons
+	// #include "FE8-Stat Colors/Talk and Growths Master EA.txt"
+	#include "HPBAR/HP Installer.txt"
+	#include "Dangerzone.event"
+
+	#include "Graphics and Portraits/Portrait Installed.event"
+	#include "Tables/Table Installer.event"
+	#include "Animations/Master Animation Installer.event"
+	#include "Text/Install Text Data.event"
+
+	SetUnitName(Eirika, EirikaName)
+	SetUnitDesc(Eirika, EirikaDesc)
+	SetUnitName(Seth, MethName)
+	
+	SetClassAnimationPtr(Paladin, pTestAnimations)
+	
+	pTestAnimations:
+		AnimationForType(WTYPE_SWORD, 0x03)
+		AnimationForType(WTYPE_LANCE, 0x03)
+	AnimationEnd
+
+#else // _FE8_
+	ERROR This is a FE8 hack.
+#endif

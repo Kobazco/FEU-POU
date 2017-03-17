@@ -1,1 +1,0 @@
-setMugEntry(number, data, mouth_x, mouth_y, eye_x, eye_y)
