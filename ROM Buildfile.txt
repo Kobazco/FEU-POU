@@ -9,4 +9,3 @@ ORG FreeSpace
 #include "HPBAR/HP Installer.txt"
 #include "Dangerzone_FE8 (1).txt"
 #include "Text/Install Text Data.event"
-#include "Text/Text Buildfile.txt"
