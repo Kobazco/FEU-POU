@@ -1,0 +1,26 @@
+#ifndef BOOTS_TABLE_TEXT_EA
+#define BOOTS_TABLE_TEXT_EA
+
+// Defines Text Table Setters
+
+#include "../core/constants.ea"
+
+#ifndef pTableText
+	#ifdef _FE6_
+		#define pTableText 0x0F635C
+	#endif // _FE6_
+	
+	#ifdef _FE7_
+		#define pTableText 0xB808AC
+	#endif // _FE7_
+	
+	#ifdef _FE8_
+		#define pTableText 0x15D48C
+	#endif // _FE8_
+#endif
+
+MESSAGE Text table located at pTableText
+
+#define SetTextPtr(aIdText, apData) "PUSH; ORG (pTableText + 4*aIdText); POIN (apData); POP"
+
+#endif // BOOTS_TABLE_TEXT_EA

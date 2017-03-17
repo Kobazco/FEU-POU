@@ -1,0 +1,27 @@
+#ifndef BOOTS_TABLE_MUG_EA
+#define BOOTS_TABLE_MUG_EA
+
+// Defines Mug Table Setters
+
+#include "../core/constants.ea"
+
+#ifndef pTableMug
+	#ifdef _FE6_
+		#define pTableMug 0x66074C
+	#endif // _FE6_
+	
+	#ifdef _FE7_
+		#define pTableMug 0xC96584
+	#endif // _FE7_
+	
+	#ifdef _FE8_
+		#define pTableMug 0x8ACBC4
+	#endif // _FE8_
+#endif
+
+MESSAGE Mug table located at pTableMug
+
+#define SetMugEntry(aIdMug, apMug, aXMouth, aYMouth, aXEye, aYEye) "PUSH; ORG pTableMug + aIdMug*0x1C; POIN apMug; POIN apMug+0x1624; POIN apMug+0x1604; POIN apMug+0x1004; WORD 0x00000000; BYTE aXMouth aYMouth aXEye aYEye; WORD 0x01; POP"
+#define SetMugEntry(aIdMug, apMug, aXMouth, aYMouth, aXEye, aYEye, aEyeControl) "PUSH; ORG pTableMug+aIdMug*0x1C; POIN apMug; POIN apMug+0x1624; POIN apMug+0x1604; POIN apMug+0x1004; WORD 0x00000000; BYTE aXMouth aYMouth aXEye aYEye; WORD aEyeControl; POP"
+
+#endif // BOOTS_TABLE_MUG_EA

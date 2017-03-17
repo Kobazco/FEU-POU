@@ -1,0 +1,55 @@
+#ifndef BOOTS_TABLE_UNIT_EA
+#define BOOTS_TABLE_UNIT_EA
+
+// Defines Unit Table Setters
+
+#include "../core/constants.ea"
+
+#ifndef pTableUnit
+	#ifdef _FE6_
+		#define pTableUnit 0x6076A0
+	#endif // _FE6_
+	
+	#ifdef _FE7_
+		#define pTableUnit 0xBDCE18
+	#endif // _FE7_
+	
+	#ifdef _FE8_
+		#define pTableUnit 0x803D30
+	#endif // _FE8_
+#endif
+
+MESSAGE Unit table located at pTableUnit
+
+#ifndef sizeTableUnitEntry
+	#ifdef _FE6_
+		#define sizeTableUnitEntry 48
+	#else // _FE6_
+		#define sizeTableUnitEntry 52
+	#endif // _FE6_
+#endif
+
+#define GetUnitOffset(aId) "(pTableUnit + aId*sizeTableUnitEntry)"
+
+#define SetUnitNumber(aIdUnit) "PUSH; ORG GetUnitOffset(aIdUnit) + 4; BYTE aIdUnit+0x01; POP"
+#define SetUnitName(aIdUnit, aIdTextName) "PUSH; ORG GetUnitOffset(aIdUnit) + 0; SHORT aIdTextName; POP"
+#define SetUnitDesc(aIdUnit, aIdTextDesc) "PUSH; ORG GetUnitOffset(aIdUnit) + 2; SHORT aIdTextDesc; POP"
+#define SetUnitClass(aIdUnit, aIdClass) "PUSH; ORG GetUnitOffset(aIdUnit) + 5; BYTE aIdClass; POP"
+#define SetUnitMug(aIdUnit, aIdPortrait) "PUSH; ORG GetUnitOffset(aIdUnit) + 6; BYTE aIdPortrait; POP"
+#define SetUnitMiniMug(aIdUnit, aIdPortrait) "PUSH; ORG GetUnitOffset(aIdUnit) + 8; BYTE aIdPortrait; POP"
+#define SetUnitAffinity(aIdUnit, aIdAffinity) "PUSH; ORG GetUnitOffset(aIdUnit) + 9; BYTE aIdAffinity; POP"
+#define SetUnitSupportPtr(aIdUnit, apSupportTable) "PUSH; ORG GetUnitOffset(aIdUnit) + 44; POIN apSupportTable; POP"
+
+#define SetUnitBaseLevel(aIdUnit, aLevel) "PUSH; ORG GetUnitOffset(aIdUnit) + 11; BYTE aLevel; POP"
+#define SetUnitBases(aIdUnit, aHP, aPower, aSkill, aSpeed, aDef, aRes, aLuck) "PUSH; ORG GetUnitOffset(aIdUnit) + 12; BYTE aHP aPower aSkill aSpeed aDef aRes aLuck; POP"
+#define SetUnitBases(aIdUnit, aHP, aPower, aSkill, aSpeed, aDef, aRes, aLuck, aCon) "PUSH; ORG GetUnitOffset(aIdUnit) + 12; BYTE aHP aPower aSkill aSpeed aDef aRes aLuck aCon; POP"
+#define SetUnitGrowths(aIdUnit, aHP, aPower, aSkill, aSpeed, aDef, aRes, aLuck) "PUSH; ORG GetUnitOffset(aIdUnit) + 28; BYTE aHP aPower aSkill aSpeed aDef aRes aLuck; POP"
+
+#define SetUnitRank(aIdUnit, aIdWeaponType, aRank) "PUSH; ORG GetUnitOffset(aIdUnit) + 20 + aIdWeaponType; BYTE aRank; POP"
+#define SetUnitRanks(aIdUnit, aSword, aLance, aAxe, aBow, aAnima, aLight, aDark, aStaff) "GetUnitOffset(aIdUnit) + 20; BYTE aSword aLance aAxe aBow aStaff aAnima aLight aDark"
+
+#define SetUnitAttributes(aIdUnit, aFlagAttributes) "PUSH; ORG GetUnitOffset(aIdUnit) + 40; WORD aFlagAttributes; POP"
+
+// TODO: Add FE7 custom battle sprites support
+
+#endif // BOOTS_TABLE_UNIT_EA

@@ -1,5 +1,5 @@
-#0x212
+# 0x212 EirikaName
 Tordo[X]
 
-#0x06E
+# 0x6e EirikaDesc
 Please reply soon :)[X]

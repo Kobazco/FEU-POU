@@ -7,7 +7,7 @@ TxtData0x212:
 #incext ParseFile "_textentries\0x212.txt"
 setText(0x212,TxtData0x212)
 
-TxtData0x06E:
-#incext ParseFile "_textentries\0x06E.txt"
-setText(0x06E,TxtData0x06E)
+TxtData0x6e:
+#incext ParseFile "_textentries\0x6e.txt"
+setText(0x6e,TxtData0x6e)
 

@@ -1,0 +1,56 @@
+#ifndef BOOTS_TABLE_ITEM_EA
+#define BOOTS_TABLE_ITEM_EA
+
+// Defines Item Table Setters
+
+#include "../core/constants.ea"
+
+#ifndef pTableItem
+	#ifdef _FE6_
+		#define pTableItem 0x60B648
+	#endif // _FE6_
+	
+	#ifdef _FE7_
+		#define pTableItem 0xBE222C
+	#endif // _FE7_
+	
+	#ifdef _FE8_
+		#define pTableItem 0x809B34
+	#endif // _FE8_
+#endif
+
+MESSAGE Item table located at pTableItem
+
+#ifndef sizeTableItemEntry
+	#ifdef _FE6_
+		#define sizeTableItemEntry 32
+	#else // _FE6_
+		#define sizeTableItemEntry 36
+	#endif // _FE6_
+#endif
+
+#define GetItemOffset(aId) "(pTableItem + aId*sizeTableItemEntry)"
+
+#define SetItemNumber(aIdItem) "PUSH; ORG GetItemOffset(aIdItem) + 6; BYTE (aIdItem+0x01); POP"
+#define SetItemName(aIdItem, aIdTextName) "PUSH; ORG GetItemOffset(aIdItem) + 0; SHORT aIdTextName; POP"
+#define SetItemDesc(aIdItem, aIdTextDesc) "PUSH; ORG GetItemOffset(aIdItem) + 2; SHORT aIdTextDesc; POP"
+#define SetItemUseDesc(aIdItem, aIdTextUseDesc) "PUSH; ORG GetItemOffset(aIdItem) + 4); SHORT aIdTextUseDesc; POP"
+#define SetItemIcon(aIdItem, aIdIcon) "PUSH; ORG GetItemOffset(aIdItem) + 29; BYTE aIdIcon; POP"
+#define SetItemUseEffect(aIdItem, aIdEffect) "PUSH; ORG GetItemOffset(aIdItem) + 30; BYTE aIdEffect; POP"
+#define SetItemDurability(aIdItem, aDurability) "PUSH; ORG GetItemOffset(aIdItem) + 20; BYTE aDurability; POP"
+#define SetItemCostPerUse(aIdItem, aCost) "PUSH; ORG GetItemOffset(aIdItem) + 26; SHORT aCost; POP"
+#define SetItemAttributes(aIdItem, aFlagAttributes) "PUSH; ORG GetItemOffset(aIdItem) + 8; WORD (aFlagAttributes); POP"
+#define SetItemStatBonusPtr(aIdItem, apStatBonuses) "PUSH; ORG GetItemOffset(aIdItem) + 12; POIN apStatBonuses; POP"
+
+#define SetItemWeaponType(aIdItem, aIdType) "PUSH; ORG GetItemOffset(aIdItem) + 7; BYTE aIdType; POP"
+#define SetItemWeaponStats(aIdItem, aMight, aHit, aCrit, aWeight) "PUSH; ORG GetItemOffset(aIdItem) + 21; BYTE aMight aHit aWeight aCrit; POP"
+#define SetItemWeaponRange(aIdItem, aMin, aMax) "PUSH; ORG GetItemOffset(aIdItem) + 25; BYTE (((aMin & 0xF)<<4) | aMax & 0xF); POP"
+#define SetItemWeaponRank(aIdItem, aRank) "PUSH; ORG GetItemOffset(aIdItem) + 28; BYTE aRank; POP"
+#define SetItemWeaponEffect(aIdItem, aIdEffect) "PUSH; ORG GetItemOffset(aIdItem) + 31; BYTE aIdEffect; POP"
+#define SetItemWeaponEffectivenessPtr(aIdItem, apEffectiveness) "PUSH; ORG GetItemOffset(aIdItem) + 16; POIN apEffectiveness; POP"
+
+#ifndef _FE6_
+	#define SetItemWeaponExp(aIdItem, aWExp) "PUSH; ORG GetItemOffset(aIdItem) + 32; BYTE aWExp; POP"
+#endif // _FE6_
+
+#endif // BOOTS_TABLE_ITEM_EA
