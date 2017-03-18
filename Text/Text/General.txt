@@ -1,0 +1,51 @@
+# 0x08B2
+You don't have the donations![.][A][X]
+
+# 0x08B3
+You're short on donations.[A][X]
+
+# 0x08B4
+Heh! Not enough donations![A][X]
+
+# 0x08B5
+How does [.][G] donations[.]
+sound to you?[.][Yes][X]
+
+# 0x08B6
+That's worth [.][G] donations.
+Is that all right?[Yes][X]
+
+# 0x08B7
+That is worth [G] donations.
+Is that acceptable?[.][Yes][X]
+
+# 0x08D1
+Welcome to the arena.[.][A]
+Oh! It's you again.[.][A][0x02]
+I've lost a lot of donations[.]
+thanks to you...[A][0x02]
+If you want to continue,[A]
+we're going to have to
+do things differently.[A][0x02]
+I'm going to prepare some[.]
+more challenging foes.[A][X]
+
+# 0x08D2
+Would you like to wager[.]
+[G] donations?[Yes][X]
+
+# 0x08D6
+So you won, eh? Here's
+your prize. [G] donations.[A][X]
+
+# 0x08D8
+What? You yield? Well,
+your donations are mine, then![A][X]
+
+# 0x08D9
+Looks like no one wins.[.]
+Here's your donations back.[.][A][X]
+
+# 0x08DA
+You don't have the donations![.]
+Try again later.[A][X]
