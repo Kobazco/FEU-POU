@@ -15,7 +15,7 @@
 	#endif // _FE7_
 	
 	#ifdef _FE8_
-		#define pTableItem 0x809B34
+		#define pTableItem 0x809B10
 	#endif // _FE8_
 #endif
 

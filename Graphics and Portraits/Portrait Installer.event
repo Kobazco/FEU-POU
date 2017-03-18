@@ -1,0 +1,78 @@
+#include "Tools/Tool Helpers.txt"
+// this file defines the macro:
+// setMugEntry(number, data, mouth_x, mouth_y, eye_x, eye_y)
+
+#define TordoMugId 0x02
+#define TordoEyeMugId 0x03
+#define MethMugId 0x04
+#define DorcasMugId 0x05
+#define MoulderMugId 0x07
+#define JimbobMugId 0x09
+#define ColmMugId 0x0C
+#define DathzlaZzogothMugId 0x0E
+#define HarkanianMugId 0x41
+#define GwonamMugId 0x42
+#define TakeshiMugId 0x44
+#define Takeshi2MugId 0x45
+#define GlaceoMugId 0x48
+
+{
+	Colm_Mug:
+		#incext PortraitFormatter "Portraits/ColmMug.png"
+		setMugEntry(ColmMugId, Colm_Mug, 3, 5, 3, 3)
+
+	Meth_Mug:
+		#incext PortraitFormatter "Portraits/MethMug.png"
+		setMugEntry(MethMugId, Meth_Mug, 2, 5, 2, 2)
+
+	DathzlaZzogoth_Mug:
+		#incext PortraitFormatter "Portraits/DathzlaZzogothMug.png"
+		setMugEntry(DathzlaZzogothMugId, DathzlaZzogoth_Mug, 3, 5, 3, 3)
+
+	Dorcas_Mug:
+		#incext PortraitFormatter "Portraits/DorcasMug.png"
+		setMugEntry(DorcasMugId, Dorcas_Mug, 2, 4, 3, 2)
+
+	JimBob_Mug:
+		#incext PortraitFormatter "Portraits/JimBobMug.png"
+		setMugEntry(JimbobMugId, JimBob_Mug, 2, 6, 4, 4)
+
+	Tordo_Mug:
+		#incext PortraitFormatter "Portraits/TordoMug.png"
+		setMugEntry(TordoMugId, Tordo_Mug, 3, 6, 3, 4)
+
+	TordoEye_Mug:
+		#incext PortraitFormatter "Portraits/TordoMug.png"
+		setMugEntry(TordoEyeMugId, TordoEye_Mug, 3, 6, 3, 4)
+
+	Glaceo_Mug:
+		#incext PortraitFormatter "Portraits/GlaceoMug.png"
+		setMugEntry(GlaceoMugId, Glaceo_Mug, 3, 5, 3, 3)
+
+	Harkinian_Mug:
+		#incext PortraitFormatter "Portraits/HarkinianMug.png"
+		setMugEntry(HarkanianMugId, Harkinian_Mug, 4, 4, 4, 2)
+
+	/* Duplicate
+	HarkinianH_Mug:
+		#incext PortraitFormatter "Portraits/Harkinian.png"
+		setMugEntry(0x41, HarkinianH_Mug, 4, 4, 4, 2)
+	*/
+
+	Gwonam_Mug:
+		#incext PortraitFormatter "Portraits/GwonamMug.png"
+		setMugEntry(GwonamMugId, Gwonam_Mug, 3, 8, 3, 5)
+
+	Takeshi_Mug:
+		#incext PortraitFormatter "Portraits/TakeshiMug.png"
+		setMugEntry(TakeshiMugId, Takeshi_Mug, 4, 5, 4, 3)
+		setMugEntry(Takeshi2MugId, Takeshi_Mug, 4, 5, 4, 3)
+
+	/*
+	Takeshi2_Mug:
+		#incext PortraitFormatter "Portraits/TakeshiMug.png" */
+
+	Moudler_Mug:
+		#incext PortraitFormatter "Portraits/MoudlerMug.png"
+		setMugEntry(MoulderMugId, Moudler_Mug, 2, 5, 3, 3)
+}
