@@ -7,5 +7,6 @@
 #define TordoName 0x212
 #define TordoDesc 0x6e
 #define MethName 0x213
+#define ValkyrieStaffName 0x035C
 #define TheDocName 0x0366
 #define TheDocDesc 0x0416

@@ -1,3 +1,6 @@
+# 0x035C ValkyrieStaffName
+Valkyrie[X]
+
 # 0x0366 TheDocName
 The Doc[X]
 

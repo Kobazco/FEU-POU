@@ -3,6 +3,12 @@
 
 #define ValkyrieStaff Rapier
 
-// TODO
+SetItemName(ValkyrieStaff, ValkyrieStaffName)
+SetItemDesc(ValkyrieStaff, 0x00)
+
+SetItemAttributes(ValkyrieStaff, ITEMATTR_STAFF | ITEMATTR_LOCK_1)
+
+SetItemWeaponType(ValkyrieStaff, WTYPE_STAFF)
+SetItemWeaponRank(ValkyrieStaff, 0)
 
 #endif // VALKYRIESTAFF_EVENT

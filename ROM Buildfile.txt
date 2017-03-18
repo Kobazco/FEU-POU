@@ -25,7 +25,7 @@
 	#include "HPBAR/HP Installer.txt"
 	#include "Dangerzone.event"
 
-	#include "Graphics and Portraits/Portrait Installed.event"
+	#include "Graphics and Portraits/Portrait Installer.event"
 	#include "Tables/Table Installer.event"
 	#include "Animations/Master Animation Installer.event"
 	#include "Text/Install Text Data.event"
