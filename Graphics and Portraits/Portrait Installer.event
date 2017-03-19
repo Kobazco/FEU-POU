@@ -15,6 +15,11 @@
 #define TakeshiMugId 0x44
 #define Takeshi2MugId 0x45
 #define GlaceoMugId 0x48
+#define CiraxisDogeMugId 0x06
+#define AnnaReplacementMugId 0x64
+#define MicaiahMugId 0x1A
+#define GanonMugId 0x25
+#define GreggMugId 0x13
 
 {
 	Colm_Mug:
@@ -75,4 +80,24 @@
 	Moudler_Mug:
 		#incext PortraitFormatter "Portraits/MoudlerMug.png"
 		setMugEntry(MoulderMugId, Moudler_Mug, 2, 5, 3, 3)
+		
+	CiraxisDoge_Mug:
+		#incext PortraitFormatter "Portraits/CiraxisDogeMug.png"
+		setMugEntry(CiraxisDogeMugId, CiraxisDoge_Mug, 3, 5, 3, 3)
+		
+	AnnaReplacement_Mug:
+		#incext PortraitFormatter "Portraits/AnnaReplacementMug.png"
+		setMugEntry(AnnaReplacementMugId, AnnaReplacement_Mug, 3, 6, 3, 4)
+		
+	Micaiah_Mug:
+		#incext PortraitFormatter "Portraits/MicaiahMug.png"
+		setMugEntry(MicaiahMugId, Micaiah_Mug, 3, 5, 3, 3)
+		
+	Ganon_Mug:
+		#incext PortraitFormatter "Portraits/GanonMug.png"
+		setMugEntry(GanonMugId, Ganon_Mug, 4, 5, 3, 3)
+		
+	Gregg_Mug:
+		#incext PortraitFormatter "Portraits/GreggMug.png"
+		setMugEntry(GreggMugId, Gregg_Mug, 3, 6, 3, 4)
 }
