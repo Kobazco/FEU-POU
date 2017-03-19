@@ -20,6 +20,10 @@
 #define MicaiahMugId 0x1A
 #define GanonMugId 0x25
 #define GreggMugId 0x13
+#define BetaOonaMugId 0x22
+#define LynMugId0x3C
+#define FlorinaMugId0x2B
+
 
 {
 	Colm_Mug:
@@ -100,4 +104,13 @@
 	Gregg_Mug:
 		#incext PortraitFormatter "Portraits/GreggMug.png"
 		setMugEntry(GreggMugId, Gregg_Mug, 3, 6, 3, 4)
+		
+	BetaOona_Mug:
+		#incext PortraitFormatter "Portraits/BetaOonaMug.png"
+		setMugEntry(BetaOonaMugId, BetaOona_Mug, 2, 4, 2, 6)
+		
+	Lyn_Mug:
+		#incext PortraitFormatter "Portraits/LynMug.png"
+		setMugEntry(LynMugId, Lyn_Mug, 3, 5, 3, 3)
+	
 }
