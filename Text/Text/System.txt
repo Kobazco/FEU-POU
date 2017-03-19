@@ -4,6 +4,13 @@ donations.[X]
 # 0x0007
 donations were stolen.[X]
 
+# 0x0100 CaptureCommandName
+ Capture[X]
+
+# 0x0101 CaptureCommandDesc
+Strike a fatal blow with reduced[NL]
+stats to capture an enemy.[X]
+
 # 0x03F2
 Donations[X]
 
