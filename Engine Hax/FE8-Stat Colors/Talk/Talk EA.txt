@@ -1,0 +1,42 @@
+//Replace Affinity with Talk, which displays which people the character can talk with, provided they're on the map
+
+#ifdef _FE8_
+	
+	PUSH
+	
+	//Move the affinity icon to next to Mounted Aid icon
+	ORG $8747C
+	WORD 0x2003E8C
+	
+	//Change Affin to Talk
+	#ifndef Stat_Colors
+	ORG $205A00
+	POIN Talk_ID_Location
+	#endif
+	
+	//Change affinity's R-button text
+	ORG $A00CDC+0x12
+	SHORT Talk_R_Button_Text_ID
+	
+	//Display the proper number of tiles for longer names (NOTE: This may break something down the line. Not quite sure what, yet.)
+	ORG $A00800
+	BYTE 0x08
+	
+	//Talk
+	ORG $873E4
+	callHack_r3(Talk_Functionality)
+	
+	POP
+	
+	ALIGN 4
+	Talk_Functionality:
+	#incbin "Talk.dmp"
+	POIN Get_Talkee Char_Table
+	
+	ALIGN 4
+	Get_Talkee:
+	#incbin "Get Talkee.dmp"
+	
+#else
+	ERROR "You're not assembling FE8 events!"
+#endif

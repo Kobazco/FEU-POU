@@ -1,0 +1,130 @@
+//Currently FE8 only
+
+#ifndef DefaultOffset	//write hack at this offset if assebmling from this file
+	#ifdef _FE8_
+		#define DefaultOffset 0xB40000
+	#endif
+	ORG DefaultOffset
+#endif
+
+#include ArrayMacros.txt
+
+#ifndef FEditor
+	PUSH
+	#define FEditor
+	#include "FEditorAutopatches.txt"
+	POP
+#endif
+
+# ifdef _FE8_
+
+	ALIGN 4
+	#ifndef JumpIDGetter //remember to replace this later
+		#define JumpIDGetter
+		MESSAGE Item and Staff Effect ID Getter routine placed at CURRENTOFFSET
+		IDGet:
+		#incbin "AsmBin\Use_ID_Get(FE8).dmp"
+	#endif
+	
+	#ifndef GetEffectID
+		#define GetEffectID
+		//Grabs Item/Staff Effect ID from Item Data
+		EIDGetter:
+		#incbin "AsmBin\Effect_ID_Getter.dmp"
+	#endif
+	
+	PUSH
+
+	ORG IUArray	//Item/Staff Usability Array offset
+	#incbin "Arrays\Item_Use_Array(FE8).dmp"
+
+	ORG IEArray	//Item/Staff Item Effect Array offset
+	#incbin "Arrays\Item_Effect_Array(FE8).dmp"
+
+	ORG ITArray	//Item/Staff Target table Array offset
+	#incbin "Arrays\Item_UseT_Array(FE8).dmp"
+
+	ORG PUArray
+	#incbin "Arrays\ItemPrep_Use_Array(FE8).dmp"
+
+	ORG IBArray
+	#incbin "Arrays\Item_BoxEffect_Array(FE8).dmp"	
+
+	//Jump to Main Routine
+	ORG 0x2FC72
+	BYTE 0x06 0x4B 0x0 0x49 0x8 0x47
+	POIN IDGet | 1
+
+	ORG 0x2889A
+	BYTE 0x04 0x4B 0x0 0x49 0x8 0x47
+	POIN IDGet | 1
+
+	ORG 0x28E76
+	BYTE 0x04 0x4B 0x0 0x49 0x8 0x47
+	POIN IDGet | 1
+
+	ORG 0x29F1C
+	BYTE 0x4 0x4B 0x1 0x49 0x8 0x47 0x0 0x0
+	POIN IDGet | 1
+
+	//Set offset of tables
+
+	ORG 0x288AC  //Set Pointer to Table Item/Staff Usability Array 
+	POIN IUArray
+
+	ORG 0x2FC8C //Set Pointer to Table Item/Staff Effect Array
+	POIN IEArray
+
+	ORG 0x28E88 //Set Pointer to Item/Staff Target table 
+	POIN ITArray
+
+	ORG 0x29F30 //Set Pointer to Prep Screen Item Usability Array (Staves don't work on the prep screen by default)
+	POIN PUArray
+	
+	ORG 0x2F8C4 //Box Display Item effect Array, used by items on both the prep screen and on the map
+	POIN IBArray
+
+	SetItemUseID(0x8C, 0x37)
+	POP
+
+	//Stat Boosters
+	#ifndef Item_Text
+		#define Item_Text
+		ItemTextLoop:
+		#incbin "AsmBin\ItemTextArrayCheck.dmp"
+	#endif
+	
+	//setup statbooster text
+	#include "StatBoosterText.txt"
+
+	ItemTextList:
+	#include "Arrays\ItemTextList(FE8).txt" //List of items and their displayed text ids, moved into separate file for easy editing
+
+	PUSH
+		//Items with Box Display (Stat Boosters, Metis Tome)
+		ORG 0x2F8A4
+		SHORT 0x285C 0xD029 //check for Energy Ring; remove if using separate stat boosters for str/mag
+		SHORT 0x4903 //ldr r1, ItemTextList
+		BL(ItemTextLabel)
+		B(0x2F8FC)//SHORT 0xE02D //b to end of routine
+		
+		ItemTextLabel:
+		jumpToHack(ItemTextLoop)
+		POIN ItemTextList
+
+		PrepEID:
+		SHORT 0x4900 0x4708 //ldr r1; bx r1
+		POIN IDGet | 0x1
+		//POIN IBArray
+		
+		ORG 0x2F81C
+		BL(0x174EC)
+		SHORT 0x4B28 //ldr r3
+		B(PrepEID)
+
+		
+	POP
+	
+#else
+	ERROR "This is for FE8 only"
+#endif

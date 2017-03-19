@@ -9,7 +9,10 @@
 	
 	ORG FreeSpace
 	
-	#include "FE8Essentials.event"
+	// Any Repointing is done here
+	#include "Repoint.ea"
+	
+	#include "Engine Hax/FE8Essentials.event"
 	
 	// As long as it works I'll keep it :p
 	#define NO_BOOTS_EXTRA
@@ -17,26 +20,31 @@
 	#include "boots/master.ea"
 
 	// NOTE: FE8 Item Effect Revamp doesn't assemble for some reason :/
-	// #include "Item Effect Revamp/EA Main Installer.txt"
+	// #include "Engine Hax/Item Effect Revamp/EA Main Installer.txt"
 
 	// NOTE: FE8 Stat Colors Doesn't work for now for unknown reasons (softlocks when trying to open unit menu)
-	// #include "FE8-Stat Colors/Talk and Growths Master EA.txt"
+	// #include "Engine Hax/FE8-Stat Colors/Talk and Growths Master EA.txt"
 	
-	#include "HPBAR/HP Installer.txt"
-	#include "Dangerzone.event"
-	#include "FE8-Capture/FE8-Capture Master EA File.txt"
-
+	#include "Engine Hax/FE8-Capture/FE8-Capture Master EA File.txt"
+	#include "Engine Hax/HPBAR/HP Installer.txt"
+	#include "Engine Hax/Dangerzone.event"
+	#include "Engine Hax/WeaponTriangleHax.event"
+	
 	#include "Tables/Table Installer.event"
 	
+	ALIGN 4
 	#include "Graphics and Portraits/Portrait Installer.event"
 	#include "Graphics and Portraits/Graphics Installer.event"
+	#include "Graphics and Portraits/Reply Soon Menu.txt"
 	#include "Animations/Master Animation Installer.event"
 	#include "Text/Install Text Data.event"
 
+	// Characters
 	#include "Characters/Tordo.event"
 	#include "Characters/Meth.event"
 	#include "Characters/JimBob.event"
 	
+	// Items
 	#include "Items/ValkyrieStaff.event"
 	#include "Items/TheDoc.event"
 	#include "Items/Pugi.event"
@@ -44,10 +52,6 @@
 	// Comment out to assemble the actual ROMHack, modify for testing
 	// #include "Debug.ea"
 
-	
-	//Main Menu stuff, probably wanna be better organized
-	#include "Graphics and Portraits/Reply Soon Menu.txt"
-	
 #else // _FE8_
 	ERROR This is a FE8 hack.
 #endif
