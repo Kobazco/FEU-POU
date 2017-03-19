@@ -44,6 +44,10 @@
 	// Comment out to assemble the actual ROMHack, modify for testing
 	// #include "Debug.ea"
 
+	
+	//Main Menu stuff, probably wanna be better organized
+	#include "Graphics and Portraits/Reply Soon Menu.txt"
+	
 #else // _FE8_
 	ERROR This is a FE8 hack.
 #endif

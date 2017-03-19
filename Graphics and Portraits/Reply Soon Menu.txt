@@ -1,0 +1,14 @@
+//Main Menu Install
+PUSH
+//Main Menu
+ORG 0xC5808
+POIN MainMenu
+//Main Menu Banner
+ORG 0xC5830
+POIN MainMenuBanner
+POP
+ALIGN 4
+MainMenu:
+#incext Png2Dmp --lz77 "Reply Emblem.png"
+MainMenuBanner:
+#incext Png2Dmp --lz77 "The Sacred Soons.png"
