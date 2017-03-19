@@ -1,0 +1,9 @@
+#ifndef JIMBOB_EVENT
+#define JIMBOB_EVENT
+
+#define JimBob Ross
+
+SetUnitName(JimBob, JimBobName)
+SetUnitDesc(JimBob, JimBobDesc)
+
+#endif // JIMBOB_EVENT

@@ -4,6 +4,9 @@ Valkyrie[X]
 # 0x0366 TheDocName
 The Doc[X]
 
+# 0x038A PugiName
+Pugi[X]
+
 # 0x03F9
 1 Donation[X]
 

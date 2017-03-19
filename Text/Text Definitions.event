@@ -7,6 +7,9 @@
 #define TordoName 0x212
 #define TordoDesc 0x6e
 #define MethName 0x213
+#define JimBobName 0x0218
+#define JimBobDesc 0x0274
 #define ValkyrieStaffName 0x035C
 #define TheDocName 0x0366
+#define PugiName 0x038A
 #define TheDocDesc 0x0416

@@ -34,9 +34,11 @@
 
 	#include "Characters/Tordo.event"
 	#include "Characters/Meth.event"
+	#include "Characters/JimBob.event"
 	
 	#include "Items/ValkyrieStaff.event"
 	#include "Items/TheDoc.event"
+	#include "Items/Pugi.event"
 	
 	// Comment out to assemble the actual ROMHack, modify for testing
 	// #include "Debug.ea"

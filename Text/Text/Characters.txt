@@ -4,5 +4,22 @@ Tordo[X]
 # 0x6e TordoDesc
 Please reply soon :)[X]
 
+
 # 0x213 MethName
 Meth[X]
+
+
+# 0x0218 JimBobName
+JimBob[X]
+
+# 0x0274 JimBobDesc
+A beautiful amalgamation of[NL]
+various bandits.[X]
+
+
+# 0x021B ZyxzZothName
+Zyxz'Zoth[X]
+
+# 0x0277 ZyxzZothDesc
+Iilth qi'uothk shn'ma yeh'glu[NL]
+Shath'Yar! H'IWN IILTH![X]

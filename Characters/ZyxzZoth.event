@@ -1,0 +1,9 @@
+#ifndef ZYXZZOTH_EVENT
+#define ZYXZZOTH_EVENT
+
+#define ZyxzZoth Garcia
+
+SetUnitName(ZyxzZoth, ZyxzZothName)
+SetUnitDesc(ZyxzZoth, ZyxzZothDesc)
+
+#endif // ZYXZZOTH_EVENT

@@ -31,6 +31,14 @@ TxtData0x213:
 #incext ParseFile "_textentries\0x213.txt"
 setText(0x213,TxtData0x213)
 
+TxtData0x0218:
+#incext ParseFile "_textentries\0x0218.txt"
+setText(0x0218,TxtData0x0218)
+
+TxtData0x0274:
+#incext ParseFile "_textentries\0x0274.txt"
+setText(0x0274,TxtData0x0274)
+
 TxtData0x035C:
 #incext ParseFile "_textentries\0x035C.txt"
 setText(0x035C,TxtData0x035C)
@@ -38,6 +46,10 @@ setText(0x035C,TxtData0x035C)
 TxtData0x0366:
 #incext ParseFile "_textentries\0x0366.txt"
 setText(0x0366,TxtData0x0366)
+
+TxtData0x038A:
+#incext ParseFile "_textentries\0x038A.txt"
+setText(0x038A,TxtData0x038A)
 
 TxtData0x03F9:
 #incext ParseFile "_textentries\0x03F9.txt"
