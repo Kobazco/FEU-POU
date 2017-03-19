@@ -1,0 +1,22 @@
+/////////////////////////////////////////////////////////
+//                                                     //
+//               Master Hack Installer                 //
+//                                                     //
+/////////////////////////////////////////////////////////
+
+
+
+#include "Extensions/Hack Installation.txt"
+
+#ifndef pFreeSpace
+	#define pFreeSpace 0xB2A610
+	ORG pFreeSpace
+#endif
+
+////////////////////////////////FREE SPACE OUT OF BL RANGE
+//start of Free space
+
+//HP Bars (and effective weapon warning)
+#include "HPbars.txt"
+
+ALIGN 4

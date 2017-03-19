@@ -1,0 +1,30 @@
+#ifndef WEAPONTRIANGLEHAX_EVENT
+#define WEAPONTRIANGLEHAX_EVENT
+
+// Thanks to Colorz for those
+#define WTAAdvantage(attackingType, defendingType) "BYTE attackingType defendingType 0x0F 0x01"
+#define WTADisadvantage(attackingType, defendingType) "BYTE attackingType defendingType 0xF1 0xFF"
+#define WTAEnd "BYTE 0xFF 0xFF"
+
+ALIGN 4
+WTATable:
+	WTAAdvantage(WTYPE_SWORD, WTYPE_AXE)
+	WTAAdvantage(WTYPE_SWORD, WTYPE_ANIMA)
+	
+	WTAAdvantage(WTYPE_DARK, WTYPE_AXE)
+	WTAAdvantage(WTYPE_DARK, WTYPE_ANIMA)
+	
+	WTAAdvantage(WTYPE_AXE, WTYPE_LANCE)
+	WTAAdvantage(WTYPE_AXE, WTYPE_LIGHT)
+	
+	WTAAdvantage(WTYPE_ANIMA, WTYPE_LANCE)
+	WTAAdvantage(WTYPE_ANIMA, WTYPE_LIGHT)
+	
+	WTAAdvantage(WTYPE_LANCE, WTYPE_SWORD)
+	WTAAdvantage(WTYPE_LANCE, WTYPE_DARK)
+	
+	WTAAdvantage(WTYPE_LIGHT, WTYPE_SWORD)
+	WTAAdvantage(WTYPE_LIGHT, WTYPE_DARK)
+WTAEnd
+
+#endif // WEAPONTRIANGLEHAX_EVENT

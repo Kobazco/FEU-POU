@@ -1,5 +1,0 @@
-#include "Tools/Tool Helpers.txt"
-	//Text for statboosters to display upon use
-	DefaultStatBooster:
-	#incbin "Text\DefaultStatBooster.dmp"
-	setText(0x50, DefaultStatBooster)

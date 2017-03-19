@@ -1,0 +1,24 @@
+#ifndef DefaultOffset
+	#ifdef _FE8_
+		#define DefaultOffset 0xB40000	//write hack at this offset if assebmling from this file
+	#endif
+	ORG DefaultOffset
+#endif
+
+# ifdef _FE8_
+	//do battle prep screen tables later at 0x29F16 and 0x2F89E
+
+	VM:
+	MESSAGE Might Vulnerary Effect routine placed at CURRENTOFFSET
+	#incbin "AsmBin\MigVul.dmp"
+	PUSH
+
+	/*
+	ORG 0x2FD14	//Pointer in Item effect table
+	POIN VM
+	*/
+
+	POP
+#else
+ERROR "This is for FE8 only"
+#endif

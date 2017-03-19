@@ -1,0 +1,8 @@
+#ifndef REPOINT_EA
+#define REPOINT_EA
+
+PUSH
+	#inctext PFinder FE8.gba 0x59BA90 WTATable
+POP
+
+#endif // REPOINT_EA
