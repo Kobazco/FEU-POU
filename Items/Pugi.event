@@ -1,0 +1,12 @@
+#ifndef PUGI_EVENT
+#define PUGI_EVENT
+
+#define Pugi Hatchet
+
+SetItemName(Pugi, PugiName)
+SetItemDesc(Pugi, 0x00)
+
+SetItemDurability(Pugi, 60)
+SetItemWeaponStats(Pugi, 10, 80, 30,  9) // Mgt, Hit, Crt, Wgt
+
+#endif // PUGI_EVENT
