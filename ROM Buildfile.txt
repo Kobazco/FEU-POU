@@ -1,5 +1,5 @@
 #ifdef _FE8_ // Ensuring we are assembling FE8 events
-	#define FreeSpace 0xB31A90
+	#define FreeSpace 0xB2A610
 	
 	// Ensuring everyone is happy
 	#define pFreeSpace FreeSpace
@@ -24,6 +24,7 @@
 	
 	#include "HPBAR/HP Installer.txt"
 	#include "Dangerzone.event"
+	#include "FE8-Capture/FE8-Capture Master EA File.txt"
 
 	#include "Tables/Table Installer.event"
 	

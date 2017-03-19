@@ -4,11 +4,15 @@
 #endif
 
 
+#define CaptureCommandName 0x0100
+#define CaptureCommandDesc 0x0101
 #define TordoName 0x212
 #define TordoDesc 0x6e
 #define MethName 0x213
 #define JimBobName 0x0218
 #define JimBobDesc 0x0274
+#define ZyxzZothName 0x021B
+#define ZyxzZothDesc 0x0277
 #define ValkyrieStaffName 0x035C
 #define TheDocName 0x0366
 #define PugiName 0x038A
