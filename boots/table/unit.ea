@@ -35,7 +35,7 @@ MESSAGE Unit table located at pTableUnit
 #define SetUnitName(aIdUnit, aIdTextName) "PUSH; ORG GetUnitOffset(aIdUnit) + 0; SHORT aIdTextName; POP"
 #define SetUnitDesc(aIdUnit, aIdTextDesc) "PUSH; ORG GetUnitOffset(aIdUnit) + 2; SHORT aIdTextDesc; POP"
 #define SetUnitClass(aIdUnit, aIdClass) "PUSH; ORG GetUnitOffset(aIdUnit) + 5; BYTE aIdClass; POP"
-#define SetUnitMug(aIdUnit, aIdPortrait) "PUSH; ORG GetUnitOffset(aIdUnit) + 6; BYTE aIdPortrait; POP"
+#define SetUnitMug(aIdUnit, aIdPortrait) "PUSH; ORG GetUnitOffset(aIdUnit) + 6; SHORT aIdPortrait; POP"
 #define SetUnitMiniMug(aIdUnit, aIdPortrait) "PUSH; ORG GetUnitOffset(aIdUnit) + 8; BYTE aIdPortrait; POP"
 #define SetUnitAffinity(aIdUnit, aIdAffinity) "PUSH; ORG GetUnitOffset(aIdUnit) + 9; BYTE aIdAffinity; POP"
 #define SetUnitSupportPtr(aIdUnit, apSupportTable) "PUSH; ORG GetUnitOffset(aIdUnit) + 44; POIN apSupportTable; POP"

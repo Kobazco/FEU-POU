@@ -1,0 +1,2 @@
+That is worth [G] donations.
+Is that acceptable?[.][Yes][X]

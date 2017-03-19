@@ -4,5 +4,55 @@ Valkyrie[X]
 # 0x0366 TheDocName
 The Doc[X]
 
+# 0x03F9
+1 Donation[X]
+
+# 0x03FA
+5 Donations[X]
+
+# 0x03FB
+10 Donations[X]
+
+# 0x03FC
+50 Donations[X]
+
+# 0x03FD
+100 Donations[X]
+
+# 0x03FE
+150 Donations[X]
+
+# 0x03FF
+200 Donations[X]
+
+# 0x0400
+3,000 Donations[X]
+
+# 0x0401
+5,000 Donations[X]
+
 # 0x0416 TheDocDesc
 I hope you read it...[X]
+
+# 0x049C
+A valuable gemstone worth[.]
+20,000 donations.[X]
+
+# 0x049D
+A valuable gemstone worth[.]
+15,000 donations.[X]
+
+# 0x049E
+A valuable gemstone worth[.]
+10,000 donations.[X]
+
+# 0x049F
+A rare gemstone worth[.]
+5,000 donations.[X]
+
+# 0x04A0
+An uncommon gemstone[.]
+worth 2,500 donations.[X]
+
+# 0x04A1
+A bag full of donations.[X]

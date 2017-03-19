@@ -1,2 +1,6 @@
+#include "Text/System.txt"
+
 #include "Text/Characters.txt"
 #include "Text/Items.txt"
+
+#include "Text/General.txt"
