@@ -112,5 +112,9 @@
 	Lyn_Mug:
 		#incext PortraitFormatter "Portraits/LynMug.png"
 		setMugEntry(LynMugId, Lyn_Mug, 3, 5, 3, 3)
+		
+	Florina_Mug:
+		#incext PortraitFormatter "Portraits/FlorinaMug.png"
+		setMugEntry(FlorinaMugId, Florina_Mug, 3, 6, 3, 4)
 	
 }
