@@ -2,56 +2,34 @@
 
 #include "Table Definitions.txt"
 
+/*
 #include "Animation\Custom Battle Animation Editor.event"
 
 #include "Animation\FE8 Battle Palette Reference.event"
 
 #include "Chapter Unit Editor\Chapter1.event"
-
 #include "Chapter Unit Editor\Chapter10A.event"
-
 #include "Chapter Unit Editor\Chapter10B Cutscene.event"
-
 #include "Chapter Unit Editor\Chapter10B.event"
-
 #include "Chapter Unit Editor\Chapter11A Cutscene.event"
-
 #include "Chapter Unit Editor\Chapter11A.event"
-
 #include "Chapter Unit Editor\Chapter11B.event"
-
 #include "Chapter Unit Editor\Chapter12A.event"
-
 #include "Chapter Unit Editor\Chapter12B.event"
-
 #include "Chapter Unit Editor\Chapter13A Cutscene.event"
-
 #include "Chapter Unit Editor\Chapter13A Cutscene2.event"
-
 #include "Chapter Unit Editor\Chapter13A.event"
-
 #include "Chapter Unit Editor\Chapter13B.event"
-
 #include "Chapter Unit Editor\Chapter14A Cutscene.event"
-
 #include "Chapter Unit Editor\Chapter14A Cutscene2.event"
-
 #include "Chapter Unit Editor\Chapter14A Cutscene3.event"
-
 #include "Chapter Unit Editor\Chapter14A.event"
-
 #include "Chapter Unit Editor\Chapter14B Cutscene.event"
-
 #include "Chapter Unit Editor\Chapter14B Cutscene2.event"
-
 #include "Chapter Unit Editor\Chapter14B Cutscene3.event"
-
 #include "Chapter Unit Editor\Chapter14B.event"
-
 #include "Chapter Unit Editor\Chapter15A.event"
-
 #include "Chapter Unit Editor\Chapter15B.event"
-
 #include "Chapter Unit Editor\Chapter16A Cutscene.event"
 
 #include "Chapter Unit Editor\Chapter16A Cutscene2.event"
@@ -145,11 +123,12 @@
 #include "Chapter Unit Editor\Valni3.event"
 
 #include "Chapter Unit Editor\Valni4 + Ruins1.event"
+*/
 
 #include "Class & Character editors\FE8 Character Editor.event"
 
 #include "Class & Character editors\FE8 Class Editor.event"
-
+/*
 #include "Random editors\Crit bonus editorFE8.event"
 
 #include "Random editors\FE8 Level Cap Editor.event"
@@ -164,3 +143,4 @@
 
 #include "Random editors\Support Compatibility Editor.event"
 
+*/

@@ -21,8 +21,8 @@
 #define GanonMugId 0x25
 #define GreggMugId 0x13
 #define BetaOonaMugId 0x22
-#define LynMugId0x3C
-#define FlorinaMugId0x2B
+#define LynMugId 0x3C
+#define FlorinaMugId 0x2B
 
 
 {
