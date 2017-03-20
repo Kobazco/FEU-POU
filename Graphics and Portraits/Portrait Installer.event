@@ -1,3 +1,6 @@
+#ifndef PORTRAIT_GRAPHICS_EVENT
+#define PORTRAIT_GRAPHICS_EVENT
+
 #include "Tools/Tool Helpers.txt"
 // this file defines the macro:
 // setMugEntry(number, data, mouth_x, mouth_y, eye_x, eye_y)
@@ -24,12 +27,12 @@
 #define LynMugId 0x3C
 #define FlorinaMugId 0x2B
 
-
 {
+	ALIGN 4
 	Colm_Mug:
 		#incext PortraitFormatter "Portraits/ColmMug.png"
 		setMugEntry(ColmMugId, Colm_Mug, 3, 5, 3, 3)
-
+	
 	Meth_Mug:
 		#incext PortraitFormatter "Portraits/MethMug.png"
 		setMugEntry(MethMugId, Meth_Mug, 2, 5, 2, 2)
@@ -116,5 +119,6 @@
 	Florina_Mug:
 		#incext PortraitFormatter "Portraits/FlorinaMug.png"
 		setMugEntry(FlorinaMugId, Florina_Mug, 3, 6, 3, 4)
-	
 }
+
+#endif // PORTRAIT_GRAPHICS_EVENT

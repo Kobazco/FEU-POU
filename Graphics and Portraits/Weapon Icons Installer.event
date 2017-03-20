@@ -1,0 +1,17 @@
+#ifndef WEAPON_ICONS_GRAPHICS_EVENT
+#define WEAPON_ICONS_GRAPHICS_EVENT
+
+{ // Inserting weapon icons
+	PUSH
+		ORG 0x36B4
+			POIN pWeaponIcons
+		ORG 0x3788
+			POIN pWeaponIcons
+	POP
+
+	ALIGN 4
+	pWeaponIcons:
+		#incext Png2Dmp "WeaponIcons/WeaponIcons.png"
+}
+
+#endif // WEAPON_ICONS_GRAPHICS_EVENT
