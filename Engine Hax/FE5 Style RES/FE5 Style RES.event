@@ -1,0 +1,35 @@
+#ifndef FE5_STYLE_RES_EVENT
+#define FE5_STYLE_RES_EVENT
+
+#include "Extensions/Hack Installation.txt"
+
+{
+	PUSH
+		ORG 0x2AB50 // branches to the hack
+			BL(pMagIsResCheck)
+		
+		ORG 0x17012 // makes staves heal off of RES
+			SHORT $F002
+			SHORT $F92D
+
+		ORG 0x2CCE2 // makes offensive staves use RES for accuracy
+			SHORT $F7EC
+			SHORT $FAC5
+
+		ORG 0x18A3E // MAG/2 range -> RES/2 range
+			SHORT $2118
+
+		ORG 0x18A3A // include bonus RES in range calculation
+			SHORT $F7FD
+			SHORT $FD51
+
+		ORG 0x18A58 // apply Magic/Melee fix patch by Hextator
+			#incbin MagicMeleeFix.bin
+	POP
+
+	ALIGN 4
+	pMagIsResCheck:
+		#incbin Check.bin
+}
+
+#endif // FE5_STYLE_RES_EVENT

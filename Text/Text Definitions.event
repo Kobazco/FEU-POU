@@ -9,6 +9,7 @@
 #define TordoName 0x212
 #define TordoDesc 0x6e
 #define MethName 0x213
+#define DorcasName 0x0214
 #define JimBobName 0x0218
 #define JimBobDesc 0x0274
 #define ZyxzZothName 0x021B
