@@ -1,0 +1,8 @@
+#ifndef GRAPHICS_INSTALLER_EVENT
+#define GRAPHICS_INSTALLER_EVENT
+
+#include "Portrait Installer.event"
+#include "Weapon Icons Installer.event"
+#include "Title Screen Installer.event"
+
+#endif // GRAPHICS_INSTALLER_EVENT

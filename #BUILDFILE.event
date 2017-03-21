@@ -1,0 +1,65 @@
+#ifndef MAIN_EVENT
+#define MAIN_EVENT
+
+#ifdef _FE8_ // Ensuring we are assembling FE8 events
+	#define FreeSpace 0xB2A610
+	
+	// Ensuring everyone is happy
+	#define pFreeSpace FreeSpace
+	#define Free_Space FreeSpace
+
+	ORG FreeSpace
+	
+	#include eastdlib.event
+	
+	// As long as it works I'll keep it :p
+	#define NO_BOOTS_EXTRA
+	#define NO_BOOTS_VANILLA_DEFINITIONS
+	#include "boots/master.ea"
+
+	// Any Repointing is done here
+	#include "_Repoint.event"
+	
+	// NOTE: FE8 Item Effect Revamp doesn't assemble for some reason :/
+	// #include "Engine Hax/Item Effect Revamp/EA Main Installer.txt"
+
+	// NOTE: FE8 Stat Colors Doesn't work for now for unknown reasons (softlocks when trying to open unit menu)
+	// #include "Engine Hax/FE8-Stat Colors/Talk and Growths Master EA.txt"
+	
+	// #include "Engine Hax/FE5 Style RES/FE5 Style RES.event"
+
+	#include "Tables/Table Installer.event"
+	
+	// Sadly another one that's broken :/ It makes the game softlock when moving next to a unit rescuing another ally unit (enemy works fine)
+	// #include "Engine Hax/FE8-Capture/FE8-Capture Master EA File.txt"
+	
+	#include "Engine Hax/HPBAR/HP Installer.txt"
+	#include "Engine Hax/Dangerzone.event"
+	#include "Engine Hax/SNES Criticals.event"
+	#include "Engine Hax/WeaponTriangleHax.event"
+	
+	#include "Animations/Master Animation Installer.event"
+	#include "Text/Install Text Data.event"
+	
+	#include "Graphics and Portraits/#Graphics Master Installer.event"
+	
+	#include "Chapters/Prologue.event"
+	
+	// Characters
+	#include "Characters/Tordo.event"
+	#include "Characters/Meth.event"
+	#include "Characters/JimBob.event"
+	#include "Characters/ZyxzZoth.event"
+	
+	// Items
+	#include "Items/ValkyrieStaff.event"
+	#include "Items/TheDoc.event"
+	#include "Items/Pugi.event"
+	
+	// Comment out to assemble the actual ROMHack, modify for testing
+	// #include "_Debug.event"
+#else // _FE8_
+	ERROR This is a FE8 hack. Please Assemble FE8.
+#endif
+
+#endif // MAIN_EVENT

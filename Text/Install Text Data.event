@@ -39,6 +39,10 @@ TxtData0x213:
 #incext ParseFile "_textentries\0x213.txt"
 setText(0x213,TxtData0x213)
 
+TxtData0x0214:
+#incext ParseFile "_textentries\0x0214.txt"
+setText(0x0214,TxtData0x0214)
+
 TxtData0x0218:
 #incext ParseFile "_textentries\0x0218.txt"
 setText(0x0218,TxtData0x0218)
