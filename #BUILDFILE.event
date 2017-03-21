@@ -61,6 +61,7 @@
 	// Chapters	
 	#include "Chapters/Prologue.event"
 	#include "Chapters/Ch1.event"
+	#include "Chapters/Ch2.event"
 
 	// Comment out to assemble the actual ROMHack, modify for testing
 	// #include "_Debug.event"
