@@ -1,4 +1,4 @@
-[OpenMidLeft][LoadFace][0x42][0x01][OpenMidLeft]I am Gwonam, the Moonstone,[.]
-Hyrule's finest general![.][A][0x02]
-And you're just a corpse who
+[OpenMidLeft][LoadFace][0x42][0x01][OpenMidLeft]I am Gwonam, the Moonstone,[.][NL]
+Hyrule's finest general![.][A][0x02][NL]
+And you're just a corpse who[NL]
 does not know he is dead.[.][A][X]

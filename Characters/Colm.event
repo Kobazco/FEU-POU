@@ -1,0 +1,6 @@
+#ifndef COLM_EVENT
+#define COLM_EVENT
+
+SetUnitMug(Colm, ColmMugId)
+
+#endif // COLM_EVENT
