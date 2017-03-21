@@ -6,6 +6,7 @@
 
 #define CaptureCommandName 0x0100
 #define CaptureCommandDesc 0x0101
+#define HealArrow 0x0102
 #define TordoName 0x212
 #define TordoDesc 0x6e
 #define MethName 0x213

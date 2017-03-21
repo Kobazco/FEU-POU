@@ -1,0 +1,48 @@
+//Show Heal Amount (FE7/8)
+//By Tequila
+
+{
+	#ifdef _FE7_
+		#ifndef Free_Space
+			#define Free_Space 0xD00000
+			ORG Free_Space
+		#endif
+		#define Arrow_Text_ID 0x12B1 //currently just a hyphen; make a text id with '->' and put it here (DON'T CHANGE THE VANILLA ONE)
+		
+		#include "Extensions/Hack Installation.txt"
+		
+		PUSH
+		
+		ORG $31876
+		SHORT 0x46C0
+		jumpToHack(FE7_Show_Heal_Amount)
+		
+		POP
+		
+		FE7_Show_Heal_Amount:
+		#incbin "FE7-Show Heal Amount.dmp"
+		WORD Arrow_Text_ID
+	#else
+		#ifdef _FE8_
+			#ifndef Free_Space
+				#define Free_Space 0xB2B200
+				ORG Free_Space
+			#endif
+			#define Arrow_Text_ID 0x0102 //currently just a hyphen; make a text id with '->' and put it here (DON'T CHANGE THE VANILLA ONE)
+			
+			#include "Extensions/Hack Installation.txt"
+			
+			PUSH
+				ORG $34A1A
+					SHORT 0x46C0
+					jumpToHack(FE8_Show_Heal_Amount)
+			POP
+			
+			FE8_Show_Heal_Amount:
+				#incbin "FE8-Show Heal Amount.dmp"
+				WORD Arrow_Text_ID
+		#else
+			ERROR "You're not assembling FE7 or FE8 events!"
+		#endif
+	#endif
+}

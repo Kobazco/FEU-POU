@@ -11,6 +11,9 @@ donations were stolen.[X]
 Strike a fatal blow with reduced[NL]
 stats to capture an enemy.[X]
 
+# 0x0102 HealArrow
+->[X]
+
 # 0x03F2
 Donations[X]
 

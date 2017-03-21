@@ -30,16 +30,17 @@
 
 	#include "Tables/Table Installer.event"
 	
+	// Engine Hax
+	#include "Engine Hax/Show Heal Amount/Install.event"
 	#include "Engine Hax/FE8-Capture/FE8-Capture Master EA File.txt"
-	
 	#include "Engine Hax/HPBAR/HP Installer.txt"
 	#include "Engine Hax/Dangerzone.event"
 	#include "Engine Hax/SNES Criticals.event"
 	#include "Engine Hax/WeaponTriangleHax.event"
 	
+	// Misc Data
 	#include "Animations/Master Animation Installer.event"
 	#include "Text/Install Text Data.event"
-	
 	#include "Graphics and Portraits/#Graphics Master Installer.event"
 	
 	// Characters
