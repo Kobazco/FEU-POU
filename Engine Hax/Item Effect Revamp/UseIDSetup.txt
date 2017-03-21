@@ -1,4 +1,5 @@
 //Currently FE8 only
+//Prep screen items not supported yet
 
 #ifndef DefaultOffset	//write hack at this offset if assebmling from this file
 	#ifdef _FE8_
@@ -16,7 +17,7 @@
 	POP
 #endif
 
-# ifdef _FE8_
+#ifdef _FE8_
 
 	ALIGN 4
 	#ifndef JumpIDGetter //remember to replace this later

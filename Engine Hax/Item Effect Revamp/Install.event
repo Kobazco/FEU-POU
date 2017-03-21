@@ -5,7 +5,8 @@
 	#ifdef _FE8_
 		#define DefaultOffset 0xB40000
 	#endif
-	ORG DefaultOffset
+	// We should be in free space, right?
+	// ORG DefaultOffset
 #endif
 
 //If you wish to repoint the jump pointer tables, change the offsets in ArraySetup.txt

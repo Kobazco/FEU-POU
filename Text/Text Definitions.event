@@ -18,6 +18,7 @@
 #define ZyxzZothName 0x021B
 #define ZyxzZothDesc 0x0277
 #define ValkyrieStaffName 0x035C
+#define ValkyrieStaffDesc 0x040C
 #define TheDocName 0x0366
-#define PugiName 0x038A
 #define TheDocDesc 0x0416
+#define PugiName 0x038A

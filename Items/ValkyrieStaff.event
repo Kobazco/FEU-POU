@@ -4,11 +4,17 @@
 #define ValkyrieStaff Rapier
 
 SetItemName(ValkyrieStaff, ValkyrieStaffName)
-SetItemDesc(ValkyrieStaff, 0x00)
+SetItemDesc(ValkyrieStaff, ValkyrieStaffDesc)
 
-SetItemAttributes(ValkyrieStaff, ITEMATTR_STAFF | ITEMATTR_LOCK_1)
+SetItemAttributes(ValkyrieStaff, ITEMATTR_STAFF | ITEMATTR_LOCK_4)
 
 SetItemWeaponType(ValkyrieStaff, WTYPE_STAFF)
-SetItemWeaponRank(ValkyrieStaff, 0)
+SetItemWeaponRank(ValkyrieStaff, WRANK_E)
+
+SetItemDurability(ValkyrieStaff, 60)
+
+// Make it a 10 HP Heal staff
+SetItemUseEffect(ValkyrieStaff, 0x01)
+SetItemMight(ValkyrieStaff, 10)
 
 #endif // VALKYRIESTAFF_EVENT
