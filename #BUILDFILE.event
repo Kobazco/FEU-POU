@@ -30,8 +30,7 @@
 
 	#include "Tables/Table Installer.event"
 	
-	// Sadly another one that's broken :/ It makes the game softlock when moving next to a unit rescuing another ally unit (enemy works fine)
-	// #include "Engine Hax/FE8-Capture/FE8-Capture Master EA File.txt"
+	#include "Engine Hax/FE8-Capture/FE8-Capture Master EA File.txt"
 	
 	#include "Engine Hax/HPBAR/HP Installer.txt"
 	#include "Engine Hax/Dangerzone.event"
@@ -43,11 +42,10 @@
 	
 	#include "Graphics and Portraits/#Graphics Master Installer.event"
 	
-	#include "Chapters/Prologue.event"
-	
 	// Characters
 	#include "Characters/Tordo.event"
 	#include "Characters/Meth.event"
+	#include "Characters/Dorcas.event"
 	#include "Characters/JimBob.event"
 	#include "Characters/ZyxzZoth.event"
 	
@@ -56,6 +54,10 @@
 	#include "Items/TheDoc.event"
 	#include "Items/Pugi.event"
 	
+	// Chapters	
+	#include "Chapters/Prologue.event"
+	#include "Chapters/Ch1.event"
+
 	// Comment out to assemble the actual ROMHack, modify for testing
 	// #include "_Debug.event"
 #else // _FE8_

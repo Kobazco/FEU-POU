@@ -13,9 +13,9 @@ ldrb	r1,[r1,#0xB]
 ldr		r2,Compare_Allegiance_Func
 mov		r14,r2
 .short	0xF800
+pop		{r1}
 cmp		r0,#0x0
 bne		GoBack
-pop		{r1}
 ldrb	r2,[r1,#0xB]
 mov		r0,#0x0
 ldrb	r3,[r1,#0x13]
