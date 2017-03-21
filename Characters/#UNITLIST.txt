@@ -42,6 +42,7 @@ UNIT CHANGES LIST: (Units with # before their name are to be decided, others may
 	# Duessel > Ganon - Druid (Alusq)
 	# Knoll > Void - Lord (Glacoe)
 	
+	# Cormag > FREE
 	# Rennac > FREE
 	
 	Myhrr > Fa(e) - Manakete (Lamia)
