@@ -38,6 +38,7 @@
 					jumpToHack(FE8_Show_Heal_Amount)
 			POP
 			
+			ALIGN 4
 			FE8_Show_Heal_Amount:
 				#incbin "FE8-Show Heal Amount.dmp"
 				WORD Arrow_Text_ID

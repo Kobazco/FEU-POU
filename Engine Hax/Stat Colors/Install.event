@@ -3,20 +3,30 @@
 
 #ifdef _FE8_
 	#include "Extensions/Hack Installation.txt"
-	#define callHack_r1(offset) "SHORT 0x4901; BL(0xD18C4); SHORT 0xE001; POIN (offset|0x1)"
-	#ifndef Free_Space
-		#define Free_Space 0xB2B2B0
-		ORG Free_Space
-		PUSH
-	#endif
-	#define Metis_Tome_Increase 5
-	#define Char_Table 0x803D30
-	#define Talk_Text_ID 0x4F1  //Change this to a text id of your choice that says 'Talk' (0x680 has a space in front of it for alignment reasons, so don't use that)
-	#define Talk_R_Button_Text_ID 0x551 //Change this to a text id of your choice as well; this is currently Affinity's.
 	
-	POP
+	#ifndef callHack_r1(offset)
+		#define callHack_r1(offset) "SHORT 0x4901; BL(0xD18C4); SHORT 0xE001; POIN (offset|0x1)"
+	#endif
+	
+	#ifndef Free_Space
+		#define Free_Space 0xB2B200
+		ORG Free_Space
+	#endif
+	
+	#define Metis_Tome_Increase 5
+	
+	// Ensuring Compatibility with BOOTS
+	#ifdef pTableUnit
+		#define Char_Table pTableUnit
+	#else
+		#define Char_Table 0x803D30
+	#endif
+	
+	#define Talk_Text_ID 0x103  //Change this to a text id of your choice that says 'Talk' (0x680 has a space in front of it for alignment reasons, so don't use that)
+	#define Talk_R_Button_Text_ID 0x104 //Change this to a text id of your choice as well; this is currently Affinity's.
 	
 	ALIGN 4
+	#include "Talk/Talk EA.txt"
 	#include "Stat Colors/Stat Colors EA.txt"
 	#include "Display Growths/Display Growths EA.txt"
 	
@@ -31,13 +41,14 @@
 	Valid colors are 0 (white), 1 (grey), 2 (blueish-grey), 3 (yellow, default), and 4 (glowy-green used for capped stats). That's it. Sorry. If a growth is higher than the largest entry, it will use 3, the default index. If you want to use the Display Growths hack without any funky colors, just put BYTE 0 and leave it at that.
 	MAKE SURE THE ENTRIES ARE SORTED BY GROWTH IN INCREASING ORDER!
 	*/
-	BYTE 30 00
-	BYTE 40 01
-	BYTE 50 02
-	BYTE 70 03
-	BYTE 255 04
-	BYTE 0
 	
+	// Note by StanH_, the TEXTCOLOR_* definitions are defined in BOOTS/core/constants.ea
+	BYTE 30  TEXTCOLOR_GRAY
+	BYTE 45  TEXTCOLOR_NORMAL
+	BYTE 60  TEXTCOLOR_BLUE
+	// BYTE 70  TEXTCOLOR_ORANGE
+	BYTE 255 TEXTCOLOR_GREEN
+	BYTE 0
 #else
 	ERROR "You're not assembling FE8 events!"
 #endif

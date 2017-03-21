@@ -23,6 +23,14 @@ TxtData0x0102:
 #incext ParseFile "_textentries\0x0102.txt"
 setText(0x0102,TxtData0x0102)
 
+TxtData0x0103:
+#incext ParseFile "_textentries\0x0103.txt"
+setText(0x0103,TxtData0x0103)
+
+TxtData0x0104:
+#incext ParseFile "_textentries\0x0104.txt"
+setText(0x0104,TxtData0x0104)
+
 TxtData0x03F2:
 #incext ParseFile "_textentries\0x03F2.txt"
 setText(0x03F2,TxtData0x03F2)

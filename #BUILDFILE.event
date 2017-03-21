@@ -31,6 +31,7 @@
 	#include "Tables/Table Installer.event"
 	
 	// Engine Hax
+	#include "Engine Hax/Stat Colors/Install.event"
 	#include "Engine Hax/Show Heal Amount/Install.event"
 	#include "Engine Hax/FE8-Capture/FE8-Capture Master EA File.txt"
 	#include "Engine Hax/HPBAR/HP Installer.txt"
