@@ -7,6 +7,8 @@ SetUnitName(Ciraxidoge, CiraxidogeName)
 
 // SetUnitGrowths(Ciraxidoge, 150, 80, 25, 30, 90, 40, 30)
 // Toned down because no broken units pls
-SetUnitGrowths(Ciraxidoge, 95, 50, 25, 30, 55, 30, 25)
+SetUnitGrowths(Ciraxidoge, 90, 50, 25, 30, 60, 30, 25)
+
+SetUnitRanks(Ciraxidoge, WRANK_NONE, WRANK_D, WRANK_NONE, WRANK_NONE, WRANK_NONE, WRANK_NONE, WRANK_NONE, WRANK_NONE)
 
 #endif // CIRAXIDOGE_EVENT

@@ -31,3 +31,10 @@ Zyxz'Zoth[X]
 # 0x0277 ZyxzZothDesc
 Iilth qi'uothk shn'ma yeh'glu[NL]
 Shath'Yar! H'IWN IILTH![X]
+
+
+# 0x0224 MicaiahName
+Micaiah[X]
+
+# 0x0280 MicaiahDesc
+The main character.[X]

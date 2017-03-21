@@ -52,6 +52,8 @@
 	#include "Characters/Ciraxidoge.event"
 	#include "Characters/JimBob.event"
 	#include "Characters/ZyxzZoth.event"
+	#include "Characters/Colm.event"
+	#include "Characters/Micaiah.event"
 	
 	// Items
 	#include "Items/ValkyrieStaff.event"
@@ -62,6 +64,8 @@
 	#include "Chapters/Prologue.event"
 	#include "Chapters/Ch1.event"
 	#include "Chapters/Ch2.event"
+	#include "Chapters/Ch3.event"
+	#include "Chapters/Ch4.event"
 
 	// Comment out to assemble the actual ROMHack, modify for testing
 	// #include "_Debug.event"

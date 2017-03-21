@@ -46,7 +46,7 @@ MESSAGE Unit table located at pTableUnit
 #define SetUnitGrowths(aIdUnit, aHP, aPower, aSkill, aSpeed, aDef, aRes, aLuck) "PUSH; ORG GetUnitOffset(aIdUnit) + 28; BYTE aHP aPower aSkill aSpeed aDef aRes aLuck; POP"
 
 #define SetUnitRank(aIdUnit, aIdWeaponType, aRank) "PUSH; ORG GetUnitOffset(aIdUnit) + 20 + aIdWeaponType; BYTE aRank; POP"
-#define SetUnitRanks(aIdUnit, aSword, aLance, aAxe, aBow, aAnima, aLight, aDark, aStaff) "GetUnitOffset(aIdUnit) + 20; BYTE aSword aLance aAxe aBow aStaff aAnima aLight aDark"
+#define SetUnitRanks(aIdUnit, aSword, aLance, aAxe, aBow, aAnima, aLight, aDark, aStaff) "PUSH; ORG GetUnitOffset(aIdUnit) + 20; BYTE aSword aLance aAxe aBow aStaff aAnima aLight aDark"
 
 #define SetUnitAttributes(aIdUnit, aFlagAttributes) "PUSH; ORG GetUnitOffset(aIdUnit) + 40; WORD aFlagAttributes; POP"
 
