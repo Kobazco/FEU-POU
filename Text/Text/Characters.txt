@@ -1,7 +1,7 @@
 # 0x212 TordoName
 Tordo[X]
 
-# 0x6e TordoDesc
+# 0x026E TordoDesc
 Please reply soon :)[X]
 
 
@@ -11,6 +11,10 @@ Meth[X]
 
 # 0x0214 DorcasName
 Dorcas[X]
+
+
+# 0x0215 CiraxidogeName
+Ciraxidoge[X]
 
 
 # 0x0218 JimBobName

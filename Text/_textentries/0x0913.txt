@@ -1,0 +1,1 @@
+[OpenMidLeft][LoadFace][0x04][0x01][OpenMidLeft]All that's left is their leader[.][ToggleMouthMove]...[.][ToggleMouthMove][A][X]

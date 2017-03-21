@@ -1,0 +1,7 @@
+You've received a rapier from Seth.[.][A]
+All weapons have a [.][ToggleRed]durability[ToggleRed] rating.
+The rapier's durability is 40.[A]
+Once the rapier has been used[.]
+40 times, it will break.[A]
+Pay close attention to how many uses
+your weapons have remaining.[A][X]

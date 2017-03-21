@@ -1,0 +1,4 @@
+[OpenMidRight][LoadFace][0x30][0x01][OpenMidRight]What was that? Do you think you can[.]
+take me, wretched lordling?[.][A]
+Come! It's time you high-and-mighty[.]
+knights learned to respect a true warrior![A][X]

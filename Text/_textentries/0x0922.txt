@@ -1,0 +1,8 @@
+On this map you need to defeat
+O'Neill, the enemy leader, to win.[A]
+The [ToggleRed]objective[.][ToggleRed] is displayed at the [.]
+corner of the screen.[.][A]
+Your objective changes from map to
+map, which may change your approach.[A]
+Check your objective before deciding
+your strategy. Now, attack the enemy![.][A][X]

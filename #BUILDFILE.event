@@ -49,6 +49,7 @@
 	#include "Characters/Tordo.event"
 	#include "Characters/Meth.event"
 	#include "Characters/Dorcas.event"
+	#include "Characters/Ciraxidoge.event"
 	#include "Characters/JimBob.event"
 	#include "Characters/ZyxzZoth.event"
 	

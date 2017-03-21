@@ -1,0 +1,18 @@
+[OpenMidLeft][LoadFace][0x04][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft]Princess, are you injured?[A][OpenMidRight]What?[.][A]
+Oh, no[ToggleMouthMove]...[.][ToggleMouthMove][.....]
+I'm fine, Seth.[.][A][OpenMidLeft]But you look so pale[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight]I'm fine[ToggleMouthMove]... [ToggleMouthMove]Fine.[.][A]
+[ToggleMouthMove]...[.][ToggleMouthMove]This is war, isn't it?[A]
+It's not at all like the games I used[.]
+to play with my brother or Lyon.[A]
+I never thought[.][ToggleMouthMove]-- [.][ToggleMouthMove]I didn't
+know it would be this[.][ToggleMouthMove]...[.][ToggleMouthMove]savage.[.][A]
+Are words useless? Is strength
+all that matters? It's so sad[.][ToggleMouthMove]...[.][ToggleMouthMove][A]
+Why would the Hyrule Empire do this?[.]
+To what end would they start a war?[.][A][OpenMidLeft]Princess[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][ToggleMouthMove]...[.][ToggleMouthMove]Don't worry, Seth. I won't
+give in to sorrow.[A]
+Let's get moving.[.][A]
+I'm not broken, and I won't stop
+until I see Renais restored.[A]
+I won't stop until I'm reunited[.]
+with my father and brother.[.][A][X]

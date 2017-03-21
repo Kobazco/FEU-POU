@@ -1,0 +1,2 @@
+[OpenMidLeft][LoadFace][0x51][0x01][OpenMidLeft]Ephraim, Tordo[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
+You must survive.[.][A][X]

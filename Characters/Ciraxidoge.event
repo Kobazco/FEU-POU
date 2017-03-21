@@ -1,0 +1,12 @@
+#ifndef CIRAXIDOGE_EVENT
+#define CIRAXIDOGE_EVENT
+
+#define Ciraxidoge Franz
+
+SetUnitName(Ciraxidoge, CiraxidogeName)
+
+// SetUnitGrowths(Ciraxidoge, 150, 80, 25, 30, 90, 40, 30)
+// Toned down because no broken units pls
+SetUnitGrowths(Ciraxidoge, 95, 50, 25, 30, 55, 30, 25)
+
+#endif // CIRAXIDOGE_EVENT

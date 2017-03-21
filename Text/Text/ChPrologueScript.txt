@@ -1,27 +1,27 @@
 # 0x0903
 [OpenMidLeft][LoadFace][0x51][0x01][OpenFarFarRight][LoadFace][0x6A][0x01][OpenFarFarRight][MoveMidRight][OpenMidRight]Your Majesty, I bear bad news.[A][CloseSpeechSlow][OpenMidRight]The castle gate has been breached.[A]
-King Harkinian's forces are within[.]
+King Harkinian's forces are within[.][NL]
 the castle walls.[.][A][OpenMidLeft]I understand.[.][A][OpenMidRight]The garrison has fallen.[A]
-We've lost contact with Prince Ephraim
+We've lost contact with Prince Ephraim[NL]
 and can expect no aid from his men.[.][A]
 Your Majesty, what are we to do?[A][OpenMidLeft][ToggleMouthMove]...[.][ToggleMouthMove]What else can we do?[A]
-Order your men to lay[.]
+Order your men to lay[.][NL]
 down their arms.[A][X]
 
 # 0x0904
 [OpenMidLeft][LoadFace][0x51][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenMidRight][MoveRight][OpenRight]Please[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft]Tordo.[.][A]
-Are you wearing the[.]
+Are you wearing the[.][NL]
 bracelet I gave you?[A][OpenRight]Please reply soon.[A][OpenMidLeft]Good.[.][A][CloseSpeechSlow][OpenMidLeft]Meth.[.][A][OpenFarRight][LoadFace][0x04][0x01][OpenFarRight]Yes, Your Majesty?[A][OpenMidLeft]Take Eirika and head for Frelia.[A]
-King Hayden is an honorable man.
+King Hayden is an honorable man.[NL]
 I trust he will keep you safe.[A][OpenFarRight]Understood.[.][A]
 And what of Your Majesty?[.][A][OpenMidLeft]Me? I shall remain here.[A]
-We have long held Hyrule among our[.]
+We have long held Hyrule among our[.][NL]
 dearest allies, yet now, they attack?[.][A]
-I must know why.[A][CloseSpeechSlow][OpenMidLeft]Am I somehow responsible for this?
+I must know why.[A][CloseSpeechSlow][OpenMidLeft]Am I somehow responsible for this?[NL]
 Have I erred in my leadership?[A]
-Renais is mine to guide[.][ToggleMouthMove]... [ToggleMouthMove]How[.]
+Renais is mine to guide[.][ToggleMouthMove]... [ToggleMouthMove]How[.][NL]
 could I have failed her so?[.][A][SendToBack][OpenRight][MoveRight][OpenRight]Please... Please reply soon![A]
-If you remain behind, then so shall I![A][OpenMidLeft]Go now, Meth! Ride![.]
+If you remain behind, then so shall I![A][OpenMidLeft]Go now, Meth! Ride![.][NL]
 Take her to safety![.][A][X]
 
 # 0x0905
@@ -29,15 +29,15 @@ Take her to safety![.][A][X]
 Your Highness.[A][X]
 
 # 0x0906
-[OpenMidLeft][LoadFace][0x51][0x01][OpenMidLeft]Ephraim, Tordo[.][ToggleMouthMove]...[.][ToggleMouthMove]
+[OpenMidLeft][LoadFace][0x51][0x01][OpenMidLeft]Ephraim, Tordo[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
 You must survive.[.][A][X]
 
 # 0x0907
-[OpenMidRight][LoadFace][0x04][0x01][OpenMidLeft][LoadFace][0x06][0x01][OpenMidLeft]General Meth![.][A][OpenMidRight]Ciraxidoge, run ahead and bring word of our[.]
+[OpenMidRight][LoadFace][0x04][0x01][OpenMidLeft][LoadFace][0x06][0x01][OpenMidLeft]General Meth![.][A][OpenMidRight]Ciraxidoge, run ahead and bring word of our[.][NL]
 coming to Frelia.[.][A]
-A single man has better odds of passing[.]
+A single man has better odds of passing[.][NL]
 unseen by Hyrule's men.[A]
-Convey to the throne all that has happened
+Convey to the throne all that has happened[NL]
 here and petition for reinforcements.[.][A][OpenMidLeft]U-understood![.][A][X]
 
 # 0x0908
@@ -212,7 +212,7 @@ the enemy.[A]
 Place the cursor on Eirika
 and press the [ToggleRed]A Button[ToggleRed].[.][A][X]
 
-Text of ID 0x091F
+# 0x091F
 The cursor is now on Eirika.
 Press the [ToggleRed]A Button[ToggleRed].[.][A][X]
 
