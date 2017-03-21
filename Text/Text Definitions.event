@@ -6,6 +6,9 @@
 
 #define CaptureCommandName 0x0100
 #define CaptureCommandDesc 0x0101
+#define HealArrow 0x0102
+#define TalkStatScreen 0x0103
+#define TalkStatScreenDesc 0x0104
 #define TordoName 0x212
 #define TordoDesc 0x6e
 #define MethName 0x213
@@ -15,6 +18,7 @@
 #define ZyxzZothName 0x021B
 #define ZyxzZothDesc 0x0277
 #define ValkyrieStaffName 0x035C
+#define ValkyrieStaffDesc 0x040C
 #define TheDocName 0x0366
-#define PugiName 0x038A
 #define TheDocDesc 0x0416
+#define PugiName 0x038A

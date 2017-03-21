@@ -36,7 +36,7 @@
 	HealItemCheck:
 	SHORT 0xB500 0x21FF 0x4008
 	BL(EIDGetter)
-	SHORT 0x4902	//ldr r1
+	SHORT 0x4902
 	BL(IDListLoop)
 	SHORT 0xBC02 0x4708 //pop r1; bx r1
 	POIN HealIDList
@@ -57,50 +57,6 @@
 	HealIDList: //be sure to end list with 0x0, refer to "Item Effect IDs.txt" for which ID does what by default
 	BYTE 0x21 0x22 0x33 0x34 0x35 0x0 
 	
-	//Chest Key AI
-		
-	PUSH
-		ORG 0x3B9D0
-		callHack_r3(ChestKeyCheck)
-		SHORT 0x2800	//cmp r0, 0x00
-		SHORT 0xD00B	//beq to 0x3B9F8
-		SHORT 0x2820	//cmp r0, 0x20
-		SHORT 0xD1E9	//bne 0x3B9B8
-	POP
-
-		ALIGN 4
-		ChestKeyCheck:
-		SHORT 0xB500 //push r14
-		SHORT 0x1C20 // mov r0,r4
-		SHORT 0x21FF 0x4008
-		BL(EIDGetter)
-		SHORT 0x4902	//ldr r1
-		BL(IDListLoop)
-		SHORT 0xBC02 0x4708 //pop r1; bx r1
-		ALIGN 4
-		POIN ChestKeyList
-		
-		ChestKeyList:
-		BYTE 0x1E 0x20 0x26 0x0
-		
-	//Other Item(s) AI
-		
-	PUSH
-		ORG $4087A
-		SHORT 0x0 0x0
-		
-		ORG 0x407FC
-		callHack_r3(EIDGetter)
-		#incbin "AsmBin\ItemAI(FE8).dmp"
-		POIN AIItemArray
-
-		ORG 0x408C8
-		POIN AIItemArray + 0x4
-		
-		ORG AIItemArray
-		#incbin "Arrays\AIItemArray(FE8).dmp"
-	POP
-		
 	//Staff AI
 	PUSH
 		ORG 0x3FA02
@@ -110,9 +66,6 @@
 		
 		ORG 0x3FA3C
 		POIN AIStaffArray
-		
-		ORG 0x3FAE0
-		POIN AIStaffArray + 0x4
 		
 		ORG AIStaffArray
 		#incbin "Arrays\AIStaffArray(FE8).dmp"
@@ -125,11 +78,10 @@
 
 /*
 To Do:
-healing staves	done
-lockpicks		done
-door keys		done
-chest keys		done
-other staves	done
-master keys? 	done
-other items 	done
+healing staves
+lockpicks
+door keys	0x8040800
+chest keys
+other staves
+master keys? 
 */

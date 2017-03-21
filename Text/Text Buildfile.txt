@@ -4,3 +4,5 @@
 #include "Text/Items.txt"
 
 #include "Text/General.txt"
+
+#include "ChPrologue.txt"

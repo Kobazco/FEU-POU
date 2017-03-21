@@ -17,14 +17,6 @@ v1.5
 -staff AI support added
 -files reorganized into folders
 
-v1.6
-- master key ai support
-- custom lockpick ai support
-- custom door/chest key support
-- custom item AI support added
-- fixed error in staff ai not changing a pointer
-
-
 intended features for future releases
 - dancer ring support
-- fixed out spell association 
+- custom lockpick and key AI support

@@ -4,7 +4,6 @@
 #define Pugi Hatchet
 
 SetItemName(Pugi, PugiName)
-SetItemDesc(Pugi, 0x00)
 
 SetItemDurability(Pugi, 60)
 SetItemWeaponStats(Pugi, 10, 80, 30,  9) // Mgt, Hit, Crt, Wgt

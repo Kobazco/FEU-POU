@@ -16,7 +16,8 @@
 	ORG $873C4
 	POIN Write_Numbers|1
 	
-	ORG $87474 //Call updates of bg layers 0 and 2
+	ORG $8746E //Call updates of bg layers 0 and 2
+	SHORT 0x46C0
 	jumpToHack(Update_Layers)
 	
 	ORG $883B4 //Only display rescue arrows if not on growths page

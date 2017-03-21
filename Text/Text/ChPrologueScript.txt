@@ -1,0 +1,304 @@
+# 0x0903
+[OpenMidLeft][LoadFace][0x51][0x01][OpenFarFarRight][LoadFace][0x6A][0x01][OpenFarFarRight][MoveMidRight][OpenMidRight]Your Majesty, I bear bad news.[A][CloseSpeechSlow][OpenMidRight]The castle gate has been breached.[A]
+King Harkinian's forces are within[.]
+the castle walls.[.][A][OpenMidLeft]I understand.[.][A][OpenMidRight]The garrison has fallen.[A]
+We've lost contact with Prince Ephraim
+and can expect no aid from his men.[.][A]
+Your Majesty, what are we to do?[A][OpenMidLeft][ToggleMouthMove]...[.][ToggleMouthMove]What else can we do?[A]
+Order your men to lay[.]
+down their arms.[A][X]
+
+# 0x0904
+[OpenMidLeft][LoadFace][0x51][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenMidRight][MoveRight][OpenRight]Please[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft]Tordo.[.][A]
+Are you wearing the[.]
+bracelet I gave you?[A][OpenRight]Please reply soon.[A][OpenMidLeft]Good.[.][A][CloseSpeechSlow][OpenMidLeft]Meth.[.][A][OpenFarRight][LoadFace][0x04][0x01][OpenFarRight]Yes, Your Majesty?[A][OpenMidLeft]Take Eirika and head for Frelia.[A]
+King Hayden is an honorable man.
+I trust he will keep you safe.[A][OpenFarRight]Understood.[.][A]
+And what of Your Majesty?[.][A][OpenMidLeft]Me? I shall remain here.[A]
+We have long held Hyrule among our[.]
+dearest allies, yet now, they attack?[.][A]
+I must know why.[A][CloseSpeechSlow][OpenMidLeft]Am I somehow responsible for this?
+Have I erred in my leadership?[A]
+Renais is mine to guide[.][ToggleMouthMove]... [ToggleMouthMove]How[.]
+could I have failed her so?[.][A][SendToBack][OpenRight][MoveRight][OpenRight]Please... Please reply soon![A]
+If you remain behind, then so shall I![A][OpenMidLeft]Go now, Meth! Ride![.]
+Take her to safety![.][A][X]
+
+# 0x0905
+[OpenRight][LoadFace][0x02][0x01][OpenFarRight][LoadFace][0x04][0x01][OpenRight]Father![.][A][SendToBack][OpenFarRight]Forgive me,[.]
+Your Highness.[A][X]
+
+# 0x0906
+[OpenMidLeft][LoadFace][0x51][0x01][OpenMidLeft]Ephraim, Tordo[.][ToggleMouthMove]...[.][ToggleMouthMove]
+You must survive.[.][A][X]
+
+# 0x0907
+[OpenMidRight][LoadFace][0x04][0x01][OpenMidLeft][LoadFace][0x06][0x01][OpenMidLeft]General Meth![.][A][OpenMidRight]Ciraxidoge, run ahead and bring word of our[.]
+coming to Frelia.[.][A]
+A single man has better odds of passing[.]
+unseen by Hyrule's men.[A]
+Convey to the throne all that has happened
+here and petition for reinforcements.[.][A][OpenMidLeft]U-understood![.][A][X]
+
+# 0x0908
+[OpenMidLeft][LoadFace][0x04][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft]Princess Tordo, we must[ToggleMouthMove]--[ToggleMouthMove][A]
+Quickly! Behind me![.][A][X]
+
+# 0x0909
+[OpenFarLeft][LoadFace][0x02][0x01][OpenLeft][LoadFace][0x04][0x01][OpenMidRight][LoadFace][0x42][0x01][OpenMidRight]You there, with the girl. Tell me, would
+that be the wayward princess of Renais?[.][A]
+Well, this must be my lucky day.[A]
+You're a dead man. The wench goes[.]
+with me.[A][OpenLeft]Never![A][X]
+
+# 0x090A
+[OpenMidLeft][LoadFace][0x42][0x01][OpenMidLeft]I am Gwonam, the Moonstone,[.]
+Hyrule's finest general![.][A][0x02]
+And you're just a corpse who
+does not know he is dead.[.][A][X]
+
+# 0x090B
+[OpenMidLeft][LoadFace][0x04][0x01][OpenMidLeft]Ahhh[ToggleMouthMove]...[.][ToggleMouthMove][A][0x02]
+No![.][A][X]
+
+# 0x090C
+[OpenMidRight][LoadFace][0x42][0x01][OpenMidRight]Such terrible wounds, and still[.]
+he holds to his duty?[.][A]
+How entertaining.[.][A]
+Fly away, little man. Fly away.[.]
+Try to outrun death.[A]
+More time to savor the hunt[.][ToggleMouthMove]...[.][ToggleMouthMove]
+and the kill.[.][A][X]
+
+# 0x090D
+[OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft][LoadFace][0x04][0x01][OpenMidLeft]Princess Tordo! This way! I can [.]
+see no more of Hyrule's men.[.][A]
+If we've made it this far, we've
+surely earned a moment's rest.[A]
+Please forgive my grabbing you
+so[ToggleMouthMove]...[.][ToggleMouthMove]brusquely earlier.[A][OpenMidRight]Please reply soon, Meth.[.][A]
+If it weren't for you, I would never
+be able to use those animations.[.][A]
+You are the reason I'm going.[.]
+You have my gratitude.[A][OpenMidRight][MoveRight][OpenRight]And whoever that man was, he was
+clearly after my project[ToggleMouthMove]...[.][ToggleMouthMove][A]
+It's my fault that you received[.]
+such a grave wound.[.][A]
+Allow me to treat it, I[.][ToggleMouthMove]--[ToggleMouthMove][A][OpenMidLeft]Your Highness, I can't allow an injury
+like this to be an obstacle.[A]
+We have more important matters to[.]
+attend to. We must press on to Frelia.[A]
+We must fulfill His Majesty's wishes.[.][A][OpenRight][ToggleMouthMove]...[.][ToggleMouthMove][A]
+I wonder how my father fares alone in[.]
+the castle. Do you think he's safe?[.][A]
+And what of my brother on the Hyrule front?
+We've heard nothing from him for days.[A][OpenMidLeft]King Fado and Prince Ephraim are
+both valiant and brave men.[.][A]
+I doubt even the might of the Hyrule[.]
+Empire can hold them in check.[A]
+More important to me, Your Highness, [.]
+is that you look to your own safety.[A]
+How sad the two of them would be if[.]
+something were to happen to you.[A]
+We must reach Frelia to ensure the
+day of your happy reunion.[A][OpenRight]Yes, of course. You're right.[.][A]
+Until I'm reunited with my father[.]
+and brother, I must not despair.[A]
+Come, Seth. Let us go.[A][X]
+
+# 0x090E
+[OpenMidLeft][LoadFace][0x04][0x01][OpenMidLeft]Once we cross that bridge, we will
+be in Frelia, near Border Mulan.[A]
+Let us proceed, Princess Eirika.[A][X]
+
+# 0x090F
+[OpenMidLeft][LoadFace][0x02][0x01][OpenMidRight][LoadFace][0x04][0x01][OpenMidRight]Your Highness, I won't lie to you.
+This will not be an easy ride.[A]
+Please, take this rapier.[.]
+If something should happen to me,[.][A]
+you must continue to Frelia,
+alone if need be.[.][A][X]
+
+# 0x0910
+[OpenMidRight][LoadFace][0x30][0x01][OpenMidRight]You there! Renais dogs! Where[.]
+do you think you're going?[A][OpenMidRight][ClearFace][OpenLeft][LoadFace][0x02][0x01][OpenFarLeft][LoadFace][0x04][0x01][OpenFarLeft]Grado's men[.][ToggleMouthMove]...[.][ToggleMouthMove][A]
+Stand back, Princess Eirika.[A][OpenLeft]It's all right, Seth.[.][A]
+My brother has taught me
+something of swordplay.[.][A]
+I will stand with you.[A][X]
+
+# 0x0911
+[OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft][LoadFace][0x04][0x01][OpenMidLeft]Princess Eirika![A][OpenMidRight]I'm fine. His axe was[.]
+slow, and I was quick.[A]
+Now it's my turn![.][A][X]
+
+# 0x0912
+[OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft][LoadFace][0x04][0x01][OpenMidLeft]I'll hold the rest of them here.
+Please, Princess[ToggleMouthMove]--[ToggleMouthMove]to Frelia![A][X]
+
+# 0x0913
+[OpenMidLeft][LoadFace][0x04][0x01][OpenMidLeft]All that's left is their leader[.][ToggleMouthMove]...[.][ToggleMouthMove][A][X]
+
+# 0x0914
+[OpenMidRight][LoadFace][0x30][0x01][OpenMidRight]What was that? Do you think you can[.]
+take me, wretched lordling?[.][A]
+Come! It's time you high-and-mighty[.]
+knights learned to respect a true warrior![A][X]
+
+# 0x0915
+[OpenMidRight][LoadFace][0x04][0x01][OpenMidRight]Urgh[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][ClearFace][OpenMidLeft][LoadFace][0x02][0x01][OpenMidLeft]Seth![.][A]
+His wounds must be worse
+than he let on[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][ClearFace][OpenMidRight][LoadFace][0x30][0x01][OpenMidRight]Time to die![A][OpenMidRight][ClearFace][OpenMidLeft][LoadFace][0x02][0x01][OpenMidLeft]Stop! Face me, if[.]
+you have the steel![.][A][X]
+
+# 0x0916
+[OpenMidLeft][LoadFace][0x30][0x01][OpenMidLeft]You will be the first to die![.][A][X]
+
+# 0x0917
+[OpenMidLeft][LoadFace][0x30][0x01][OpenMidLeft]What? How?[A][X]
+
+# 0x0918
+[OpenMidLeft][LoadFace][0x04][0x01][OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft]Princess, are you injured?[A][OpenMidRight]What?[.][A]
+Oh, no[ToggleMouthMove]...[.][ToggleMouthMove][.....]
+I'm fine, Seth.[.][A][OpenMidLeft]But you look so pale[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight]I'm fine[ToggleMouthMove]... [ToggleMouthMove]Fine.[.][A]
+[ToggleMouthMove]...[.][ToggleMouthMove]This is war, isn't it?[A]
+It's not at all like the games I used[.]
+to play with my brother or Lyon.[A]
+I never thought[.][ToggleMouthMove]-- [.][ToggleMouthMove]I didn't
+know it would be this[.][ToggleMouthMove]...[.][ToggleMouthMove]savage.[.][A]
+Are words useless? Is strength
+all that matters? It's so sad[.][ToggleMouthMove]...[.][ToggleMouthMove][A]
+Why would the Hyrule Empire do this?[.]
+To what end would they start a war?[.][A][OpenMidLeft]Princess[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][ToggleMouthMove]...[.][ToggleMouthMove]Don't worry, Seth. I won't
+give in to sorrow.[A]
+Let's get moving.[.][A]
+I'm not broken, and I won't stop
+until I see Renais restored.[A]
+I won't stop until I'm reunited[.]
+with my father and brother.[.][A][X]
+
+# 0x0919
+Your training begins with [ToggleRed]movement[ToggleRed].[.][A]
+Place the [ToggleRed]square cursor[.][ToggleRed] on[.]
+Eirika and press the [.][ToggleRed]A Button[ToggleRed].[.][A][X]
+
+# 0x091A
+Press the [ToggleRed]A Button[ToggleRed]
+to select Eirika.[.][A][X]
+
+# 0x091B
+You can move anywhere[.]
+within the [.][ToggleRed]blue area[.][ToggleRed].[.][A]
+Move the cursor to the
+flashing space beside Seth
+and press the [ToggleRed]A Button[ToggleRed].[.][A][X]
+
+# 0x091C
+You'll now move next
+to Seth.[A]
+Go ahead and press the
+[ToggleRed]A Button[ToggleRed].[.][A][X]
+
+# 0x091D
+Red units are [ToggleRed]enemy units[.][ToggleRed].[.][A]
+After all of Eirika's party has moved,
+the [ToggleRed]enemy[.][ToggleRed] units will move.[.][A]
+Each side takes turns moving and then[.]
+fighting until the battle ends.[.][A][X]
+
+# 0x091E
+It's time to [.][ToggleRed]attack[ToggleRed]
+the enemy.[A]
+Place the cursor on Eirika
+and press the [ToggleRed]A Button[ToggleRed].[.][A][X]
+
+Text of ID 0x091F
+The cursor is now on Eirika.
+Press the [ToggleRed]A Button[ToggleRed].[.][A][X]
+
+# 0x0920
+Select [.][ToggleRed]Attack[ToggleRed] and press
+the [ToggleRed]A Button[ToggleRed].[.][A][X]
+
+# 0x0921
+This is the [ToggleRed]combat
+information window[ToggleRed].[.][A]
+You can see the combatant's[.]
+[ToggleRed]HP[ToggleRed] and the amount[.]
+of damage you will inflict.[.][A]
+Eirika should do [.][ToggleRed]7[.][ToggleRed] points,
+and the enemy should do [ToggleRed]9[.][ToggleRed].[.][A]
+You see the [ToggleRed]x2[ToggleRed] next to
+[ToggleRed]Mt[ToggleRed], right?[A]
+This indicates that you will
+[ToggleRed]attack twice[ToggleRed].[.][A]
+Eirika is faster than her[.]
+opponent, so she can [.][ToggleRed]strike
+twice[.][ToggleRed] in one turn.[.][A]
+So, with [.][ToggleRed]2 attacks of 7
+points each[.][ToggleRed], Eirika will[.]
+do [.][ToggleRed]14 points[.][ToggleRed] of damage.[.][A]
+Now press the [ToggleRed]A Button[ToggleRed] to[.]
+[ToggleRed]attack[ToggleRed] the enemy.[.][A][X]
+
+# 0x0922
+On this map you need to defeat
+O'Neill, the enemy leader, to win.[A]
+The [ToggleRed]objective[.][ToggleRed] is displayed at the [.]
+corner of the screen.[.][A]
+Your objective changes from map to
+map, which may change your approach.[A]
+Check your objective before deciding
+your strategy. Now, attack the enemy![.][A][X]
+
+# 0x0923
+Place the cursor on [ToggleRed]Eirika[ToggleRed] and
+press the [ToggleRed]A Button[ToggleRed].[.][A][X]
+
+# 0x0924
+The cursor is now on Eirika.
+Press the [ToggleRed]A Button[ToggleRed].[.][A][X]
+
+# 0x0925
+Move next to the enemy
+and press the [ToggleRed]A Button[ToggleRed].[.][A][X]
+
+# 0x0926
+The [ToggleRed]combat information
+window[ToggleRed] is open again.[.][A]
+Do you see [.][ToggleRed]Hit[.][ToggleRed] displayed
+below [ToggleRed]HP[ToggleRed] and [.][ToggleRed]Mt[ToggleRed]?[.][A]
+[ToggleRed]Hit[.][ToggleRed] is the likelihood that[.]
+you will land your blow.[A]
+Eirika's [.][ToggleRed]Hit[.][ToggleRed] is 94, so she
+has a 94 percent chance[.]
+of hitting the enemy.[.][A]
+[ToggleRed]Crit[ToggleRed], short for Critical, also
+appears in this window.[.][A]
+This is the chance an attack
+will be a lethal strike.[A]
+Eirika's [.][ToggleRed]Crit[ToggleRed] is 14, so she
+has a 14 percent chance of
+landing a killing blow.[.][A]
+Critical attacks do [ToggleRed]3 times[.][ToggleRed]
+the damage of a normal
+attack.[.][A]
+Press the [ToggleRed]A Button[ToggleRed] to[.]
+attack the enemy leader.[A][X]
+
+# 0x0927
+Eirika gained over [.][ToggleRed]100[.]
+experience points[.][ToggleRed] and
+has [ToggleRed]leveled up[ToggleRed].[.][A]
+Gaining levels increases [.]
+unit abilities and makes [.]
+them stronger.[A][X]
+
+# 0x0928
+You've received a rapier from Seth.[.][A]
+All weapons have a [.][ToggleRed]durability[ToggleRed] rating.
+The rapier's durability is 40.[A]
+Once the rapier has been used[.]
+40 times, it will break.[A]
+Pay close attention to how many uses
+your weapons have remaining.[A][X]

@@ -2,6 +2,17 @@
 .org 0x0
 
 ldr		r0,StatScreenStruct
+sub		r0,#0x1
+ldrb	r0,[r0]
+mov		r1,#0x1
+tst		r0,r1
+bne		IsUpdateNeeded
+ldr		r0,DisplayBWL
+mov		r14,r0
+.short	0xF800
+
+IsUpdateNeeded:
+ldr		r0,StatScreenStruct
 sub		r0,#0x2
 ldrb	r0,[r0]
 cmp		r0,#0x0
@@ -30,6 +41,7 @@ sub		r0,#0x2
 mov		r1,#0x0
 strb	r1,[r0]
 GoBack:
+add		sp,#0x50
 pop		{r4-r6}
 pop		{r0}
 bx		r0
@@ -49,3 +61,5 @@ Ptr3:
 .long 0x0200472C
 Ptr4:
 .long 0x02023D40
+DisplayBWL:
+.long 0x08086FAC
