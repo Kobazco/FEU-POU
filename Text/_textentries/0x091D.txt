@@ -1,0 +1,5 @@
+Red units are [ToggleRed]enemy units[.][ToggleRed].[.][A]
+After all of Eirika's party has moved,
+the [ToggleRed]enemy[.][ToggleRed] units will move.[.][A]
+Each side takes turns moving and then[.]
+fighting until the battle ends.[.][A][X]

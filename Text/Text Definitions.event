@@ -10,9 +10,10 @@
 #define TalkStatScreen 0x0103
 #define TalkStatScreenDesc 0x0104
 #define TordoName 0x212
-#define TordoDesc 0x6e
+#define TordoDesc 0x026E
 #define MethName 0x213
 #define DorcasName 0x0214
+#define CiraxidogeName 0x0215
 #define JimBobName 0x0218
 #define JimBobDesc 0x0274
 #define ZyxzZothName 0x021B

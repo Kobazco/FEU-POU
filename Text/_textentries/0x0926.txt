@@ -1,0 +1,21 @@
+The [ToggleRed]combat information
+window[ToggleRed] is open again.[.][A]
+Do you see [.][ToggleRed]Hit[.][ToggleRed] displayed
+below [ToggleRed]HP[ToggleRed] and [.][ToggleRed]Mt[ToggleRed]?[.][A]
+[ToggleRed]Hit[.][ToggleRed] is the likelihood that[.]
+you will land your blow.[A]
+Eirika's [.][ToggleRed]Hit[.][ToggleRed] is 94, so she
+has a 94 percent chance[.]
+of hitting the enemy.[.][A]
+[ToggleRed]Crit[ToggleRed], short for Critical, also
+appears in this window.[.][A]
+This is the chance an attack
+will be a lethal strike.[A]
+Eirika's [.][ToggleRed]Crit[ToggleRed] is 14, so she
+has a 14 percent chance of
+landing a killing blow.[.][A]
+Critical attacks do [ToggleRed]3 times[.][ToggleRed]
+the damage of a normal
+attack.[.][A]
+Press the [ToggleRed]A Button[ToggleRed] to[.]
+attack the enemy leader.[A][X]

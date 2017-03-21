@@ -1,0 +1,7 @@
+[OpenMidRight][LoadFace][0x42][0x01][OpenMidRight]Such terrible wounds, and still[.]
+he holds to his duty?[.][A]
+How entertaining.[.][A]
+Fly away, little man. Fly away.[.]
+Try to outrun death.[A]
+More time to savor the hunt[.][ToggleMouthMove]...[.][ToggleMouthMove]
+and the kill.[.][A][X]

@@ -1,0 +1,34 @@
+[OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft][LoadFace][0x04][0x01][OpenMidLeft]Princess Tordo! This way! I can [.]
+see no more of Hyrule's men.[.][A]
+If we've made it this far, we've
+surely earned a moment's rest.[A]
+Please forgive my grabbing you
+so[ToggleMouthMove]...[.][ToggleMouthMove]brusquely earlier.[A][OpenMidRight]Please reply soon, Meth.[.][A]
+If it weren't for you, I would never
+be able to use those animations.[.][A]
+You are the reason I'm going.[.]
+You have my gratitude.[A][OpenMidRight][MoveRight][OpenRight]And whoever that man was, he was
+clearly after my project[ToggleMouthMove]...[.][ToggleMouthMove][A]
+It's my fault that you received[.]
+such a grave wound.[.][A]
+Allow me to treat it, I[.][ToggleMouthMove]--[ToggleMouthMove][A][OpenMidLeft]Your Highness, I can't allow an injury
+like this to be an obstacle.[A]
+We have more important matters to[.]
+attend to. We must press on to Frelia.[A]
+We must fulfill His Majesty's wishes.[.][A][OpenRight][ToggleMouthMove]...[.][ToggleMouthMove][A]
+I wonder how my father fares alone in[.]
+the castle. Do you think he's safe?[.][A]
+And what of my brother on the Hyrule front?
+We've heard nothing from him for days.[A][OpenMidLeft]King Fado and Prince Ephraim are
+both valiant and brave men.[.][A]
+I doubt even the might of the Hyrule[.]
+Empire can hold them in check.[A]
+More important to me, Your Highness, [.]
+is that you look to your own safety.[A]
+How sad the two of them would be if[.]
+something were to happen to you.[A]
+We must reach Frelia to ensure the
+day of your happy reunion.[A][OpenRight]Yes, of course. You're right.[.][A]
+Until I'm reunited with my father[.]
+and brother, I must not despair.[A]
+Come, Seth. Let us go.[A][X]

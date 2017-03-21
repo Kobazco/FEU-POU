@@ -1,0 +1,2 @@
+Move next to the enemy
+and press the [ToggleRed]A Button[ToggleRed].[.][A][X]

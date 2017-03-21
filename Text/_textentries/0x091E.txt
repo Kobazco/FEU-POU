@@ -1,0 +1,4 @@
+It's time to [.][ToggleRed]attack[ToggleRed]
+the enemy.[A]
+Place the cursor on Eirika
+and press the [ToggleRed]A Button[ToggleRed].[.][A][X]

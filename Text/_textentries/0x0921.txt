@@ -1,0 +1,19 @@
+This is the [ToggleRed]combat
+information window[ToggleRed].[.][A]
+You can see the combatant's[.]
+[ToggleRed]HP[ToggleRed] and the amount[.]
+of damage you will inflict.[.][A]
+Eirika should do [.][ToggleRed]7[.][ToggleRed] points,
+and the enemy should do [ToggleRed]9[.][ToggleRed].[.][A]
+You see the [ToggleRed]x2[ToggleRed] next to
+[ToggleRed]Mt[ToggleRed], right?[A]
+This indicates that you will
+[ToggleRed]attack twice[ToggleRed].[.][A]
+Eirika is faster than her[.]
+opponent, so she can [.][ToggleRed]strike
+twice[.][ToggleRed] in one turn.[.][A]
+So, with [.][ToggleRed]2 attacks of 7
+points each[.][ToggleRed], Eirika will[.]
+do [.][ToggleRed]14 points[.][ToggleRed] of damage.[.][A]
+Now press the [ToggleRed]A Button[ToggleRed] to[.]
+[ToggleRed]attack[ToggleRed] the enemy.[.][A][X]
