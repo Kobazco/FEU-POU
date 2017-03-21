@@ -1,2 +1,2 @@
-Select [.][ToggleRed]Attack[ToggleRed] and press
+Select [.][ToggleRed]Attack[ToggleRed] and press[NL]
 the [ToggleRed]A Button[ToggleRed].[.][A][X]

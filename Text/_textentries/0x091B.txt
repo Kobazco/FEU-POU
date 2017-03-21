@@ -1,5 +1,5 @@
-You can move anywhere[.]
-within the [.][ToggleRed]blue area[.][ToggleRed].[.][A]
-Move the cursor to the
-flashing space beside Seth
+You can move anywhere[.][NL]
+within the [.][ToggleRed]blue area[.][ToggleRed].[.][A][NL]
+Move the cursor to the[NL]
+flashing space beside Meth[NL]
 and press the [ToggleRed]A Button[ToggleRed].[.][A][X]

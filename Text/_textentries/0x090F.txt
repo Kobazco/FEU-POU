@@ -1,6 +1,6 @@
-[OpenMidLeft][LoadFace][0x02][0x01][OpenMidRight][LoadFace][0x04][0x01][OpenMidRight]Your Highness, I won't lie to you.
-This will not be an easy ride.[A]
-Please, take this rapier.[.]
-If something should happen to me,[.][A]
-you must continue to Frelia,
+[OpenMidLeft][LoadFace][0x02][0x01][OpenMidRight][LoadFace][0x04][0x01][OpenMidRight]Your Highness, I won't lie to you.[NL]
+This will not be an easy ride.[A][NL]
+Please, take this rapier.[.][NL]
+If something should happen to me,[.][A][NL]
+you must continue to Frelia,[NL]
 alone if need be.[.][A][X]

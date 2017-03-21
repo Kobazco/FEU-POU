@@ -1,6 +1,6 @@
 [OpenMidRight][LoadFace][0x04][0x01][OpenMidLeft][LoadFace][0x06][0x01][OpenMidLeft]General Meth![.][A][OpenMidRight]Ciraxidoge, run ahead and bring word of our[.][NL]
-coming to Frelia.[.][A]
+coming to Frelia.[.][A][NL]
 A single man has better odds of passing[.][NL]
-unseen by Hyrule's men.[A]
+unseen by Hyrule's men.[A][NL]
 Convey to the throne all that has happened[NL]
 here and petition for reinforcements.[.][A][OpenMidLeft]U-understood![.][A][X]
