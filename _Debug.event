@@ -7,8 +7,8 @@
 SetClassAnimationPtr(Paladin, pTestAnimations)
 
 pTestAnimations:
-	AnimationForType(WTYPE_SWORD, 0x03)
-	AnimationForType(WTYPE_LANCE, 0x03)
+	AnimationForType(WTYPE_SWORD, animMicaiah)
+	AnimationForType(WTYPE_LANCE, animMicaiah)
 AnimationEnd
 
 #endif // DEBUG_EA

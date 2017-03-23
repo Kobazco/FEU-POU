@@ -19,18 +19,11 @@
 
 	// Any Repointing is done here
 	#include "_Repoint.event"
-	
-	// NOTE: FE8 Item Effect Revamp doesn't assemble for some reason :/
-	// #include "Engine Hax/Item Effect Revamp/EA Main Installer.txt"
 
-	// NOTE: FE8 Stat Colors Doesn't work for now for unknown reasons (softlocks when trying to open unit menu)
-	// #include "Engine Hax/FE8-Stat Colors/Talk and Growths Master EA.txt"
-	
-	// #include "Engine Hax/FE5 Style RES/FE5 Style RES.event"
-
-	#include "Tables/Table Installer.event"
+//	#include "Tables/Table Installer.event"
 	
 	// Engine Hax
+	// #include "Engine Hax/FE5 Style RES/FE5 Style RES.event"
 	#include "Engine Hax/Item Effect Revamp/Install.event"
 	#include "Engine Hax/Stat Colors/Install.event"
 	#include "Engine Hax/Show Heal Amount/Install.event"
@@ -39,6 +32,8 @@
 	#include "Engine Hax/Dangerzone.event"
 	#include "Engine Hax/SNES Criticals.event"
 	#include "Engine Hax/WeaponTriangleHax.event"
+	
+	#include "Animations/#Animation Ids.event"
 	
 	// Misc Data
 	#include "Animations/Master Animation Installer.event"
@@ -50,17 +45,21 @@
 	#include "Characters/Meth.event"
 	#include "Characters/Dorcas.event"
 	#include "Characters/Ciraxidoge.event"
+	// Moulder
+	// Vanessa
 	#include "Characters/JimBob.event"
 	#include "Characters/ZyxzZoth.event"
 	#include "Characters/Colm.event"
+	// Neimi
 	#include "Characters/Micaiah.event"
+	// Lute
 	
 	// Items
 	#include "Items/ValkyrieStaff.event"
 	#include "Items/TheDoc.event"
 	#include "Items/Pugi.event"
 	
-	// Chapters	
+	// Chapters
 	#include "Chapters/Prologue.event"
 	#include "Chapters/Ch1.event"
 	#include "Chapters/Ch2.event"

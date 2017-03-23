@@ -409,7 +409,7 @@
 			TEXTEND
 			REMA
 			CALL label35
-			SVAL 0x3 0x9
+			SVAL 0x3 ValkyrieStaff
 			GIVEITEMTO 0x1
 			SVAL 0x2 0x89EF828
 			CALL label24

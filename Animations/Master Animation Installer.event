@@ -11,5 +11,6 @@
 
 //////////////Installed animations go here:
 
+ALIGN 4
   //#include "my animation Installer.event"
 #include "Animations/michaiah/final Installer.event"
