@@ -8,6 +8,6 @@ SetUnitName(Meth, MethName)
 SetUnitBases(Meth, 6, 6, 6, 6, 6, 6, 6, (-10))
 SetUnitGrowths(Meth, 11, 11, 11, 111, 11, 11, 11)
 
-SetUnitRanks(Meth, WRANK_B, WRANK_B, WRANK_NONE, WRANK_NONE, WRANK_NONE, WRANK_NONE, WRANK_NONE, WRANK_NONE)
+SetUnitRanks(Meth, WRANK_B, WRANK_A, WRANK_NONE, WRANK_NONE, WRANK_NONE, WRANK_NONE, WRANK_NONE, WRANK_NONE)
 
 #endif // METH_EVENT
