@@ -1,0 +1,9 @@
+#ifndef DEFINTIONS_ITEM_EVENT
+#define DEFINTIONS_ITEM_EVENT
+
+#define ValkyrieStaff itemRapier
+#define Pugi          itemHatchet
+
+#define TheDoc        itemSieglind
+
+#endif // DEFINTIONS_ITEM_EVENT

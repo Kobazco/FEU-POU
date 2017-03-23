@@ -1,0 +1,14 @@
+#ifndef DEFINITIONS_CHARACTER_EVENT
+#define DEFINITIONS_CHARACTER_EVENT
+
+#define Tordo      unitEirika
+#define Meth       unitSeth
+#define Ciraxidoge unitFranz
+#define Dorcas     unitGilliam
+
+#define JimBob     unitRoss
+#define ZyxzZoth   unitGarcia
+
+#define Micaiah    unitArtur
+
+#endif // DEFINITIONS_CHARACTER_EVENT

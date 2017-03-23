@@ -1,0 +1,208 @@
+#FE8 Character Editor by SpyroDi
+#
+
+1
+FE8 Character Editor
+0x803D30
+256
+52
+__CharacterEditorList.txt
+NULL
+
+Name value
+0
+2
+NEHU
+NULL
+
+Description value
+2
+2
+NEHU
+NULL
+
+Character Number
+4
+1
+NEHU
+NULL
+
+Class (Support Viewer)
+5
+1
+NDHU
+_ClassList.txt
+
+Portrait
+6
+2
+NDHU
+_PortraitList.txt
+
+Mini Portrait
+8
+1
+NEHU
+NULL
+
+Affinity
+9
+1
+NDDU
+_CharacterAffinity.txt
+
+Base : Level
+11
+1
+NEDU
+NULL
+
+Base : HP
+12
+1
+NEDS
+NULL
+
+Base : Power
+13
+1
+NEDS
+NULL
+
+Base : Skill
+14
+1
+NEDS
+NULL
+
+Base : Speed
+15
+1
+NEDS
+NULL
+
+Base : Luck
+18
+1
+NEDS
+NULL
+
+Base : Defense
+16
+1
+NEDS
+NULL
+
+Base : Resistance
+17
+1
+NEDS
+NULL
+
+Base : Constitution
+19
+1
+NEDS
+NULL
+
+Rank : Sword
+20
+1
+NDDU
+_WeaponRank.txt
+
+Rank : Lance
+21
+1
+NDDU
+_WeaponRank.txt
+
+Rank : Axe
+22
+1
+NDDU
+_WeaponRank.txt
+
+Rank : Bow
+23
+1
+NDDU
+_WeaponRank.txt
+
+Rank : Staff
+24
+1
+NDDU
+_WeaponRank.txt
+
+Rank : Anima
+25
+1
+NDDU
+_WeaponRank.txt
+
+Rank : Light
+26
+1
+NDDU
+_WeaponRank.txt
+
+Rank : Dark
+27
+1
+NDDU
+_WeaponRank.txt
+
+Growth : HP
+28
+1
+NEDU
+NULL
+
+Growth : Power
+29
+1
+NEDU
+NULL
+
+Growth : Skill
+30
+1
+NEDU
+NULL
+
+Growth : Speed
+31
+1
+NEDU
+NULL
+
+Growth : Luck
+34
+1
+NEDU
+NULL
+
+Growth : Defense
+32
+1
+NEDU
+NULL
+
+Growth : Resistance
+33
+1
+NEDU
+NULL
+
+Attributes
+40
+4
+NEHU
+NULL
+
+Supports Data Pointer
+44
+4
+NDHU
+_SupportDataPtr.txt

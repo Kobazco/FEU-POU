@@ -1,0 +1,202 @@
+#FE8 Chapter Data Editor by SpyroDi, updated by Nintenlord
+#
+
+1
+FE8 Chapter Data Editor
+0x8B0890
+79
+148
+__ChapterEditorList.txt
+NULL
+
+Chapter Number Ptr
+0
+4
+NEHU
+NULL
+
+Tileset : Object Type 1
+4
+1
+NDHU
+_ChapterDataPointers.txt
+
+Tileset : Object Type 2
+5
+1
+NDHU
+_ChapterDataPointers.txt
+
+Tileset : Palette
+6
+1
+NDHU
+_ChapterDataPointers.txt
+
+Tileset : Tile Configuration
+7
+1
+NDHU
+_ChapterDataPointers.txt
+
+Map
+8
+1
+NDHU
+_ChapterDataPointers.txt
+
+Map : Tile Animation 1
+9
+1
+NDHU
+_ChapterDataPointers.txt
+
+Map : Tile Animation 2
+10
+1
+NDHU
+_ChapterDataPointers.txt
+
+Map : Triggerable Map Changes
+11
+1
+NDHU
+_ChapterDataPointers.txt
+
+Fog Level (0 => No Fog)
+12
+1
+NEDU
+NULL
+
+Battle Preparations
+13
+1
+NDDU
+_ChapterBattlePreparations.txt
+
+Weather Condition
+18
+1
+NDDU
+_ChapterWeatherConditions.txt
+
+Battle Tileset
+19
+1
+NDHU
+_ChapterBattleTileset.txt
+
+Mode Level Modifiers (N-H-E)
+20
+2
+NEHU
+NULL
+
+Player Phase Music
+22
+2
+NDHU
+_MusicList.txt
+
+Enemy Phase Music
+24
+2
+NDHU
+_MusicList.txt
+
+NPC Phase Music
+26
+2
+NDHU
+_MusicList.txt
+
+Player Phase Music 2
+28
+2
+NDHU
+_MusicList.txt
+
+Enemy Phase Music 2
+30
+2
+NDHU
+_MusicList.txt
+
+NPC Phase Music 2
+32
+2
+NDHU
+_MusicList.txt
+
+Destructible Walls HP
+44
+1
+NEDU
+NULL
+
+Event Data Reference
+116
+1
+NDHU
+_ChapterDataPointers.txt
+
+Worldmap Chapter Prologue Scene
+117
+1
+NDHU
+_ChapterWorldMapPrologue.txt
+
+Victory Music Enemy Threshold
+134
+1
+NEDU
+NULL
+
+Chapter Title Display Fade-out
+135
+1
+NDHU
+_ChapterFadeOut.txt
+
+Status : Objective Text
+136
+2
+NEHU
+NULL
+
+Goal Window Text
+138
+2
+NEHU
+NULL
+
+Goal Window Information
+140
+1
+NDHU
+_ChapterGoalWindow.txt
+
+Turns To Count Down To + 1
+141
+1
+NEDU
+NULL
+
+Protect Character Marker
+142
+1
+NDHU
+_CharacterList.txt
+
+Tile Marker : X
+143
+1
+NEDU
+NULL
+
+Tile Marker : Y
+144
+1
+NEDU
+NULL
