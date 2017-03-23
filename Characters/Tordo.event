@@ -6,4 +6,9 @@
 SetUnitName(Tordo, TordoName)
 SetUnitDesc(Tordo, TordoDesc)
 
+SetUnitBases(Tordo, 5, 5, 5, 5, 5, 5, 5)
+SetUnitGrowths(Tordo, 40, 40, 50, 40, 40, 50, 50)
+
+SetUnitRanks(Tordo, WRANK_NONE, WRANK_NONE, WRANK_NONE, WRANK_NONE, WRANK_E, WRANK_NONE, WRANK_NONE, WRANK_NONE)
+
 #endif // TORDO_EVENT

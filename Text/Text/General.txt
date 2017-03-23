@@ -8,44 +8,44 @@ You're short on donations.[A][X]
 Heh! Not enough donations![A][X]
 
 # 0x08B5
-How does [.][G] donations[.]
+How does [.][G] donations[.][NL]
 sound to you?[.][Yes][X]
 
 # 0x08B6
-That's worth [.][G] donations.
+That's worth [.][G] donations.[NL]
 Is that all right?[Yes][X]
 
 # 0x08B7
-That is worth [G] donations.
+That is worth [G] donations.[NL]
 Is that acceptable?[.][Yes][X]
 
 # 0x08D1
-Welcome to the arena.[.][A]
-Oh! It's you again.[.][A][0x02]
-I've lost a lot of donations[.]
-thanks to you...[A][0x02]
-If you want to continue,[A]
-we're going to have to
-do things differently.[A][0x02]
-I'm going to prepare some[.]
+Welcome to the arena.[.][A][NL]
+Oh! It's you again.[.][A][0x02][NL]
+I've lost a lot of donations[.][NL]
+thanks to you...[A][0x02][NL]
+If you want to continue,[A][NL]
+we're going to have to[NL]
+do things differently.[A][0x02][NL]
+I'm going to prepare some[.][NL]
 more challenging foes.[A][X]
 
 # 0x08D2
-Would you like to wager[.]
+Would you like to wager[.][NL]
 [G] donations?[Yes][X]
 
 # 0x08D6
-So you won, eh? Here's
+So you won, eh? Here's[NL]
 your prize. [G] donations.[A][X]
 
 # 0x08D8
-What? You yield? Well,
+What? You yield? Well,[NL]
 your donations are mine, then![A][X]
 
 # 0x08D9
-Looks like no one wins.[.]
+Looks like no one wins.[.][NL]
 Here's your donations back.[.][A][X]
 
 # 0x08DA
-You don't have the donations![.]
+You don't have the donations![.][NL]
 Try again later.[A][X]
