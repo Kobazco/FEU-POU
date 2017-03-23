@@ -6,15 +6,17 @@
 SetItemName(ValkyrieStaff, ValkyrieStaffName)
 SetItemDesc(ValkyrieStaff, ValkyrieStaffDesc)
 
-SetItemAttributes(ValkyrieStaff, ITEMATTR_STAFF | ITEMATTR_LOCK_4)
+SetItemAttributes(ValkyrieStaff, (ITEMATTR_STAFF | ITEMATTR_LOCK_4))
 
 SetItemWeaponType(ValkyrieStaff, WTYPE_STAFF)
 SetItemWeaponRank(ValkyrieStaff, WRANK_E)
+
+SetItemWeaponEffectivenessPtr(ValkyrieStaff, 0x00)
 
 SetItemDurability(ValkyrieStaff, 60)
 
 // Make it a 10 HP Heal staff
 SetItemUseEffect(ValkyrieStaff, 0x01)
-SetItemMight(ValkyrieStaff, 10)
+SetItemWeaponStats(ValkyrieStaff, 10, 100, 0,  2) // Mgt, Hit, Crt, Wgt
 
 #endif // VALKYRIESTAFF_EVENT

@@ -3,6 +3,7 @@
 
 PUSH
 	#inctext PFinder FE8.gba 0x59BA90 WTATable
+	// #inctext PFinder FE8.gba 0xBFFFE8 ClassAnimTable
 POP
 
 #endif // REPOINT_EA

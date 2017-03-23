@@ -1,7 +1,7 @@
 ///////Animation Install.event///////
     
 PUSH
-AnimTableEntry(0x03) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
+AnimTableEntry(animMicaiah) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
 WORD 0 0 0 //empty name field, who cares
 POIN Anim_final_sectiondata
 POIN Anim_final_framedata

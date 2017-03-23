@@ -1,0 +1,9 @@
+#ifndef ANIMATION_IDS_EVENT
+#define ANIMATION_IDS_EVENT
+
+// The current table ends at 0xC9, and has room up to 0xFF.
+// more than that and we'll need to repoint.
+
+#define animMicaiah 0xCA
+
+#endif // ANIMATION_IDS_EVENT
