@@ -5,12 +5,15 @@
 
 #include "constants.ea"
 
-#define GetPaletteColor(aRed, aGreen, aBlue) "(((aGreen & 0x1F) << 10) | ((aRed & 0x1F) << 5) | (aBlue & 0x1F))"
-
-#define AnimationForType(aWeaponType, aIdAnimation) "BYTE aWeaponType 0x01 aIdAnimation 0x00"
-#define AnimationForWeapon(aIdItemWeapon, aIdAnimation) "BYTE aIdItemWeapon 0x00 aIdAnimation 0x00"
+#define AnimationForType(aWeaponType, aIdAnimation) "BYTE aWeaponType 0x01; SHORT aIdAnimation"
+#define AnimationForWeapon(aIdItemWeapon, aIdAnimation) "BYTE aIdItemWeapon 0x00; SHORT aIdAnimation"
 #define AnimationEnd "BYTE 0x00 0x00 0x00 0x00"
 
+// Weapon Advantage Table Helpers (Thanks to colorz for those!)
+#define WTAAdvantage(aAttackWpn, aDefenseWpn) "BYTE aAttackWpn aDefenseWpn 0x0F 0x01 aDefenseWpn aAttackWpn 0xF1 0xFF"
+#define WTAEnd "BYTE 0xFF 0xFF"
+
+#define GetPaletteColor(aRed, aGreen, aBlue) "(((aGreen & 0x1F) << 10) | ((aRed & 0x1F) << 5) | (aBlue & 0x1F))"
 #define PaletteColor(aRed, aGreen, aBlue) "SHORT GetPaletteColor(aRed, aGreen, aBlue)"
 
 #ifdef _FE6_

@@ -1,2 +1,2 @@
-That is worth [G] donations.
+That is worth [G] donations.[NL]
 Is that acceptable?[.][Yes][X]

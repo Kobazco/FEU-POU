@@ -7,7 +7,6 @@
 
 #ifdef _FE8_
 	#define SetUnitMenuPtr(apUnitMenu) "PUSH; ORG 0x59D1F8; POIN apUnitMenu; POP"
-	#define UnitMenuStart "{ SetUnitMenuPtr(pTableUnitMenu); ALIGN 4; pTableUnitMenu: }"
 
 	#define UnitMenuCommand(aIdTextName, aIdTextDesc, aIdColor, apRoutineUsability, apRoutineEffect) "WORD $80D7DE0; SHORT aIdTextName aIdTextDesc; BYTE aIdColor $4E; SHORT 0; POIN (apRoutineUsability|1); WORD 0; POIN (apRoutineEffect|1); WORD 0 0 0"
 

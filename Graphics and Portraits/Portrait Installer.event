@@ -10,15 +10,15 @@
 #define MethMugId 0x04
 #define DorcasMugId 0x05
 #define MoulderMugId 0x07
-#define JimbobMugId 0x09
+#define JimBobMugId 0x09
 #define ColmMugId 0x0C
-#define DathzlaZzogothMugId 0x0E
+#define ZyxzZothMugId 0x0E
 #define HarkanianMugId 0x41
 #define GwonamMugId 0x42
 #define TakeshiMugId 0x44
 #define Takeshi2MugId 0x45
 #define GlaceoMugId 0x48
-#define CiraxisDogeMugId 0x06
+#define CiraxidogeMugId 0x06
 #define AnnaReplacementMugId 0x64
 #define MicaiahMugId 0x1A
 #define GanonMugId 0x25
@@ -39,7 +39,7 @@
 
 	DathzlaZzogoth_Mug:
 		#incext PortraitFormatter "Portraits/DathzlaZzogothMug.png"
-		setMugEntry(DathzlaZzogothMugId, DathzlaZzogoth_Mug, 3, 5, 3, 3)
+		setMugEntry(ZyxzZothMugId, DathzlaZzogoth_Mug, 3, 5, 3, 3)
 
 	Dorcas_Mug:
 		#incext PortraitFormatter "Portraits/DorcasMug.png"
@@ -47,7 +47,7 @@
 
 	JimBob_Mug:
 		#incext PortraitFormatter "Portraits/JimBobMug.png"
-		setMugEntry(JimbobMugId, JimBob_Mug, 2, 6, 4, 4)
+		setMugEntry(JimBobMugId, JimBob_Mug, 2, 6, 4, 4)
 
 	Tordo_Mug:
 		#incext PortraitFormatter "Portraits/TordoMug.png"
@@ -90,7 +90,7 @@
 		
 	CiraxisDoge_Mug:
 		#incext PortraitFormatter "Portraits/CiraxisDogeMug.png"
-		setMugEntry(CiraxisDogeMugId, CiraxisDoge_Mug, 3, 5, 3, 3)
+		setMugEntry(CiraxidogeMugId, CiraxisDoge_Mug, 3, 5, 3, 3)
 		
 	AnnaReplacement_Mug:
 		#incext PortraitFormatter "Portraits/AnnaReplacementMug.png"

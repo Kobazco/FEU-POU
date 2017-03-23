@@ -2,7 +2,11 @@
 
 #include "Table Definitions.txt"
 
-#include "Class & Character editors\FE8 Character Editor.event"
+#include "Tables\#ChapterData.event"
 
-#include "Class & Character editors\FE8 Class Editor.event"
+#include "Tables\#Character.event"
+
+#include "Tables\#Class.event"
+
+#include "Tables\#Item.event"
 

@@ -1,0 +1,37 @@
+#ifndef BOOTS_3RDPARTY_CHAPTERNAMES_FE8_EA
+#define BOOTS_3RDPARTY_CHAPTERNAMES_FE8_EA
+
+// Hack & Installer by circleseverywhere,
+// Installer refactorized by StanH_.
+
+#ifdef _FE8_
+	#include "Extensions/Hack Installation.txt"
+	
+	#ifndef pFreeSpace
+		#define pFreeSpace 0x00B2A610
+		ORG pFreeSpace
+	#endif
+	
+	{
+		
+		PUSH; ORG 0x89624
+			jumpToHack(pChName)
+		POP
+
+		ALIGN 4
+		
+		pChName:
+			#incbin "bin/chapternames_fe8.dmp"
+			ALIGN 4
+			POIN pChNameFont
+			POIN pChNameTable
+
+		pChNameFont:
+			#incext Png2Dmp "bin/chapternames_fe8_font.png" --lz77
+
+		pChNameTable:
+			#incbin "bin/chapternames_fe8_chartable.dmp"
+	}
+#endif // _FE8_
+
+#endif // BOOTS_3RDPARTY_CHAPTERNAMES_FE8_EA

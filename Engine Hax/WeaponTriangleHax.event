@@ -1,11 +1,6 @@
 #ifndef WEAPONTRIANGLEHAX_EVENT
 #define WEAPONTRIANGLEHAX_EVENT
 
-// Thanks to Colorz for those
-#define WTAAdvantage(attackingType, defendingType) "BYTE attackingType defendingType 0x0F 0x01 defendingType attackingType 0xF1 0xFF"
-// #define WTADisadvantage(attackingType, defendingType) "BYTE attackingType defendingType 0xF1 0xFF"
-#define WTAEnd "BYTE 0xFF 0xFF"
-
 ALIGN 4
 WTATable:
 	WTAAdvantage(WTYPE_SWORD, WTYPE_AXE)

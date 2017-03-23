@@ -10,17 +10,11 @@
 
 	ORG FreeSpace
 	
-	#include eastdlib.event
-	
-	// As long as it works I'll keep it :p
-	#define NO_BOOTS_EXTRA
-	#define NO_BOOTS_VANILLA_DEFINITIONS
+	#include "eastdlib.event"
 	#include "boots/master.ea"
 
 	// Any Repointing is done here
 	#include "_Repoint.event"
-
-//	#include "Tables/Table Installer.event"
 	
 	// Engine Hax
 	// #include "Engine Hax/FE5 Style RES/FE5 Style RES.event"
@@ -34,12 +28,17 @@
 	#include "Engine Hax/WeaponTriangleHax.event"
 	
 	#include "Animations/#Animation Ids.event"
+	#include "Definitions/Character Definitions.event"
+	#include "Definitions/Item Definitions.event"
 	
 	// Misc Data
 	#include "Animations/Master Animation Installer.event"
 	#include "Text/Install Text Data.event"
 	#include "Graphics and Portraits/#Graphics Master Installer.event"
 	
+	#include "Tables/Table Installer.event"
+	
+	/*
 	// Characters
 	#include "Characters/Tordo.event"
 	#include "Characters/Meth.event"
@@ -58,6 +57,7 @@
 	#include "Items/ValkyrieStaff.event"
 	#include "Items/TheDoc.event"
 	#include "Items/Pugi.event"
+	*/
 	
 	// Chapters
 	#include "Chapters/Prologue.event"
