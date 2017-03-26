@@ -1,14 +1,18 @@
 #ifndef DEFINITIONS_CHARACTER_EVENT
 #define DEFINITIONS_CHARACTER_EVENT
 
-#define Tordo      unitEirika
-#define Meth       unitSeth
-#define Ciraxidoge unitFranz
-#define Dorcas     unitGilliam
+// PLAYER UNITS
+#define unitTordo      unitEirika
+#define unitMeth       unitSeth
+#define unitCiraxidoge unitFranz
+#define unitDorcas     unitGilliam
 
-#define JimBob     unitRoss
-#define ZyxzZoth   unitGarcia
+#define unitJimBob     unitRoss
+#define unitZyxzZoth   unitGarcia
 
-#define Micaiah    unitArtur
+#define unitMicaiah    unitArtur
+
+// NON PLAYER UNITS
+#define unitHarkinian  unitVigarde
 
 #endif // DEFINITIONS_CHARACTER_EVENT

@@ -1,517 +1,482 @@
-
-////////////////////////////////////////////////////
-//                                                //
-// Disassembled with Nintenlord's Event Assembler //
-// Version: 9.10.4713.28131                       //
-// Game: FE8                                      //
-// File: FE8_U.gba                                //
-// Offset: $9E863C                                //
-//                                                //
-////////////////////////////////////////////////////
+#ifndef CHAPTER_PROLOGUE_EVENT
+#define CHAPTER_PROLOGUE_EVENT
 
 {
 	PUSH
 		ORG $591F40
-		label35:
+		label35: /* Let's not change this, but keep the label
 			EVBIT_MODIFY 0x1
 			EVBIT_F 0x2
+			
 			CHECK_EVBIT 0x8
-			BEQ 0x0 0xC 0x0
-			FADU 16
-			LABEL 0x0
+			BEQ   0x00 rC r0
+				FADU 16
+			LABEL 0x00
+			
 			EVBIT_MODIFY 0x0
-		ENDA
+		ENDA */
 
 		ORG $592104
-		label20:
+		evGameOver: /* Same
 			EVBIT_MODIFY 0x4
 			ASMC 0x85375
-		ENDA
-
-		ORG $8B3C14
-		Units1:
-			UNIT Meth Paladin 0x0 0x8 [13, 9] 0b 0x0 0x6 0x8B3BC4 [SteelSword, SilverLance, Vulnerary] NoAI
-			UNIT Tordo Cleric 0x0 0x8 [8, 5] 0b 0x0 0x1 0x8B3BF4 [Vulnerary] NoAI
-		UNIT
-
-		label36:
-			UNIT ONeill Fighter 0x0 0x24 [14, 8] 0b 0x0 0x1 0x8B3BFC [IronAxe] DoNothing Normal DefaultAI4
-			UNIT 0x82   Fighter 0x0 0xC  [14, 7] 0b 0x0 0x1 0x8B3C04 [IronAxe] [AttackInRange, RossMovementAI] Normal DefaultAI4
-			UNIT 0x80   Fighter 0x0 0x14 [14, 7] 0b 0x0 0x1 0x8B3C0C [IronAxe] [0x0, 0x12] WithoutHeed DefaultAI4
-		UNIT
-
-		ORG $8B3D18
-		label28:
-			UNIT Fado Peer 0x0 0x8 [13, 3] 0b 0x0 0x0 0x0 NoItems NoAI
-			UNIT Tordo Cleric 0x0 0x8 [14, 4] 0b 0x0 0x0 0x0 NoItems NoAI
-			UNIT Meth Paladin 0x0 0x8 [15, 4] 0b 0x0 0x0 0x0 NoItems NoAI
-			UNIT Moulder General 0x0 0x8 [11, 7] 0b 0x0 0x0 0x0 NoItems NoAI
-			UNIT Vanessa General 0x0 0x8 [15, 7] 0b 0x0 0x0 0x0 NoItems NoAI
-			UNIT Gilliam Knight 0x0 0x8 [7, 14] 0b 0x0 0x0 0x0 NoItems NoAI
-			UNIT 0xC0 Knight 0x0 0x8 [10, 14] 0b 0x0 0x0 0x0 NoItems NoAI
-			UNIT Ciraxidoge Knight 0x0 0x8 [11, 4] 0b 0x0 0x0 0x0 NoItems NoAI
-		UNIT
-
-		label29:
-			UNIT Ephraim Soldier 0x0 0x8 [9, 15] 0b 0x0 0x3 0x8B3CA0 NoItems NoAI
-		UNIT
-
-		label32:
-			UNIT Vigarde 0xB 0x0 0xC [13, 10] 0b 0x0 0x1 0x8B3CB8 NoItems NoAI
-			UNIT Lyon_Ch17 0x4F 0x0 0xC [12, 11] 0b 0x0 0x1 0x8B3CC0 NoItems NoAI
-		UNIT
-
-		label30:
-			UNIT 0x80 0x2D 0x0 0xC [5, 1] 0b 0x0 0x1 0x8B3CC8 NoItems NoAI
-			UNIT 0x80 0x2D 0x0 0xC [5, 2] 0b 0x0 0x1 0x8B3CD0 NoItems NoAI
-			UNIT 0x80 0x2F 0x0 0xD [19, 10] 0b 0x0 0x1 0x8B3CD8 NoItems NoAI
-			UNIT 0x80 0x2F 0x0 0xD [20, 10] 0b 0x0 0x1 0x8B3CE0 NoItems NoAI
-		UNIT
-
-		label31:
-			UNIT 0x83 0x35 0x0 0xC [10,10] 0b 0x0 0x1 0x8B3CE8 NoItems NoAI
-			UNIT 0x83 0x35 0x0 0xC [16,10] 0b 0x0 0x1 0x8B3CF0 NoItems NoAI
-			UNIT 0x84 0x7 0x0 0xC [10,10] 0b 0x0 0x1 0x8B3CF8 NoItems NoAI
-			UNIT 0x84 0x7 0x0 0xC [16,10] 0b 0x0 0x1 0x8B3D00 NoItems NoAI
-			UNIT 0x85 0x29 0x0 0xC [10,10] 0b 0x0 0x1 0x8B3D08 NoItems NoAI
-			UNIT 0x85 0x29 0x0 0xC [16,10] 0b 0x0 0x1 0x8B3D10 NoItems NoAI
-		UNIT
-
-		ORG $8B3F68
-		label33:
-			UNIT Meth Paladin 0x0 0x8 [9,3] 0b 0x0 0x2 0x8B3F20 [SteelSword] NoAI
-			UNIT Ciraxidoge Knight 0x0 0x8 [9,3] 0b 0x0 0x2 0x8B3F30 NoItems NoAI
-			UNIT Tordo Cleric 0x0 0x8 [6,5] 0b 0x0 0x1 0x8B3F40 NoItems NoAI
-		UNIT
-
-		label34:
-			UNIT Valter_Prologue WyvernKnight 0x0 0x2C [14,5] 0b 0x0 0x2 0x8B3F48 [SilverLance] NoAI
-			UNIT 0x80 0x1F 0x0 0xD [14,4] 0b 0x0 0x1 0x8B3F58 NoItems NoAI
-			UNIT 0x80 0x1F 0x0 0xD [14,6] 0b 0x0 0x1 0x8B3F60 NoItems NoAI
-		UNIT
-
-		ORG $9E858C
-		TurnBasedEvents:
-			TURN 0x0 label15 [1,0] 0x8
-			TURN 0x0 label16 [2,0] 0x0
-			TURN 0x0 label17 [3,0] 0x0
-			TURN 0x8 label18 [1,255] 0x8
-		END_MAIN
-
-		CharacterBasedEvents:
-		END_MAIN
-
-		LocationBasedEvents:
-		END_MAIN
-
-		MiscBasedEvents:
-			AFEV 0x3 EndingScene 0x2
-			AFEV 0x7 label19 0x0
-			AFEV 0x0 label20 0x65
-		END_MAIN
-
-		Dunno1:
-		END_MAIN
-
-		Dunno2:
-		END_MAIN
-
-		Dunno3:
-		END_MAIN
-
-		Tutorial:
-			WORD 0x89EF2B0 0x89EF328 0x89EF388 0x89EF398
-			WORD 0x89EF46C 0x89EF4EC 0x89EF50C 0x89EF53C
-			WORD 0x89EF56C 0x89EF5A8 0x89EF6E0 0x89EF758
-			WORD 0x89EF7B8 0x89EF7C8 0x89EF7FC
-		END_MAIN
-
-		PointerList:
-			POIN TurnBasedEvents
-			POIN CharacterBasedEvents
-			POIN LocationBasedEvents
-			POIN MiscBasedEvents
-			POIN Dunno1 Dunno2 Dunno3 Tutorial
-			POIN Traps1 Traps2
-			POIN Units1 Units1
-			POIN $0 $0 $0
-			POIN $0 $0 $0
-			POIN BeginningScene EndingScene
-
-		ORG $9ED9A8
-		Traps1:
-		ENDTRAP
-
-		ORG $9EDE99
-		Traps2:
-		ENDTRAP
-
-		ORG $9EE0C0
-		label24:
-			CHECK_TUTORIAL
-			BEQ 0x0 0xC 0x0
-			TUTORIAL_CALL
-			LABEL 0x0
-		ENDA
-
-		ORG $9EE2C4
-		label22:
-			CHECK_EVBIT 0x8
-			BNE 0x80BD 0xC 0x0
-			FADI 16
-			LABEL 0x80BD
-			TEXTSTART
-			CLEAN
-			FADU 16
-		ENDA
-
-		label21:
-			CHECK_EVBIT 0x8
-			BNE 0x80D2 0xC 0x0
-			FADI 16
-			LABEL 0x80D2
-			REMOVEPORTRAITS
-			BACG 0xFFFF
-			FADU 16
-		ENDA
-
-		label25:
-			CALL label21
-			SADD 0x32
-			TEXTSHOW 0xFFFF
-			TEXTEND
-			CALL label22
-		ENDA
-
-		ORG $9EEBE8
-		BeginningScene:
-			CALL label23
-			SVAL 0x2 0x89EF1BC
-			CALL label24
-			CHECK_TUTORIAL
-			BNE 0x0 0xC 0x0
-			ASMC 0xCF461
-			LABEL 0x0
-			ENUT 0x8
-			LOAD1 0x1 Units1
-			ENUN
-			SVAL 0x1 0xD
-			SET_HP 0x2
-			CUMO 0x1
-			STAL 60
-			CURE
-			MUSI
-			SVAL 0x2 0x1D
-			SVAL 0x3 0x90D
-			CALL label25
-			MUNO
-			MOVE 0x18 0x2 [4,4]
-			ENUN
-			CUMO 0x2
-			STAL 60
-			CURE
-			TEXTSTART
-			TEXTSHOW 0x90E
-			TEXTEND
-			REMA
-			SVAL 0x2 0x89EF27C
-			CALL label24
-			_WARP 0x0 0x1 [4,5]
-			ENUN
-			CALL label26
-			CALL label27
-			
-			NoFade
-		ENDA
-
-		label23:
-			SVAL 0xB 0xA000E
-			LOMA 0x10
-			LOAD2 0x1 label28
-			ENUN
-			FADU 16
-			MUSC 0x26
-			BROWNBOXTEXT 0x664 [8,8]
-			LOAD1 0x1 label29
-			ENUN
-			_0x2620 0xE
-			CUMO 0xF
-			STAL 60
-			CURE
-			TEXTSTART
-			TEXTSHOW 0x903
-			TEXTEND
-			REMA
-			MOVE 0x0 0xF [13,11]
-			ENUN
-			DISA 0xF
-			MOVE_1STEP 0x0 0x1 0x0
-			ENUN
-			CUMO 0x1
-			STAL 60
-			CURE
-			TEXTSTART
-			TEXTSHOW 0x904
-			TEXTEND
-			REMA
-			MOVEONTO 0x0 0x2 0x1
-			ENUN
-			DISA 0x1
-			CUMO 0x2
-			STAL 60
-			CURE
-			TEXTSTART
-			TEXTSHOW 0x905
-			TEXTEND
-			REMA
-			MOVE 0x0 0x2 [13,11]
-			SVAL 0xD 0x0
-			SVAL 0x1 0x10C
-			SAVETOQUEUE
-			SVAL 0x1 0x0
-			SAVETOQUEUE
-			SVAL 0x1 0x2CC
-			SAVETOQUEUE
-			SVAL 0x1 0x0
-			SAVETOQUEUE
-			MOVEFORCED 0x0 0x4 0x0
-			ENUN
-			DISA 0x2
-			DISA 0x4
-			MOVE 0x0 0x5 [11,4]
-			MOVE 0x0 0x6 [15,4]
-			ENUN
-			MOVE_1STEP 0x0 0x5 0x1
-			MOVE_1STEP 0x0 0x6 0x0
-			ENUN
-			LOAD1 0x1 label30
-			ENUN
-			LOAD1 0x1 label31
-			ENUN
-			LOAD1 0x1 label32
-			ENUN
-			CUMO 0xC5
-			STAL 60
-			CURE
-			TEXTSTART
-			TEXTSHOW 0x906
-			TEXTEND
-			FADI 2
-			REMA
-			EVBIT_F 0x2
-			CLEA 0x0
-			CLEE 0x0
-			CLEN 0x0
-			SVAL 0xB 0x0
-			LOMA 0x40
-			FADU 16
-			LOAD2 0x1 label33
-			ENUN
-			CUMO 0x2
-			STAL 60
-			CURE
-			SVAL 0x2 0x1D
-			SVAL 0x3 0x907
-			CALL label25
-			SVAL 0xD 0x0
-			SVAL 0x1 0x104
-			SAVETOQUEUE
-			SVAL 0x1 0x0
-			SAVETOQUEUE
-			SVAL 0x1 0x84
-			SAVETOQUEUE
-			SVAL 0x1 0x0
-			SAVETOQUEUE
-			SVAL 0x1 0x80
-			SAVETOQUEUE
-			SVAL 0x1 0x0
-			SAVETOQUEUE
-			MOVEFORCED 0x0 0x4 0x0
-			ENUN
-			DISA 0x4
-			CUMO 0x2
-			STAL 60
-			CURE
-			SVAL 0x2 0x1D
-			SVAL 0x3 0x908
-			CALL label25
-			LOAD1 0x1 label34
-			ENUN
-			MOVE_1STEP 0x0 0x2 0x1
-			ENUN
-			MOVE_1STEP 0x0 0x1 0x0
-			ENUN
-			CUMO 0x45
-			STAL 60
-			CURE
-			SVAL 0x2 0x1D
-			SVAL 0x3 0x909
-			CALL label25
-			MOVE_1STEP 0x0 0x45 0x0
-			ENUN
-			SVAL 0xD 0x0
-			SVAL 0x1 0x20000
-			SAVETOQUEUE
-			SVAL 0x1 0x1
-			SAVETOQUEUE
-			SVAL 0x1 0xFFFFFFFF
-			SAVETOQUEUE
-			FIG1 0x2 0x45 0x0
-			CUMO 0x2
-			STAL 60
-			CURE
-			TEXTSTART
-			TEXTSHOW 0x90B
-			TEXTEND
-			REMA
-			MOVE_1STEP 0x8 0x2 0x0
-			ENUN
-			DISA 0x1
-			SVAL 0xD 0x0
-			SVAL 0x1 0x18104
-			SAVETOQUEUE
-			SVAL 0x1 0x0
-			SAVETOQUEUE
-			SVAL 0x1 0x18084
-			SAVETOQUEUE
-			SVAL 0x1 0x0
-			SAVETOQUEUE
-			SVAL 0x1 0x18080
-			SAVETOQUEUE
-			SVAL 0x1 0x0
-			SAVETOQUEUE
-			MOVEFORCED 0x0 0x2 0x0
-			ENUN
-			DISA 0x2
-			CUMO 0x45
-			STAL 60
-			CURE
-			TEXTSTART
-			TEXTSHOW 0x90C
-			TEXTEND
-			REMA
-			FADI 16
-			EVBIT_F 0x2
-			CLEA 0x0
-			CLEE 0x0
-			CLEN 0x0
-			SVAL 0xB 0x0
-			LOMA 0x0
-			FADU 16
-		ENDA
-
-		label26:
-			CUMO 0x2
-			STAL 60
-			CURE
-			TEXTSTART
-			TEXTSHOW 0x90F
-			TEXTEND
-			REMA
-			CALL label35
-			SVAL 0x3 ValkyrieStaff
-			GIVEITEMTO 0x1
-			SVAL 0x2 0x89EF828
-			CALL label24
-		ENDA
-
-		label27:
-			LOAD1 0x1 label36
-			ENUN
-			CUMO 0x68
-			STAL 60
-			CURE
-			MUSC 0x13
-			TEXTSTART
-			TEXTSHOW 0x910
-			TEXTEND
-			REMA
-			ENUF 0x4
-		ENDA
-
-		label19:
-			CHECK_ENEMIES
-			SVAL 0x7 0x1
-			BNE 0x0 0xC 0x7
-			CUMO 0x2
-			STAL 60
-			CURE
-			TEXTSTART
-			TEXTSHOW 0x913
-			TEXTEND
-			REMA
-			ENUF 0x8
-			GOTO 0x1
-			LABEL 0x0
-			CHECK_EVENTID
-			SADD 0xC2
-			ENUF_SLOT2
-			LABEL 0x1
-			
-			NoFade
-		ENDA
-
-		label18:
-			MUSC 0x13
-			TEXTSTART
-			TEXTSHOW 0x914
-			TEXTEND
-			REMA
-			CHECK_TUTORIAL
-			BNE 0x0 0xC 0x0
-				SVAL 0x1 0x0
-				CHAI 0x68
-			LABEL 0x0
-			
-			NoFade
-		ENDA
-
-		EndingScene:
-			MUSC 0x31
-			SVAL 0x2 0x1D
-			CALL label21
-			TEXTSHOW 0x918
-			TEXTEND
-			FADI 16
-			REMA
-			ENUT 0xE0
-			ENUT 0xE1
-			ENUT 0xB7
-			ENUT 0xB4
-			ENUT 0xB5
-			ENUT 0xDC
-			ENUT 0xB9
-			ENUT 0xC2
-			ENUT 0xC3
-			ENUT 0xE7
-			ENUT 0xC9
-			MNC2 0x1
-		ENDA
-
-		ORG $9EF214
-		label15:
-			SVAL 0x2 0x89EF0A4
-			CALL label24
-			SVAL 0x2 0x89EF3B4
-			CALL label24
-			
-			NoFade
-		ENDA
-
-		label16:
-			SVAL 0x2 0x89EF3D8
-			CALL label24
-			
-			NoFade
-		ENDA
-
-		label17:
-			SVAL 0x2 0x89EF610
-			CALL label24
-			SVAL 0x2 0x89EF670
-			CALL label24
-			
-			NoFade
-		ENDA
+		ENDA */
 	POP
+	
+	EventPointerTable(0x07, PointerList)
+	
+	ALIGN 4
+	
+	unAllyUnits:
+		UNIT unitMeth  classPaladin 0x00 Level(1, Ally, False) [13, 9] 0b 0x0 6 0x8B3BC4 [itemSteelSword, itemSilverLance] NoAI
+		UNIT unitTordo classCleric  0x00 Level(1, Ally, False) [8,  5] 0b 0x0 1 0x8B3BF4 [itemVulnerary]                   NoAI
+	UNIT
+
+	unONeillEnemies:
+		UNIT unitONeill   classFighter 0x00 Level(4, Enemy, False) [14, 8] 0b 0x0 1 0x8B3BFC [itemIronAxe] DoNothing                       Normal      DefaultAI4
+		UNIT unitSoldier4 classFighter 0x00 Level(1, Enemy, False) [14, 7] 0b 0x0 1 0x8B3C04 [itemIronAxe] [AttackInRange, RossMovementAI] Normal      DefaultAI4
+		UNIT unitSoldier2 classFighter 0x00 Level(2, Enemy, False) [14, 7] 0b 0x0 1 0x8B3C0C [itemIronAxe] [AttackInRange, 0x12]           WithoutHeed DefaultAI4
+	UNIT
+
+	unSceneThroneAllies:
+		UNIT unitFado       classPeer    0x00 Level(1, Ally, False) [13, 3]  0b 0x0 0 0x00 NoItems NoAI
+		UNIT unitTordo      classCleric  0x00 Level(1, Ally, False) [14, 4]  0b 0x0 0 0x00 NoItems NoAI
+		UNIT unitMeth       classPaladin 0x00 Level(1, Ally, False) [15, 4]  0b 0x0 0 0x00 NoItems NoAI
+		
+		UNIT unitMoulder    classGeneral 0x00 Level(1, Ally, False) [11, 7]  0b 0x0 0 0x00 NoItems NoAI
+		UNIT unitVanessa    classGeneral 0x00 Level(1, Ally, False) [15, 7]  0b 0x0 0 0x00 NoItems NoAI
+		UNIT unitGilliam    classKnight  0x00 Level(1, Ally, False) [7,  14] 0b 0x0 0 0x00 NoItems NoAI
+		UNIT unitFrelian1   classKnight  0x00 Level(1, Ally, False) [10, 14] 0b 0x0 0 0x00 NoItems NoAI
+		
+		UNIT unitCiraxidoge classKnight  0x00 Level(1, Ally, False) [11, 4]  0b 0x0 0 0x00 NoItems NoAI
+	UNIT
+
+	unSceneThroneMessenger:
+		UNIT unitEphraim classSoldier 0x00 Level(1, Ally, False) [9, 15] 0b 0x0 3 0x8B3CA0 NoItems NoAI
+	UNIT
+
+	unSceneThroneLeaders:
+		UNIT unitHarkinian classGeneral     0x00 Level(1, Enemy, False) [13, 10] 0b 0x0 1 0x8B3CB8 NoItems NoAI
+		UNIT unitLyonCh17  classNecromancer 0x00 Level(1, Enemy, False) [12, 11] 0b 0x0 1 0x8B3CC0 NoItems NoAI
+	UNIT
+
+	unSceneThroneMagicEnemies:
+		UNIT unitSoldier2 classShaman 0x00 Level(1, Enemy, False) [5,  1]  0b 0x0 1 0x8B3CC8 NoItems NoAI
+		UNIT unitSoldier2 classShaman 0x00 Level(1, Enemy, False) [5,  2]  0b 0x0 1 0x8B3CD0 NoItems NoAI
+		UNIT unitSoldier2 classDruid  0x00 Level(1, Enemy, True)  [19, 10] 0b 0x0 1 0x8B3CD8 NoItems NoAI
+		UNIT unitSoldier2 classDruid  0x00 Level(1, Enemy, True)  [20, 10] 0b 0x0 1 0x8B3CE0 NoItems NoAI
+	UNIT
+
+	unSceneThroneEnemies:
+		UNIT unitSoldier5 classGreatKnight 0x00 Level(1, Enemy, False) [10, 10] 0b 0x0 1 0x8B3CE8 NoItems NoAI
+		UNIT unitSoldier5 classGreatKnight 0x00 Level(1, Enemy, False) [16, 10] 0b 0x0 1 0x8B3CF0 NoItems NoAI
+		UNIT unitSoldier6 classPaladin     0x00 Level(1, Enemy, False) [10, 10] 0b 0x0 1 0x8B3CF8 NoItems NoAI
+		UNIT unitSoldier6 classPaladin     0x00 Level(1, Enemy, False) [16, 10] 0b 0x0 1 0x8B3D00 NoItems NoAI
+		UNIT unitSoldier7 classMageKnight  0x00 Level(1, Enemy, False) [10, 10] 0b 0x0 1 0x8B3D08 NoItems NoAI
+		UNIT unitSoldier7 classMageKnight  0x00 Level(1, Enemy, False) [16, 10] 0b 0x0 1 0x8B3D10 NoItems NoAI
+	UNIT
+
+	unSceneEscapeAllies:
+		UNIT unitMeth       classPaladin 0x00 Level(1, Ally, False) [9, 3] 0b 0x0 2 0x8B3F20 [itemSteelSword] NoAI
+		UNIT unitCiraxidoge classKnight  0x00 Level(1, Ally, False) [9, 3] 0b 0x0 2 0x8B3F30 NoItems          NoAI
+		UNIT unitTordo      classCleric  0x00 Level(1, Ally, False) [6, 5] 0b 0x0 1 0x8B3F40 NoItems          NoAI
+	UNIT
+
+	unSceneEscapeValter:
+		UNIT unitValterPrologue classWyvernKnight 0x00 Level(5, Enemy, False) [14, 5] 0b 0x0 2 0x8B3F48 [itemSilverLance] NoAI
+		UNIT unitSoldier2       classWywernRider  0x00 Level(1, Enemy, True)  [14, 4] 0b 0x0 1 0x8B3F58 NoItems           NoAI
+		UNIT unitSoldier2       classWywernRider  0x00 Level(1, Enemy, True)  [14, 6] 0b 0x0 1 0x8B3F60 NoItems           NoAI
+	UNIT
+
+	edTurnEvents:
+		TurnEventEnemy(0x08, evAggroONeill, 1, 253) // TURN 0x8 evAggroONeill   [1, 255] 0x8
+	END_MAIN
+
+	edCharacterEvents:
+	END_MAIN
+
+	edLocationEvents:
+	END_MAIN
+
+	edMiscEvents:
+		AFEV 0x07 evOneEnemyLeftCheck 0x00
+		DefeatBoss(evSceneEnding)
+		CauseGameOverIfLordDies // AFEV 0x0 evGameOver 0x65
+	END_MAIN
+
+	edUnknown1:
+	END_MAIN
+
+	edUnknown2:
+	END_MAIN
+
+	edUnknown3:
+	END_MAIN
+
+	edTutorial:
+		// Don't bother with that
+		WORD 0x89EF2B0 0x89EF328 0x89EF388 0x89EF398
+		WORD 0x89EF46C 0x89EF4EC 0x89EF50C 0x89EF53C
+		WORD 0x89EF56C 0x89EF5A8 0x89EF6E0 0x89EF758
+		WORD 0x89EF7B8 0x89EF7C8 0x89EF7FC
+	END_MAIN
+
+	PointerList:
+		POIN edTurnEvents
+		POIN edCharacterEvents
+		POIN edLocationEvents
+		POIN edMiscEvents
+		POIN edUnknown1 edUnknown2 edUnknown3 edTutorial
+		POIN edTraps1 edTraps2
+		POIN unAllyUnits unAllyUnits
+		POIN $0 $0 $0
+		POIN $0 $0 $0
+		POIN evSceneBeginning evSceneEnding
+
+	edTraps1:
+	ENDTRAP
+
+	edTraps2:
+	ENDTRAP
+
+	ALIGN 4
+	
+	evLoadBackground:
+		CHECK_EVBIT 0x8
+		BNE   0x80D2 rC r0
+			FADI 16
+		LABEL 0x80D2
+		
+		REMOVEPORTRAITS
+		BACG 0xFFFF
+		
+		FADU 16
+	ENDA
+
+	evSceneBeginning:
+		CALL evIntroductionScene  // throne room, valter and stuff
+		
+		ENUT 0x8 // this line prevents ONeill from aggroing immediately
+		
+		LOAD1 0x1 unAllyUnits
+		ENUN
+		
+		SVAL r1 13 // HP Amount to set
+		SET_HP unitSeth
+		
+		FlashCursor(unitEirika, 60) // CUMO unitEirika; STAL 60; CURE
+		
+		MUNO
+		
+		// "Princess Eirika! This way!" text
+		Text(backgroundWoodland, 0x90D)
+		
+		MUSI
+		
+		MOVE 0x18 unitSeth   [4, 4] // move seth
+		MOVE 0x18 unitEirika [6, 5] // why not move Eirika too?
+		ENUN
+		
+		FlashCursor(unitSeth, 60)
+		
+		// "once we cross that bridge..." text
+		Text(0x90E)
+		
+		MOVE 0x18 unitEirika [4, 5]
+		ENUN
+		
+		CALL evGiveRapier
+		CALL evSpawnONeill
+		
+		NoFade
+	ENDA
+
+	evIntroductionScene:
+		SVAL rB 0xA000E // cam pos [0xA, 0xE] (or inverted? idk tbh)
+		LOMA 0x10 // load cutscene map
+		
+		LOAD2 0x1 unSceneThroneAllies // LOAD2 because the cutscene blue units shouldn't be added to the roster
+		ENUN
+		
+		FADU 16
+		MUSC musicRaid
+		
+		// Displays the location in the top-left
+		BROWNBOXTEXT 0x664 [8, 8]
+		
+		LOAD1 0x1 unSceneThroneMessenger
+		ENUN
+		
+		_0x2620 0xE // unknown?
+		
+		// Remember, Ephraim in this cutscene is actually the messenger
+		FlashCursor(unitEphraim, 60)
+		
+		// "defenses breached etc" text
+		Text(0x903)
+		
+		MOVE 0 unitEphraim [13, 11]
+		ENUN
+		
+		DISA unitEphraim
+		
+		MOVE_1STEP 0 unitEirika left
+		ENUN
+		
+		FlashCursor(unitEirika, 60)
+		
+		// "father, no..." text
+		Text(0x904)
+		
+		MOVEONTO 0 unitMeth unitEirika // Seth rescues Eirika
+		ENUN
+		
+		DISA unitEirika
+		
+		FlashCursor(unitMeth, 60)
+		
+		// run awayy
+		Text(0x905)
+		
+		MOVE 0 unitMeth [13, 11]
+		
+		SVAL rD 0x00 // set up coordinates to move to
+			SVAL r1 0x10C
+			SAVETOQUEUE
+			SVAL r1 0x0
+			SAVETOQUEUE
+			SVAL r1 0x2CC
+			SAVETOQUEUE
+			SVAL r1 0x0
+			SAVETOQUEUE
+		MOVEFORCED 0 unitCiraxidoge 0x00 // go to them in order
+		ENUN
+		
+		DISA unitMeth
+		DISA unitCiraxidoge // off screen you go
+		
+		MOVE 0 unitMoulder [11, 4]
+		MOVE 0 unitVanessa [15, 4]
+		ENUN
+		
+		MOVE_1STEP 0 unitMoulder right
+		MOVE_1STEP 0 unitVanessa left
+		ENUN
+		
+		LOAD1 0x1 unSceneThroneMagicEnemies
+		ENUN
+		
+		LOAD1 0x1 unSceneThroneEnemies
+		ENUN
+		
+		LOAD1 0x1 unSceneThroneLeaders
+		ENUN
+		
+		FlashCursor(unitFado, 60) // CUMO unitFado; STAL 60; CURE
+		
+		// eirika, ephraim... ded
+		Text(0x906)
+		FADI 2
+		
+		EVBIT_F 0x2
+		
+		// REMOVE EVERYONE
+		CLEA 0x00
+		CLEE 0x00
+		CLEN 0x00
+		
+		SVAL rB 0x00 // Cam pos [0, 0]
+		LOMA 0x40 // outside map
+		
+		FADU 16
+		
+		LOAD2 0x1 unSceneEscapeAllies // Seth, Franz
+		ENUN
+		
+		FlashCursor(unitMeth, 60) // CUMO unitSeth; STAL 60; CURE
+		
+		// franz, ride ahead
+		Text(backgroundWoodland, 0x907)
+		
+		SVAL rD 0x0  // another move path
+			SVAL r1 0x104
+			SAVETOQUEUE
+			SVAL r1 0x0
+			SAVETOQUEUE
+			SVAL r1 0x84
+			SAVETOQUEUE
+			SVAL r1 0x0
+			SAVETOQUEUE
+			SVAL r1 0x80
+			SAVETOQUEUE
+			SVAL r1 0x0
+			SAVETOQUEUE
+		MOVEFORCED 0 unitCiraxidoge 0x0
+		ENUN
+		
+		DISA unitCiraxidoge //franz leaves
+		
+		FlashCursor(unitSeth, 60)
+		
+		// behind me
+		Text(backgroundWoodland, 0x908)
+		
+		LOAD1 0x1 unSceneEscapeValter
+		ENUN
+		
+		MOVE_1STEP 0 unitSeth right
+		ENUN
+		
+		MOVE_1STEP 0 unitEirika left
+		ENUN
+		
+		FlashCursor(unitValterPrologue, 60)
+		
+		// gimme the girl
+		Text(backgroundWoodland, 0x909)
+		
+		MOVE_1STEP 0 unitValterPrologue left
+		ENUN
+		
+		StartBattle // SVAL rD 0x0
+			MissedAttack(0, 0) // SVAL r1 0x20000; SAVETOQUEUE
+			NormalDamage(1, 0) // SVAL r1 0x1; SAVETOQUEUE
+		EndAttack // SVAL r1 0xFFFFFFFF; SAVETOQUEUE
+		
+		FIG1 unitSeth unitValterPrologue 0x00
+		
+		FlashCursor(unitSeth, 60)
+		
+		// ahh no
+		Text(0x90B)
+		
+		MOVE_1STEP 8 unitSeth left
+		ENUN
+		
+		DISA unitEirika
+		
+		SVAL rD 0x0 // movement path again
+			SVAL r1 0x18104
+			SAVETOQUEUE
+			SVAL r1 0x0
+			SAVETOQUEUE
+			SVAL r1 0x18084
+			SAVETOQUEUE
+			SVAL r1 0x0
+			SAVETOQUEUE
+			SVAL r1 0x18080
+			SAVETOQUEUE
+			SVAL r1 0x0
+			SAVETOQUEUE
+		MOVEFORCED 0 unitSeth 0x0
+		ENUN
+		
+		DISA unitSeth
+		
+		FlashCursor(unitValterPrologue, 60)
+		
+		// such terrible wounds etc
+		Text(0x90C) // TEXTSTART; TEXTSHOW 0x90C; TEXTEND; REMA
+		
+		FADI 16
+		
+		EVBIT_F 0x2
+		
+		// REMOVE EVERYONE (again)
+		CLEA 0x00
+		CLEE 0x00
+		CLEN 0x00
+		
+		SVAL rB 0x00 // cam pos [0, 0]
+		LOMA 0x00 // I guess LOMA 0x00 loads the current chapter map?
+		
+		FADU 16
+	ENDA
+
+	evGiveRapier:
+		FlashCursor(unitSeth, 60)
+		Text(0x90F)
+		
+		CALL label35 // ?
+		
+		SVAL r3 itemRapier
+		GIVEITEMTO unitEirika
+	ENDA
+
+	evSpawnONeill:
+		LOAD1 0x1 unONeillEnemies
+		ENUN
+		
+		FlashCursor(unitONeill, 60)
+		
+		MUSC musicShadowOfTheEnemy
+		
+		// renais dogs etc
+		Text(0x910)
+		
+		ENUF 0x04
+	ENDA
+
+	evOneEnemyLeftCheck:
+		CHECK_ENEMIES // rC now contains the number of enemies
+		SVAL r7 1
+		BNE   0x00 rC r7 // Compares the number of enemies (rC) to 1 (r7) and branches to LABEL 0x00 if not equal
+			FlashCursor(unitSeth, 60) // CUMO unitSeth; STAL 60; CURE
+			
+			// all that's left is their leader
+			Text(0x913) // TEXTSTART; TEXTSHOW 0x913; TEXTEND; REMA
+			
+			ENUF 0x08 // this unsets the event ID so the next turn O'Neill aggros
+		GOTO  0x01
+		LABEL 0x00
+			CHECK_EVENTID // put event id in slot C
+			SADD slotsParam(r2, rC, r0) // 0xC2 // moves it from C to 2
+			ENUF_SLOT2 // unset the event, allowing the check to be done again next turn
+		LABEL 0x01
+		
+		NoFade
+	ENDA
+
+	evAggroONeill:
+		MUSC musicShadowOfTheEnemy
+		
+		// wretched lordling
+		Text(0x914) // TEXTSTART; TEXTSHOW 0x914; TEXTEND; REMA
+		
+		CHECK_TUTORIAL
+		BNE   0x00 rC r0 // if slot c is not 0 i.e. easy mode
+			SVAL r1 0x00
+			CHAI unitONeill
+		LABEL 0x00 // then skip changing his AI
+		
+		NoFade
+	ENDA
+
+	evSceneEnding:
+		MUSC musicVictory
+		
+		SVAL r2 backgroundWoodland
+		CALL evLoadBackground
+		
+		TEXTSHOW 0x918
+		TEXTEND
+		FADI 16
+		REMA
+		
+		ENUT 0xE0 // tons of permanent event IDs ??? Maybe guide-related
+		ENUT 0xE1
+		ENUT 0xB7
+		ENUT 0xB4
+		ENUT 0xB5
+		ENUT 0xDC
+		ENUT 0xB9
+		ENUT 0xC2
+		ENUT 0xC3
+		ENUT 0xE7
+		ENUT 0xC9
+		
+		MNC2 0x1 //go to ch1
+	ENDA
 }
+
+#endif // CHAPTER_PROLOGUE_EVENT
