@@ -1,0 +1,6 @@
+# 0x02D9 LightMageName
+Light Mage[X]
+
+# 0x0325 LightMageDesc
+Spellcasters specialized in[NL]
+light magic.[X]

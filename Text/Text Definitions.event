@@ -20,6 +20,8 @@
 #define ZyxzZothDesc 0x0277
 #define MicaiahName 0x0224
 #define MicaiahDesc 0x0280
+#define LightMageName 0x02D9
+#define LightMageDesc 0x0325
 #define ValkyrieStaffName 0x035C
 #define ValkyrieStaffDesc 0x040C
 #define TheDocName 0x0366
