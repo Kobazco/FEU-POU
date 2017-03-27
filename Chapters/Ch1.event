@@ -30,30 +30,30 @@ PUSH
 
 	ORG $8B40A0
 	Units1:
-		UNIT Tordo Cleric  Tordo 0x8 [14,9] 0b 0x0 0x1 0x8B4008 NoItems NoAI
-		UNIT Seth  Paladin Tordo 0x8 [14,9] 0b 0x0 0x1 0x8B4010 NoItems NoAI
+		UNIT unitTordo classCleric  unitTordo 0x8 [14,9] 0b 0x0 0x1 0x8B4008 NoItems NoAI
+		UNIT unitSeth  classPaladin unitTordo 0x8 [14,9] 0b 0x0 0x1 0x8B4010 NoItems NoAI
 	UNIT
 
 	label30:
-		UNIT Breguet Knight  Breguet 0x24 [2, 9] 0b 0x0 0x1 0x8B4018 [IronLance] GuardTileAI 0x9 GuardTile
-		UNIT 0x80    Soldier Breguet 0x15 [1, 9] 0b 0x0 0x1 0x8B4020 [IronLance] AttackInRangeAI 0x9 DefaultAI4
-		UNIT 0x80    Soldier Breguet 0x15 [2, 9] 0b 0x0 0x2 0x8B4028 [IronLance] AttackInRangeAI 0x9 DefaultAI4
-		UNIT 0x80    Soldier Breguet 0x1D [2, 9] 0b 0x0 0x1 0x8B4038 [IronLance] [AttackInPlace, 0x12] Reckless DefaultAI4
-		UNIT 0x80    Fighter Breguet 0x15 [1, 9] 0b 0x0 0x1 0x8B4040 [IronAxe]   DefaultAI Reckless DefaultAI4
-		UNIT 0x80    Fighter Breguet 0x15 [2, 9] 0b 0x0 0x1 0x8B4048 [IronAxe]   DefaultAI Reckless DefaultAI4
-		UNIT 0x80    Fighter Breguet 0x15 [2, 9] 0b 0x0 0x1 0x8B4050 [IronAxe]   DefaultAI Reckless DefaultAI4
+		UNIT unitBreguet classKnight  unitBreguet 0x24 [2, 9] 0b 0x0 0x1 0x8B4018 [IronLance] GuardTileAI 0x9 GuardTile
+		UNIT 0x80        classSoldier unitBreguet 0x15 [1, 9] 0b 0x0 0x1 0x8B4020 [IronLance] AttackInRangeAI 0x9 DefaultAI4
+		UNIT 0x80        classSoldier unitBreguet 0x15 [2, 9] 0b 0x0 0x2 0x8B4028 [IronLance] AttackInRangeAI 0x9 DefaultAI4
+		UNIT 0x80        classSoldier unitBreguet 0x1D [2, 9] 0b 0x0 0x1 0x8B4038 [IronLance] [AttackInPlace, 0x12] Reckless DefaultAI4
+		UNIT 0x80        classFighter unitBreguet 0x15 [1, 9] 0b 0x0 0x1 0x8B4040 [IronAxe]   DefaultAI Reckless DefaultAI4
+		UNIT 0x80        classFighter unitBreguet 0x15 [2, 9] 0b 0x0 0x1 0x8B4048 [IronAxe]   DefaultAI Reckless DefaultAI4
+		UNIT 0x80        classFighter unitBreguet 0x15 [2, 9] 0b 0x0 0x1 0x8B4050 [IronAxe]   DefaultAI Reckless DefaultAI4
 	UNIT
 
 	label35:
 		// Swapped those two to make Knight!Ciraxidoge able to actually do stuff
-		UNIT Dorcas     Tarvos 0x0   0x20 [5, 0] 0b 0x0 0x1 0x8B4058 [IronAxe, Vulnerary] NoAI
-		UNIT Ciraxidoge Knight Tordo 0x8  [6, 0] 0b 0x0 0x1 0x8B4060 [IronLance, Javelin] NoAI
+		UNIT unitDorcas     classTarvos 0x0       0x20 [5, 0] 0b 0x0 0x1 0x8B4058 [IronAxe, Vulnerary] NoAI
+		UNIT unitCiraxidoge classKnight unitTordo 0x8  [6, 0] 0b 0x0 0x1 0x8B4060 [IronLance, Javelin] NoAI
 	UNIT
 
 	ORG $8B4208
 	label32:
-		UNIT 0xC1 Cavalier  0x0 0xA [2, 2] 0b 0x0 0x3 0x8B4080 [IronLance] NoAI
-		UNIT 0xC0 Mercenary 0x0 0xA [2, 2] 0b 0x0 0x1 0x8B4098 [IronSword] NoAI
+		UNIT 0xC1 classCavalier  0x0 0xA [2, 2] 0b 0x0 0x3 0x8B4080 [IronLance] NoAI
+		UNIT 0xC0 classMercenary 0x0 0xA [2, 2] 0b 0x0 0x1 0x8B4098 [IronSword] NoAI
 	UNIT
 
 	ORG $9E868C

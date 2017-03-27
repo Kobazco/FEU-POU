@@ -1,15 +1,15 @@
 0x803d30,Name value,Description value,Character Number,Class (Support Viewer),Portrait,Mini Portrait,Affinity,##UNKNOWN##,Base : Level,Base : HP,Base : Power,Base : Skill,Base : Speed,Base : Defense,Base : Resistance,Base : Luck,Base : Constitution,Rank : Sword,Rank : Lance,Rank : Axe,Rank : Bow,Rank : Staff,Rank : Anima,Rank : Light,Rank : Dark,Growth : HP,Growth : Power,Growth : Skill,Growth : Speed,Growth : Defense,Growth : Resistance,Growth : Luck,##UNKNOWN##,Attributes,Supports Data Pointer,##UNKNOWN##
 None,0x0,0x19,0x1b,0x0,0x1d,0x1f,0,0x0,33,0,35,0,37,0,39,0,0,41,0,43,0,45,0,47,0,0,49,0,51,0,5,4,0x31c0402,0xf001f007,0x3018001,0x4
-Tordo,TordoName,TordoDesc,0x1,Cleric,TordoMugId,0x0,6,0x1,1,5,5,5,5,5,5,5,0,0,0,0,0,WRANK_D,0,0,0,40,40,50,40,40,50,50,0x0,CA_FEMALE,0x88aebac,0x7
-Meth,MethName,0x26f,0x2,Paladin,MethMugId,0x0,7,0x3,1,6,6,6,6,6,6,6,-10,WRANK_B,WRANK_A,0,0,0,0,0,0,11,11,11,111,11,11,11,0x0,CA_NONE,0x88aebdc,0x3
-Dorcas,DorcasName,0x270,0x3,Tarvos,DorcasMugId,0x0,2,0x7,4,8,2,4,2,0,3,3,0,0,0,WRANK_D,0,0,0,0,0,80,45,40,35,45,20,30,0x0,CA_NONE,0x88aec0c,0x4
-Ciraxidoge,0x215,0x271,0x4,Knight,CiraxidogeMugId,0x0,6,0x6,1,0,2,3,2,0,1,2,0,0,WRANK_D,0,0,0,0,0,0,90,50,25,30,60,30,25,0x0,CA_NONE,0x88aebf4,0x3
-Moulder,0x216,0x272,0x5,Priest,MoulderMugId,0x0,7,0x8,3,2,3,5,7,1,0,1,4,0,0,0,0,WRANK_C,0,0,0,70,40,50,40,25,25,20,0x0,CA_NONE,0x88aec24,0x4
-Vanessa,0x217,0x273,0x6,PegasusKnight,0x8,0x0,7,0x9,1,3,1,2,6,3,3,4,0,0,WRANK_D,0,0,0,0,0,0,50,35,55,60,20,30,50,0x0,CA_FEMALE | CA_TRIANGLEATTACK_PEGASI,0x88aec3c,0xa
+Tordo,TordoName,TordoDesc,0x1,classCleric,TordoMugId,0x0,6,0x1,1,5,5,5,5,5,5,5,0,0,0,0,0,WRANK_D,0,0,0,40,40,50,40,40,50,50,0x0,CA_FEMALE,0x88aebac,0x7
+Meth,MethName,0x26f,0x2,classPaladin,MethMugId,0x0,7,0x3,1,6,6,6,6,6,6,6,-10,WRANK_B,WRANK_A,0,0,0,0,0,0,11,11,11,111,11,11,11,0x0,CA_NONE,0x88aebdc,0x3
+Dorcas,DorcasName,0x270,0x3,classTarvos,DorcasMugId,0x0,2,0x7,4,8,2,4,2,0,3,3,0,0,0,WRANK_D,0,0,0,0,0,80,45,40,35,45,20,30,0x0,CA_NONE,0x88aec0c,0x4
+Ciraxidoge,0x215,0x271,0x4,classKnight,CiraxidogeMugId,0x0,6,0x6,1,0,2,3,2,0,1,2,0,0,WRANK_D,0,0,0,0,0,0,90,50,25,30,60,30,25,0x0,CA_NONE,0x88aebf4,0x3
+Moulder,0x216,0x272,0x5,classPriest,MoulderMugId,0x0,7,0x8,3,2,3,5,7,1,0,1,4,0,0,0,0,WRANK_C,0,0,0,70,40,50,40,25,25,20,0x0,CA_NONE,0x88aec24,0x4
+Vanessa,0x217,0x273,0x6,classPegasusKnight,0x8,0x0,7,0x9,1,3,1,2,6,3,3,4,0,0,WRANK_D,0,0,0,0,0,0,50,35,55,60,20,30,50,0x0,CA_FEMALE | CA_TRIANGLEATTACK_PEGASI,0x88aec3c,0xa
 JimBob,JimBobName,JimBobDesc,0x7,0x3d,JimBobMugId,0x0,1,0xa,1,1,2,2,2,2,0,8,0,0,0,WRANK_E,0,0,0,0,0,70,50,35,30,25,20,40,0x0,CA_NONE,0x88aec6c,0x5
-Neimi,0x219,0x275,0x8,Archer,0xa,0x0,1,0xb,1,0,1,2,2,0,2,4,0,0,0,0,WRANK_D,0,0,0,0,55,45,50,60,15,35,50,0x0,CA_FEMALE,0x88aec9c,0x7
-Colm,0x21a,0x276,0x9,Thief,ColmMugId,0x0,6,0xc,2,2,1,3,1,1,1,8,0,WRANK_E,0,0,0,0,0,0,0,75,40,40,65,25,20,45,0x0,CA_NONE,0x88aec84,0x0
-Zyxz’Zoth,ZyxzZothName,0x277,0xa,Fighter,ZyxzZothMugId,0x0,1,0xd,4,8,3,5,3,3,1,3,3,0,0,WRANK_C,0,0,0,0,0,75,60,60,30,25,15,35,0x0,CA_NONE,0x88aec54,0x1
+Neimi,0x219,0x275,0x8,classArcher,0xa,0x0,1,0xb,1,0,1,2,2,0,2,4,0,0,0,0,WRANK_D,0,0,0,0,55,45,50,60,15,35,50,0x0,CA_FEMALE,0x88aec9c,0x7
+Colm,0x21a,0x276,0x9,classThief,ColmMugId,0x0,6,0xc,2,2,1,3,1,1,1,8,0,WRANK_E,0,0,0,0,0,0,0,75,40,40,65,25,20,45,0x0,CA_NONE,0x88aec84,0x0
+Zyxz’Zoth,ZyxzZothName,0x277,0xa,classFighter,ZyxzZothMugId,0x0,1,0xd,4,8,3,5,3,3,1,3,3,0,0,WRANK_C,0,0,0,0,0,75,60,60,30,25,15,35,0x0,CA_NONE,0x88aec54,0x1
 Innes,0x21c,0x278,0xb,0x1b,0xf,0x0,4,0x14,1,10,7,7,10,5,7,14,1,0,0,0,WRANK_A,0,0,0,0,75,40,40,45,20,25,45,0x0,CA_NONE,0x88aed5c,0x0
 Lute,0x21d,0x279,0xc,0x26,0x10,0x0,7,0xf,1,1,5,3,5,1,1,8,0,0,0,0,0,0,WRANK_C,0,0,45,65,30,45,15,40,45,0x0,CA_FEMALE,0x88aeccc,0x7
 Natasha,0x21e,0x27a,0xd,0x4a,0x11,0x0,4,0x10,1,2,1,2,6,2,0,6,0,0,0,0,0,WRANK_D,0,0,0,50,60,25,40,15,55,60,0x0,CA_FEMALE,0x88aece4,0xa
