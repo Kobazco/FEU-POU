@@ -14,3 +14,11 @@
 ALIGN 4
   //#include "my animation Installer.event"
 #include "Animations/michaiah/final Installer.event"
+
+ALIGN 4
+pLightMageAnimations:
+	AnimationForType(WTYPE_DISARMED, animMicaiah)
+	AnimationForType(WTYPE_ANIMA,    animMicaiah)
+	AnimationForType(WTYPE_LIGHT,    animMicaiah)
+	AnimationForType(WTYPE_DARK,     animMicaiah)
+AnimationEnd

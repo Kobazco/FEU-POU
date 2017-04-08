@@ -1,0 +1,6 @@
+#ifndef CLASS_DEFINITIONS_EVENT
+#define CLASS_DEFINITIONS_EVENT
+
+#define classLightMage 0x39
+
+#endif // CLASS_DEFINITIONS_EVENT

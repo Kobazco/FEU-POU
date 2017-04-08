@@ -74,12 +74,9 @@ PUSH
 	END_MAIN
 
 	LocationBasedEvents:
-		VILL 0x9 label20 [4,2] 0x10
-		LOCA 0x9 [4,1] 0x20
-		VILL 0xA label21 [7,2] 0x10
-		LOCA 0xA [7,1] 0x20
-		VILL 0xB label22 [1,12] 0x10
-		LOCA 0xB [1,11] 0x20
+		Village(0x9, label20, 4, 2) // Village at [4, 2]
+		Village(0xA, label21, 7, 2) // Village at [4, 2]
+		Village(0xB, label22, 1, 12) // Village at [4, 2]
 		SHOP 0x0 label23 [5,7] 0x16
 	END_MAIN
 

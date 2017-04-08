@@ -5,9 +5,6 @@
 
 {
 	PUSH
-		ORG 0x2AB50 // branches to the hack
-			BL(pMagIsResCheck)
-		
 		ORG 0x17012 // makes staves heal off of RES
 			SHORT $F002
 			SHORT $F92D
@@ -22,14 +19,22 @@
 		ORG 0x18A3A // include bonus RES in range calculation
 			SHORT $F7FD
 			SHORT $FD51
-
+		
 		ORG 0x18A58 // apply Magic/Melee fix patch by Hextator
 			#incbin MagicMeleeFix.bin
+		
 	POP
 
-	ALIGN 4
-	pMagIsResCheck:
-		#incbin Check.bin
+	#ifdef MAG_AS_RES_FULL
+		PUSH; ORG 0x2AB50 // branches to the hack
+			BL(pMagIsResCheck)
+		POP
+		
+		ALIGN 4
+		
+		pMagIsResCheck:
+			#incbin Check.bin
+	#endif
 }
 
 #endif // FE5_STYLE_RES_EVENT
