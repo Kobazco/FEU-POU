@@ -2,13 +2,18 @@
 #define MAIN_EVENT
 
 #ifdef _FE8_ // Ensuring we are assembling FE8 events
+	#define BLRangeFreeSpace 0x1C1EC0
 	#define FreeSpace 0xB2A610
 	
 	// Ensuring everyone is happy
 	#define pFreeSpace FreeSpace
 	#define Free_Space FreeSpace
 
-	ORG FreeSpace
+	// Including hax that need to be in BL range
+	ORG BLRangeFreeSpace; ALIGN 4
+		#include "Engine Hax/FE5 Style RES/FE5 Style RES.event"
+	
+	ORG FreeSpace; ALIGN 4
 	
 	#include "eastdlib.event"
 	#include "boots/master.ea"
@@ -17,7 +22,6 @@
 	#include "_Repoint.event"
 	
 	// Engine Hax
-	// #include "Engine Hax/FE5 Style RES/FE5 Style RES.event"
 	#include "Engine Hax/Item Effect Revamp/Install.event"
 	#include "Engine Hax/Stat Colors/Install.event"
 	#include "Engine Hax/Show Heal Amount/Install.event"
@@ -30,6 +34,7 @@
 	#include "Animations/#Animation Ids.event"
 	#include "Definitions/Character Definitions.event"
 	#include "Definitions/Item Definitions.event"
+	#include "Definitions/Class Definitions.event"
 	
 	// Misc Data
 	#include "Animations/Master Animation Installer.event"
